@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hi! Nice to meet you!",
+    "section": "",
+    "text": "Hi! Nice to meet you!\nWelcome to my personal website!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 5, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "in short, this is how my journey has been"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\n\n\nThe University of Manchester 🇬🇧\n\n\n\nBSc (Hons) Computer Science and Mathematics\n\n\n\n2024 - 2027\n\n\n\n\n\nMain focus: Probability, Statistics, ML and AI\nYear 1 results: Overall grade \\(91.4\\%\\), top \\(1\\%\\) on the course, top \\(0.3\\%\\) among Year 1 students in the Department of Computer Science\nRelevant courses: Probability and Statistics II, Machine Learning, Linear Regression Models\n\nRiga State Gymnasium No. 1 🇱🇻\n\n\n\nGeneral Secondary Education Diploma\n\n\n\n2021 - 2024\n\n\n\n\n\nIncluding Mathematics HL, Programming HL, English HL with average grade: \\(9.5/10\\) across \\(19\\) subjects\nState examinations: Mathematics HL (\\(99\\%/100\\%\\)), Programming HL (\\(91\\%/100\\%\\))\nExtra examinations: IELTS (\\(7.5/9\\)), SAT (\\(1490/1600\\)), IB CS HL (\\(7/7\\))"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Curriculum Vitae",
+    "section": "Experience",
+    "text": "Experience\n\n\nResearch Assistant 🇬🇧\n\nThe University of Manchester - 06/2025 - 08/2025 (voluntary)\nProduced an introductory write-up on foundational concepts at the intersection of Conformal Prediction and Imprecise Probability under the supervision of Michele Caprio\n\n\n\nComputer Science Teacher 🇱🇻\n\nProgramming School No. 1 - 09/2023 - 05/2024\nIntroduced computer science concepts e.g. iteration, selection, working with files and API via Scratch and MIT App Inventor for \\(1^\\text{st}\\)-\\(6^\\text{th}\\) grade students \n\n\n\nTechnical Coordinator 🇱🇻\n\nLatvian Student Integration Bee - 10/2023 - 12/2023\nCoded and hosted static webpage with HTML and W3CSS with incorporated version control\nIntroduced and maintained custom domain emails for the organising committee"
+  },
+  {
+    "objectID": "about.html#volunteering-and-leadership",
+    "href": "about.html#volunteering-and-leadership",
+    "title": "Curriculum Vitae",
+    "section": "Volunteering and Leadership",
+    "text": "Volunteering and Leadership\n\n\nPresident 🇬🇧\n\nHackchester (the University of Manchester Cyber Security Society) - 10/2024 - 05/2025\nLed committee of \\(5\\) members\nSuccessfully planned and hosted weekly events over whole academic year\n\n\n\n\nLead Organiser 🇱🇻\n\nProblemCon++ - 09/2021 - 11/20222\nHosted \\(2\\) programming contests and a hackathon to bring students’ interest to the IT sphere\nObtained sponsorship from \\(9\\) companies, including major local companies and a leading IT education fund \n\n\n\n\n\n\n\nAcademic Awards\n\n\n\n\n\nMichael Jealous Memorial Prize (for excellence in Year 1 studies) and Golden Anniversary Prize (for best Year 1 student in CS Department)\nLetter of Recognition from the Prime Minister of the Republic of Latvia for achieved excellence in academic studies in school"
+  },
+  {
+    "objectID": "about.html#certificates",
+    "href": "about.html#certificates",
+    "title": "Curriculum Vitae",
+    "section": "Certificates",
+    "text": "Certificates\n\n\nMachine Learning with Python from freeCodeCamp\n\nRepresents approximately 300 hours of work with TensorFlow and Python\n\n\n\nTensorflow Developer Certificate from Google\n\nCertificate’s exam tests skills in building TensorFlow models in CV, CNN and NLP (was active 04/2022 - 04/2025)\n\n\n\n\n\n\n\nAcademic Awards\n\n\n\n\n\nMichael Jealous Memorial Prize (for excellence in Year 1 studies) and Golden Anniversary Prize (for best Year 1 student in CS Department)\nLetter of Recognition from the Prime Minister of the Republic of Latvia for achieved excellence in academic studies in school"
+  },
+  {
+    "objectID": "about.html#academic-awards",
+    "href": "about.html#academic-awards",
+    "title": "Curriculum Vitae",
+    "section": "Academic awards",
+    "text": "Academic awards\n\n\nMichael Jealous Memorial Prize (for excellence in Year 1 studies) and Golden Anniversary Prize (for best Year 1 student)\nLetter of Recognition from the Prime Minister of the Republic of Latvia for achieved excellence in academic studies"
+  }
+]

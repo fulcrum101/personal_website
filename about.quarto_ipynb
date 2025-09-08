@@ -1,0 +1,55 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Curriculum Vitae\"\n",
+        "image: profile.jpg\n",
+        "about:\n",
+        "  template: jolla\n",
+        "  links:\n",
+        "    - icon: linkedin\n",
+        "      text: LinkedIn\n",
+        "      href: https://www.linkedin.com/in/vlohmanova/\n",
+        "    - icon: github\n",
+        "      text: Github\n",
+        "      href: https://github.com/fulcrum101\n",
+        "---\n",
+        "\n",
+        "```{css, echo = FALSE}\n",
+        "body {\n",
+        "text-align: left;\n",
+        "}\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "## Education\n",
+        "\n",
+        "### The University of Manchester\n",
+        "#### BSc (Hons) Computer Science and Mathematics\n",
+        ":::: {.columns}\n",
+        "::: {.column width=70%}\n",
+        "- \n",
+        ":::\n",
+        "::: {.column width=30%}\n",
+        "2024 - 2027\n",
+        ":::\n",
+        "::::\n"
+      ],
+      "id": "e4db2126"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

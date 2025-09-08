@@ -1,0 +1,109 @@
+---
+title: "Curriculum Vitae"
+image: profile.PNG
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/vlohmanova/
+    - icon: github
+      text: Github
+      href: https://github.com/fulcrum101
+---
+
+in short, this is how my journey has been
+
+# Education {.text-left}
+
+------------------------------------------------------------------------
+
+### The University of Manchester 🇬🇧
+
+-   BSc (Hons) Computer Science and Mathematics - 2024 - 2027
+-   Main focus: Probability, Statistics, ML and AI
+-   Year 1 results: Overall grade $91.4\%$, top $1\%$ on the course, top $0.3\%$ among Year 1 students in the Department of Computer Science
+-   Relevant courses: Probability and Statistics II, Machine Learning, Linear Regression Models
+
+### Riga State Gymnasium No. 1 🇱🇻
+
+-   General Secondary Education Diploma - 2021 - 2024
+-   Including Mathematics HL, Programming HL, English HL with average grade: $9.5/10$ across $19$ subjects
+-   State examinations: Mathematics HL ($99\%/100\%$), Programming HL ($91\%/100\%$)
+-   Extra examinations: IELTS ($7.5/9$), SAT ($1490/1600$), IB CS HL ($7/7$)
+
+------------------------------------------------------------------------
+
+## Experience
+
+------------------------------------------------------------------------
+
+### Research Assistant 🇬🇧
+
+-   The University of Manchester - 06/2025 - 08/2025 (voluntary)
+-   Produced an introductory write-up on foundational concepts at the intersection of Conformal Prediction and Imprecise Probability under the supervision of [Michele Caprio](https://michelecaprio.wixsite.com/caprio)
+
+### Computer Science Teacher 🇱🇻
+
+-   [Programming School No. 1](https://pps.lv/) - 09/2023 - 05/2024
+-   Introduced computer science concepts e.g. iteration, selection, working with files and API via Scratch and MIT App Inventor for $1^\text{st}$-$6^\text{th}$ grade students
+<!--
+    ### Project Manager and Front-end Developer🇱🇻
+
+    - [programme.lv](https://programme.lv/tasks) - 12/2022 - 04/2024 (voluntary)
+    - Contributed in programming the front end of a dynamic website with NextJS using MantineUI and TailwindCSS
+    - Created marketing campaign with video advertisement that won 3rd place at competition [Business Sketches 2023](https://konkurss.biznesaskices.lv/) hosted by Swedbank
+    - Communicated with prospective sponsors and planned workflow among team members
+    ---> 
+
+### Technical Coordinator 🇱🇻
+
+-   [Latvian Student Integration Bee](https://analizesturnirs.lv) - 10/2023 - 12/2023
+-   Coded and hosted static webpage with HTML and W3CSS with incorporated version control
+-   Introduced and maintained custom domain emails for the organising committee
+
+------------------------------------------------------------------------
+
+## Volunteering and Leadership
+
+------------------------------------------------------------------------
+
+### President 🇬🇧
+-   [Hackchester](https://www.linkedin.com/company/hackchester) (the University of Manchester Cyber Security Society) - 10/2024 - 05/2025
+-   Led committee of $5$ members
+-   Successfully planned and hosted weekly events over whole academic year
+
+<!---
+### Volunteer 🇱🇻
+
+-   [Latvian Kendo Federation](https://www.facebook.com/LatvijasKendoFederacija) - 04/2022 - 08/2024
+-   Created visuals, flyers and banners for marketing campaigns in Figma and website using Streamlit
+-   Contributed in introducing and maintaining the digitisation system of the scoring system for 2 of the biggest international kendo competitions held in Latvia via Google Sheets
+-   Promoted kendo, Japanese martial arts and culture, and healthy lifestyle at 5 festivals with an average of 15,000 visitors each
+---->
+
+### Lead Organiser 🇱🇻
+
+-   [ProblemCon++](https://www.facebook.com/profile.php?id=100082875841673) - 09/2021 - 11/20222
+-   Hosted $2$ programming contests and a hackathon to bring students' interest to the IT sphere
+-   Obtained sponsorship from $9$ companies, including major local companies and a leading IT education fund 
+<!---
+    ***
+    ## Certificates
+    ***
+    ### Machine Learning with Python from freeCodeCamp
+
+    - Represents approximately 300 hours of work with TensorFlow and Python
+
+    ### Tensorflow Developer Certificate from Google 
+    - Certificate’s exam tests skills in building TensorFlow models in CV, CNN and NLP (was active 04/2022 - 04/2025)
+    --->
+
+::: {.callout-note icon="false"}
+# Academic Awards
+
+------------------------------------------------------------------------
+
+-   **Michael Jealous Memorial Prize** (for excellence in Year 1 studies) and **Golden Anniversary Prize** (for best Year 1 student in CS Department)
+-   **Letter of Recognition** from the Prime Minister of the Republic of Latvia for achieved excellence in academic studies in school
+:::

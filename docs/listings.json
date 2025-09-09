@@ -2,8 +2,19 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/DS_miniproof_mean/index.html"
+    ]
+  },
+  {
+    "listing": "/blog_page.html",
+    "items": [
+      "/posts/DS_miniproof_mean/index.html",
+      "/posts/brandy_ sandwich/index.html",
+      "/posts/moonlight_venice/index.html",
+      "/posts/mobius/index.html",
+      "/posts/progress/index.html",
+      "/posts/red_latern/index.html",
+      "/posts/yellow_sun/index.html"
     ]
   }
 ]

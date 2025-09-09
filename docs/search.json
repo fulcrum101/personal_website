@@ -32,6 +32,433 @@
     "href": "index.html#resources",
     "title": "Veronika Lohmanova",
     "section": "Resources",
-    "text": "Resources\n\n\n\nResource\nDescription\nLink\n\n\n\n\nQuarto Docs\nOfficial documentation for Quarto\nquarto.org\n\n\nPandoc Guide\nReference for markdown/table syntax\npandoc.org\n\n\nGitHub Repo\nExample blog source code\ngithub.com"
+    "text": "Resources\nHere are some talks I had given:\n\n\n\nName\nEvent\nLanguage\nLink\n\n\n\n\nMatemātiska analīze varbūtību teorijā, statisikā un datu zinātnē\nLSMAT diskusiju klubs 2025\n🇱🇻\npresentation\n\n\nIdealised ruler and collapsing compass: Euclidean geometry\nMIMUC 2025\n🇬🇧\npresentation"
+  },
+  {
+    "objectID": "index.html#mathematics-related-blog-posts",
+    "href": "index.html#mathematics-related-blog-posts",
+    "title": "Veronika Lohmanova",
+    "section": "Mathematics related blog posts",
+    "text": "Mathematics related blog posts"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html",
+    "href": "talks/LSMAT/LSMAT_lekcija.html",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "",
+    "text": "Ievads varbūtību teorijā un statistikā\nSadalījumi\nNo izlases līdz populācijai\nHipotēžu pārbaude"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#saturs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#saturs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "",
+    "text": "Ievads varbūtību teorijā un statistikā\nSadalījumi\nNo izlases līdz populācijai\nHipotēžu pārbaude"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#varbūtības-teorija-vs-statistika",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#varbūtības-teorija-vs-statistika",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Varbūtības teorija vs statistika",
+    "text": "Varbūtības teorija vs statistika\n\n\n\n\n\ngraph LR\n    A[Populācija]\n    B[Izlase]\n    A --&gt;|varbūtības teorija| B\n    B --&gt;|statistika| A\n\n\n\n\n\n\n. . .\n\nPopulācija (ģenerālkopa, population): nenovērojams\nIzlase (sample): novērojams\n\n. . .\n\nNotācija un terminoloģija\n\n\\(X\\) gadījuma lielums (random variable)\n\\(x\\) noteiktā vērtība\n\\(X=x\\) notikums\n\\(R(X)\\) visu iespējamu gadījuma lieluma vērtību kopa\n\\(\\Omega\\) visu iespējamu eksperimenta rezultātu kopa"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#varbūtības-telpas",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#varbūtības-telpas",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Varbūtības telpas",
+    "text": "Varbūtības telpas\n. . .\n\nPar varbūtību telpu sauc objektu kolekciju \\((\\Omega, F, P)\\), kur\n\n\n\n\\(\\Omega\\): visu iespējamu rezultātu kopa\n\\(F \\subseteq 2^\\Omega\\): izmērāma kopa (measurable set)\n\\(P: F \\to [0, 1]\\): varbūtības mēra funkcija (probability measure)\n\n\n. . .\n\nKolmogorova aksiomas\n\\[P(\\Omega) = 1\\]\n\\[A\\cap B = \\emptyset \\implies P(A\\cup B) = P(A) + P(B),\\ \\ \\   \\forall A, B \\in F\\]\n. . .\n\n\n\\[ \\implies P(A) = 1 - P(A^c)\\]\n\n\\[\\implies  P(\\emptyset) = 0\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-motivācija",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-motivācija",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: Motivācija",
+    "text": "Eksperiments: Motivācija\nKādā no galda spēlēm spēlētājam, kad ir viņam gājiens, vajag met spēles kauliņu. Atkarībā no cik reizes uzmetas \\(6\\), ir dažādas gājiena iespējas. Viena raundā jāmet kauliņš \\(10\\) reizes.\nRunā, ka melnā tirgū pirāts nopirka maģisko kauliņu pie raganas. Mums kā spēļu sacensību organizatoriem ir aizdomās, ka pirāta metamais kauliņš uzkrīt uz \\(6\\) biežāk nekā parastais metamais kauliņš.\n. . .\nJautājums: Ja mums ir dota informācija par katru raundu, vai mēs varam noskaidrot spēles gaitā ar kādu varbūtību tas uzkrīt uz \\(6\\)?\n. . .\n\nApzīmējumi\n\n\n\\(X\\): Skaitlis, ko uzmet, \\(R(X) = \\{1, 2, 3, 4, 5, 6\\}\\)\n\\(Y\\): Cik reizes uzmeta sešinieku viena raundā, \\(R(Y) = \\{0, 1, \\dots, 10\\}\\)\n\\(P[X = 6] = ?\\)\n\\(n_1 = 10, n_2 = 100, n_3 = 1000, n_4 = 10000\\): raundu skaits vienā spēlē"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_1-10",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_1-10",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: \\(n_1 = 10\\)",
+    "text": "Eksperiments: \\(n_1 = 10\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_2-100",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_2-100",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: \\(n_2 = 100\\)",
+    "text": "Eksperiments: \\(n_2 = 100\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_3-1000",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_3-1000",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: \\(n_3 = 1000\\)",
+    "text": "Eksperiments: \\(n_3 = 1000\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_4-10000",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_4-10000",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: \\(n_4 = 10000\\)",
+    "text": "Eksperiments: \\(n_4 = 10000\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc?",
+    "text": "Kāpēc?\n. . .\n\\[ Y \\sim \\text{Binom}(10, p) \\]\n. . .\n\\[ p = P[X = 6] \\]\n. . .\n\nJa kādu mēģinājumu atkārto \\(m\\) reizes, un katrā atsevišķā reizē notikuma \\(A\\) iestāšanās varbūtība ir vienāda ar \\(p\\), tad saka, ka gadījuma lielums \\(Y\\): «notikuma \\(A\\) iestāšanās reižu skaits» ir sadalīts pēc binomiāla sadalījuma likuma \\(Y \\sim \\text{Binom}(m, p)\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījums",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījums",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījums",
+    "text": "Sadalījums\n\nSadalījums: funkcija kas nosaka notikumu iestāšanas varbūtību\n\n\n\\[\\text{Gadījuma lielums} \\sim \\text{sadalījuma nosaukms}(\\text{parametri}) \\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-un-nepārtrauktie-sadalījumi",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-un-nepārtrauktie-sadalījumi",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Diskrētie un nepārtrauktie sadalījumi",
+    "text": "Diskrētie un nepārtrauktie sadalījumi\nDiskrētie: \\(R(X)\\) kopā ir noteiktās, skaitāmas vērtības\n. . .\n\n\\(X \\sim \\text{Bern}(\\frac12)\\), \\(X\\) - Monēta nolaižas ar ciparu augša\n\\(Y \\sim \\text{Binom}(10, \\frac12)\\), \\(Y\\) - Cik reizēs no 10 mēģinājumiem monēta nolaižas ar ciparu augšā\n\\(Z \\sim \\text{Geom}(\\frac12)\\) - Cik mēģinājumus vajag, lai monēta pirmo reizi nolaižas ar ciparu augšā\n\n. . .\nNepārtrauktie: \\(R(X)\\) kopa ir intervāls ar neskaitāmi daudz starpvērtībam\n. . .\n\n\\(X \\sim \\text{U}(1, 10)\\) - Nejaušs skaitlis intervālā \\([1, 10]\\)\n\\(Y \\sim \\text{Norm}(1.7, 0.3)\\) - Augums grupā\n\\(Z \\sim \\text{Exp}(\\frac14)\\) - Konsultācijas garums veikalā, kad vidējais ir \\(4\\) minūtes"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-sadalījumi",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-sadalījumi",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Diskrētie sadalījumi",
+    "text": "Diskrētie sadalījumi\n\n\n\\[ X \\sim \\text{Bern}(p) \\]\n\\[ R(X) = \\{0, 1\\} \\]\nvarbūtību masas funkcija\n(probability mass function)\n\\[p_X(x) :=P[X = x] = \\begin{cases} 1-p & \\text{ja}\\  x=0  \\\\ p & \\text{ja}\\  x=1\\\\\\end{cases}\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-sadalījumi-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-sadalījumi-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Diskrētie sadalījumi",
+    "text": "Diskrētie sadalījumi\n\n\n\\[X \\sim \\text{Bern}(p)\\] \\[R(X) = \\{0, 1\\}\\] kumulatīva sadalījuma funkcija\n(cumulative distribution function)\n\\[\n\\begin{align}\nF_X(x) &:= P[X \\le  x] = \\sum_{i=0}^x p_X(i)\\\\\n&=\n\\begin{cases}\n1 - p       & \\text{ja } x = 0 \\\\\n1 - p + p   & \\text{ja } x = 1 \\\\\n\\end{cases}\\\\\n&=\n\\begin{cases}\n1 - p & \\text{ja } x = 0 \\\\\n1     & \\text{ja } x = 1 \\\\\n\\end{cases}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\n\\[ P[X=x] = 0 \\ \\ \\ \\forall x \\in R(X)\\]\n. . .\nvarbūtības masas funkcija Varbūtības blīvuma funkcija!\n. . .\n\\[ f: \\mathbb{R} \\to \\mathbb{R}^{+}_0\\]\n. . ."
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\nKā tad noteikt gadījuma notikuma varbūtību?\n. . .\nAr intervālu!\n. . .\nkumulatīva sadalījuma funkcija\n\n\\[F_X(x):= P[X \\le x] = \\int_{-\\infty}^x f(t)\\,dt\\]\n\n. . .\n\\[\n\\begin{align}\n\\implies P[a \\le X \\le b] &= P[X \\le b] - P[X \\le a] \\\\\n&= F(b) - F(a) \\\\\n&=  \\int_{-\\infty}^b f(t)\\,dt - \\int_{-\\infty}^a f(t)\\,dt\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\n\\[\n\\begin{align}\nP[a \\le X \\le b] &= F(b) - F(a) \\\\\n&=  \\int_{-\\infty}^b f(t)\\,dt - \\int_{-\\infty}^a f(t)\\,dt\n\\end{align}\n\\]\n. . .\n\nNoteiktā integrāļa īpašība: Intervālu \\([\\alpha, \\beta]\\) var sadalīt \\([\\alpha, \\gamma]\\cup[\\gamma, \\beta]\\), tad \\(\\int_\\alpha^\\beta f(t)\\,dt = \\int_\\alpha^\\gamma f(t)\\,dt + \\int_\\gamma^\\beta f(t)\\,dt\\)\n\n. . .\n\\[\\int_{-\\infty}^b f(t)\\,dt = \\int_{-\\infty}^a f(t)\\,dt + \\int_a^b f(t)\\,dt\\]\n. . .\n\\[\\implies \\int_a^b f(t)\\,dt = \\int_{-\\infty}^b f(t)\\,dt - \\int_{-\\infty}^a f(t)\\,dt\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-4",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-4",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\n\n\n\n\\[ P[a \\le X \\le b] = \\int_a^b f(t)\\,dt\\]\n\nPiemērs: nepārtraukts vienmērīgs sadalījums\n\\(X \\sim U(a, b), b&gt;a\\)\n\\[f_X(x) =\n\\begin{cases}\n\\frac1{b-a} & \\text{ja } \\  a \\le x \\le b\\\\\n0 & \\text{citādi}\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\nPiemērs: \\(X \\sim U(a, b)\\) Kā atrast kumulatīvo sadalījuma funkciju?\n. . .\nTrīs gadījumi:\n\n\\(x &lt; a\\)\n\\(x \\in [a, b]\\)\n\\(x &gt; b\\)\n\n. . .\n\n\\(x &lt; a\\)\n\n\\[F_X(x) = \\int_{-\\infty}^x f_X(t) \\,dt = \\int_{-\\infty}^x 0 \\,dt = 0\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\n\\(X \\sim U(a, b), b&gt;a\\)\n. . .\n\n\\(x \\in [a, b]\\) \\[\n\\begin{align}\nF_X(x) &= \\int_{-\\infty}^x f_X(t) \\,dt = \\int_{-\\infty}^a f_X(t)\\,dt + \\int_a^x f_X(t)\\,dt \\\\\n&= \\int_{-\\infty}^a 0\\,dt + \\int_a^x \\frac1{b-a}\\,dt \\\\\n&= 0 + \\frac1{b-a}\\int_a^x dt = \\left[ \\frac{t}{b-a}\\right]_a^x = \\frac{x-a}{b-a}\n\\end{align}\n\\]\n\n. . ."
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\n\\(X \\sim U(a, b), b&gt;a\\)\n. . .\n\n\\(x &gt; b\\)\n\n\\[\n\\begin{align}\nF_X(x) &= \\int_{-\\infty}^x f_X(t)dt = \\int_{-\\infty}^a f_X(t)\\,dt + \\int_{a}^b f_X(t)\\,dt + \\int_b^x f_X(t)\\,dt \\\\\n&= \\int_{-\\infty}^a 0\\,dt + \\int_{a}^b \\frac1{b-a}\\,dt + \\int_b^x 0\\,dt\\\\\n&= 0 + \\left[\\frac{t}{b-a}\\right]_a^b + 0 = \\frac{b}{b-a} - \\frac{a}{b-a} \\\\\n&= \\frac{b-a}{b-a} = 1\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\n\n\n\\[f_X(x) =\n\\begin{cases}\n\\frac1{b-a} & \\text{ja } \\  a \\le x \\le b\\\\\n0 & \\text{citādi}\n\\end{cases}\n\\]\n\\[F_X(x) =\n\\begin{cases}\n0 & \\text{ja } \\  x &lt;a\\\\\n\\frac{x-a}{b-a} & \\text{ja } x \\in [a, b] \\\\\n1 & \\text{ja } \\  x &gt; b\\\\\n\\end{cases}\n\\]\n\n\\(f_X(x) = \\frac{d}{dx} F_X(x)\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-4",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-4",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\n\\[ X \\sim U(2, 5), P[3.5 \\le X \\le4.2]=?\\]\n\n\n\\[\n\\begin{align}\n&P[3.5 \\le X \\le4.2] \\\\\n&= F_X(4.2) - F_X(3.5)\\\\\n&= \\frac{4.2-2}{5-2} - \\frac{3.5-2}{5-2} \\\\\n&= \\frac{2.2 - 1.5}{3}\\\\\n&= \\frac{0.7}{3} \\approx 23.33\\%\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-5",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-5",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\n. . .\n\n\n\\[\\lim_{x \\to -\\infty} F_X(x) = 0\\]\n\n\\[\\lim_{x \\to \\infty} F_X(x) = 1\\]\n\n\n. . .\nKādi ir kritēriji pmf, pdf un cdf?\n. . .\n\n\\(F_X: \\Omega = \\mathbb{R} \\to [0, 1]\\) ir ne dilstoša\n\\(p_X: \\Omega \\to [0, 1]\\)\n\n. . .\n\n\n\\[ \\sum_{x \\in R(X)} p_X(x) = 1\\]\n\n\\[ \\int_{x \\in R(X)} f_X(x)dx = \\int_{-\\infty}^{\\infty} f_X(x)dx = 1 \\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc matemātiska analīze varbūtību teorijā?",
+    "text": "Kāpēc matemātiska analīze varbūtību teorijā?\n\n\nLai strādāt ar nepārtrauktām vērtībām!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti",
+    "text": "Sadalījuma momenti\n. . .\nSagaidāma vērtība (svērtais aritmētiskais vidējais, expected value)\n. . .\n\n\n\\[ \\mathbb{E}[X] := \\sum_{x\\in R(X)} x p_X(x) \\]\n\n\\[ \\mathbb{E}[X] :=\\int_{-\\infty}^{\\infty} xf_X(x)dx \\]\n\n\n. . .\n\n\n\\[ \\mathbb{E}[g(X)] := \\sum_{x\\in R(X)} g(x) p_X(x) \\]\n\n\\[ \\mathbb{E}[g(X)] :=\\int_{-\\infty}^{\\infty} g(x)f_X(x)dx \\]\n\n\n. . .\nĪpašības:\n\n\n\\(\\mathbb{E}[aX + b] = a \\mathbb{E}[X] + b\\)\n\\(\\mathbb{E}[X+Y] = \\mathbb{E}[X] + \\mathbb{E}[Y]\\)\n\\(\\mathbb{E}[X\\cdot Y] = \\mathbb{E}[X] \\cdot \\mathbb{E}[Y]\\), ja \\(X, Y\\) ir neatkarīgi"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti",
+    "text": "Sadalījuma momenti\n\n\n\\[ \\mathbb{E}[g(X)] := \\sum_{x\\in R(X)} g(x) p_X(x) \\]\n\n\\[ \\mathbb{E}[g(X)] :=\\int_{-\\infty}^{\\infty} g(x)f_X(x)dx \\]\n\n\n. . .\nDispersija (variance) \\[ \\text{Var}(X) := \\mathbb{E}[\\left( X - \\mathbb{E}[X]\\right)^2] \\]\n. . .\n\\[ \\implies \\text{Var}(X) = \\mathbb{E}[X^2] - \\mathbb{E}[X]^2\\]\n. . .\nStandartnovirze (standard deviation)\n\\[ \\text{SD}(X):= \\sqrt{\\text{Var}(X)}\\]\n. . .\nĪpašības:\n\n\n\n\\(\\text{Var}(aX + b) = a^2\\text{Var}(X)\\)\n\n\n\n\\(\\text{Var}(X \\pm Y) = \\text{Var}(X) + \\text{Var}(Y)\\), ja \\(X, Y\\) ir neatkarīgi"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti: piemērs",
+    "text": "Sadalījuma momenti: piemērs\n\nMD: Ja \\(X\\sim U(a, b), b &gt; a\\), tad kas ir \\(\\mathbb{E}[X]\\), \\(\\text{Var}[X]\\)?"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc matemātiska analīze varbūtību teorijā?",
+    "text": "Kāpēc matemātiska analīze varbūtību teorijā?\n\n\nLai strādāt ar nepārtrauktām vērtībām!\n\n\n. . .\n\n\nLai varētu veikt secinājumus balstoties uz nepatraukto vērtību teorētisko modeli!\n\n\n. . .\nnepatraukto vērtību teorētisko modeli?"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti: piemērs",
+    "text": "Sadalījuma momenti: piemērs\n\n\n\n\\(X \\sim \\text{Po}(\\lambda), \\lambda&gt;0\\)\n“cik reizes noteiktā intervālā notiks notikums ar vidējo \\(\\lambda\\)”\n\\(R(X) = \\mathbb{N}_0 \\cup {\\infty}\\)\n\\(p_X(x) = \\frac{\\lambda^x}{x!}e^{-\\lambda}\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti: piemērs",
+    "text": "Sadalījuma momenti: piemērs\n\n\n\\[\n\\begin{align}\n\\mathbb{E}[X] &= \\sum_{x=0}^\\infty p_X(x) = \\sum_{x=0}^\\infty x \\frac{\\lambda^x}{x!} e^{-\\lambda} \\\\\n&= e^{-\\lambda} \\sum_{x=1}^\\infty \\frac{\\lambda^x}{x!} = e^{-\\lambda} \\sum_{x=1}^{\\infty}\\frac{x\\cdot\\lambda^x}{x\\cdot (x-1)!} \\\\\n&= \\lambda e^{-\\lambda} \\sum_{x=1}^\\infty \\frac{\\lambda^{x-1}}{(x-1)!}\n\\end{align}\n\\]\n\nTeilora rinda! \\(e^x = \\sum_{n=0}^\\infty \\frac{x^n}{n!}\\)\n\n\\[\\dots = \\lambda e^{-\\lambda} \\sum_{m=0}^\\infty \\frac{\\lambda^m}{m!} = \\lambda e^{-\\lambda}e^{\\lambda}=\\lambda\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc matemātiska analīze varbūtību teorijā?",
+    "text": "Kāpēc matemātiska analīze varbūtību teorijā?\n\n\nLai strādāt ar nepārtrauktām vērtībām!\n\n\n\n\nLai varētu veikt secinājumus balstoties uz teorētisko modeli!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#statistika",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#statistika",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Statistika",
+    "text": "Statistika\n\n\n\n\n\ngraph LR\n    A[Populācija]\n    B[Izlase]\n    A --&gt;|varbūtības teorija| B\n    B --&gt;|statistika| A\n\n\n\n\n\n\n. . .\n\nPopulācija (ģenerālkopa, population): nenovērojams\nIzlase (sample): novērojams\n\n. . .\n\n\n\n\n\ngraph TD\n    A[Statistika]\n    B[Aprakstojoša]\n    C[Secinošāja]\n    A --&gt; B\n    A --&gt; C\n\n\n\n\n\n\n. . ."
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#izlases-statistika",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#izlases-statistika",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Izlases statistika",
+    "text": "Izlases statistika\n. . .\nIzlases statistika (sample statistic) - vērtība, ko var aprēķināt no izlases datiem\n. . .\n\n\n\\[  \\bar{X} = \\frac1n \\sum_{i=1}^n X_i\\]\n\n\\[ S^2 = \\frac{1}{n-1} \\sum_{i=1}^n (X_i - \\bar{X})^2\\]\n\n\n. . .\nPie dotiem \\(\\{ x_i \\}_{i=1}^n\\)\n\n\n\\[  \\bar{x} = \\frac1n \\sum_{i=1}^n x_i\\]\n\n\\[ s^2 = \\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})^2\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#novērtētājs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#novērtētājs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Novērtētājs",
+    "text": "Novērtētājs\n. . .\n\nKā mēs varam novērtēt kādu lielumu no populācijas?\n\n. . .\n\nPunkta novērtētāji\n\\[  \\hat{\\mu} = \\bar{X} = \\frac1n \\sum_{i=1}^n X_i\\]\n\n\nIntervālu novērtētāji\n\\[ \\left[ \\bar{X} - z_\\frac{\\alpha}{2} \\frac{\\sigma}{\\sqrt{n}}, \\bar{X} + z_\\frac{\\alpha}{2} \\frac{\\sigma}{\\sqrt{n}} \\right]\\]\n. . .\nIntervālu piemērs: ticamības intervāls!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Intervālu novērtētājs: piemērs",
+    "text": "Intervālu novērtētājs: piemērs\n\\[X_1, X_2, \\dots, X_n \\sim \\text{Norm}(\\mu, \\sigma^2)\\]\n\n\\(\\sigma\\) ir zināms\n\\(\\mu\\) ir nezināms\n\n. . .\nMēs gribām uztaisīt intervālu tā, ka \\(\\mu\\) ir tajā intervāla ar \\(1-\\alpha\\) varbūtību!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#centrāla-robežteorēma",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#centrāla-robežteorēma",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Centrāla robežteorēma",
+    "text": "Centrāla robežteorēma\n\nJa \\[ X_1, X_2, \\dots, X_n \\] ir neatkarīgi un ir sadalīts pēc viena sadalījuma, tad \\[ \\lim_{n\\to \\infty} \\frac1n \\sum_{i=1}^n X_i \\sim \\text{Norm}\\left(\\mathbb{E}[X], \\frac{\\text{Var}(X)}{n}\\right)  \\]\n\n\n\n\nWikipedia: Central Limit Theorem"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#normālais-sadalījums",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#normālais-sadalījums",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Normālais sadalījums",
+    "text": "Normālais sadalījums\n\n\n\\[ X \\sim \\text{Norm}(\\mu, \\sigma^2) \\]\n\\[ f_X(x)  = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} \\, e^{ -\\frac{(x - \\mu)^2}{2\\sigma^2} }\\]\n\\[ \\Phi(x) = F_X(x) = \\int_{-\\infty}^{x} f_X(t) \\, dt \\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#normālais-sadalījums-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#normālais-sadalījums-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Normālais sadalījums",
+    "text": "Normālais sadalījums\n\n\n\nSigma: MIT News"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Intervālu novērtētājs: piemērs",
+    "text": "Intervālu novērtētājs: piemērs\n\\[X_1, X_2, \\dots, X_n \\sim \\text{Norm}(\\mu, \\sigma^2)\\]\n\n\\(\\sigma\\) ir zināms\n\\(\\mu\\) ir nezināms\n\n. . .\nAproksimējam \\(\\bar{X} \\sim \\text{Norm}\\left(\\mathbb{E}[X], \\frac{\\text{Var}(X)}{n}\\right) \\implies \\bar{X} \\sim \\text{Norm}\\left(\\mu, \\frac{\\sigma^2}{n} \\right)\\)\n. . .\n\\[\nP[a \\le \\bar{X} \\le b]  = 1 -\\alpha\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Intervālu novērtētājs: piemērs",
+    "text": "Intervālu novērtētājs: piemērs"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Intervālu novērtētājs: piemērs",
+    "text": "Intervālu novērtētājs: piemērs\n\\[X_1, X_2, \\dots, X_n \\sim \\text{Norm}(\\mu, \\sigma^2)\\]\n. . .\n\\[\n\\begin{align}\n&P\\left[-z_{\\frac{\\alpha}{2}} \\le \\frac{\\bar{X} - \\mathbb{E}[\\bar{X}]}{\\sqrt{\\text{Var}(\\bar{X})}} \\le z_{\\frac{\\alpha}{2}}\\right]  \n= P\\left[-z_{\\frac{\\alpha}{2}} \\le \\frac{\\bar{X} - \\mu}{\\frac{\\sigma}{\\sqrt{n}}} \\le z_{\\frac{\\alpha}{2}}\\right]\\\\\n&= P\\left[-z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} \\le \\bar{X} - \\mu \\le z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} \\right] \\\\\n&= P\\left[-z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} - \\bar{X} \\le  - \\mu \\le z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} - \\bar{X} \\right] \\\\\n&= P\\left[\\bar{X}  -z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} \\le   \\mu \\le \\bar{X} + z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} \\right] = 1 -\\alpha\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#filozofija",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#filozofija",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Filozofija",
+    "text": "Filozofija\n\n\nFrekvenistu pieeja (frequenist)\n\nVarbūtība = ilgtermiņa biežums\nJa \\(6\\) dienas līja lietus, tad uz \\(7\\) tas līs \\(100\\%\\)\n\n\nBejiesa pieeja (Bayesian)\n\nVarbūtība = ticamības mērs\nJāskatas pēc mākoņiem"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude",
+    "text": "Hipotēžu pārbaude"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude",
+    "text": "Hipotēžu pārbaude\n\n\\(H_0\\): bāzes/nulles hipotēze (nekas nemainas)\n\\(H_1\\): alternatīva hipotēze (to, ko mēs gribām pieradīt)\n\n. . .\nMēs nevaram pierādīt hipotēzi!\n. . .\nMēs varām tikai spriest, vai ir izvēlētājam nozīmes līmenim (significance level) \\(\\alpha\\) ir pietiekami liecību, lai noraidīt/nenoraidīt nulles hipotēzi\n. . .\n\nMēs nevaram pierādīt, ka visi gulbji ir balti. Mēs varam tikai to noraidīt, atradot vienu melno gulbji.\n\n. . .\n\n\nTwo-tailed\n\\[H_0: \\mu = 0 \\]\n\\[H_1: \\mu \\neq  0 \\]\n\nOne-tailed\n\\[H_0: \\mu = 0 \\]\n\\[H_1: \\mu &lt; \\text{vai} &gt;  0 \\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude",
+    "text": "Hipotēžu pārbaude\n\n\\(H_0\\): bāzes/nulles hipotēze (nekas nemainās)\n\\(H_1\\): alternatīva hipotēze (to, ko mēs gribām pieradīt)\n\n. . .\nMetodoloģija:\n\nAprēķināt izlases statistikas esošo vērtību varbūtību pēc \\(H_0\\) (p vērtība)?\nVai tā varbūtībā ir pietiekami liela? Tad noraidīt vai nenoraidīt nulles hipotēzi!\n\n\nArī saucas Z-test vai T-test!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude: piemērs",
+    "text": "Hipotēžu pārbaude: piemērs\n\n\n\n\n  [1] 1 2 1 2 3 3 2 4 2 3 3 3 0 3 1 1 1 3 4 3 3 3 2 2 1 5 3 2 1 1 4 2 2 0 0 1 2\n [38] 2 2 3 2 3 5 1 4 1 1 3 3 2 3 1 2 1 3 1 2 1 1 2 0 1 4 1 1 2 2 4 1 0 3 3 0 2\n [75] 2 2 3 3 2 2 2 2 4 1 3 2 1 4 3 1 2 2 2 2 1 2 3 2 3 1"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude: piemērs",
+    "text": "Hipotēžu pārbaude: piemērs\n\\[H_0: p = \\frac16 \\implies \\mu = \\mu_0 = 10 \\cdot \\frac16 = \\frac53\\]\n\\[ H_1: p &gt; \\frac16 \\implies \\mu &gt; 10 \\cdot \\frac16 = \\frac53 \\]\n\\[ \\alpha = 5\\%, \\ \\ \\ n=100\\]\n. . .\n\n\nAproksimējam \\(t \\sim T(n-1)\\)\n\\(s^2 = \\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\\(t = \\frac{\\bar{x} - \\mu_0}{\\frac{s}{\\sqrt{n}}}\\)\n\n\n\n\n    One Sample t-test\n\ndata:  pirate_100\nt = 3.7797, df = 99, p-value = 0.0001342\nalternative hypothesis: true mean is greater than 1.666667\n95 percent confidence interval:\n 1.904033      Inf\nsample estimates:\nmean of x \n     2.09"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc matemātiska analīze varbūtību teorijā?",
+    "text": "Kāpēc matemātiska analīze varbūtību teorijā?\n\n\nLai strādāt ar nepārtrauktām vērtībām!\n\n\n\n\nLai varētu veikt secinājumus balstoties uz teorētisko modeli!\n\n\n\n\nLai varētu aproksimēt un taisit inferences!"
+  },
+  {
+    "objectID": "posts/yellow_sun/index.html",
+    "href": "posts/yellow_sun/index.html",
+    "title": "A glass of brandy and a sandwich",
+    "section": "",
+    "text": "I am not sure when it all started.\nWas it the day April was lost? Was it the day February was bedridden? Or was it the day Big Storm took the lives of my parents? No, my heart tells me it was the moment when my eyes caught an old book of Greek legends. It was falling apart, yet still safely kept on the shelf in February’s house. Books are precious here in any condition. We are a small island in the middle of nowhere that many say is cursed. And I started to agree.\nWe were three, a loveful family. Only my tears remember the last warm morning we had. My beloved father whose strange sense of humour did not have a limit. My beloved mother who wholeheartedly laughed at each awkward joke of father.\nWe were three, a joyful, even mischievous trio. We were the ones who could flip the land into the sky, the ones, who could be lectured by every dweller on our island in one day. Looking back, it is really funny how our names aligned - February, March and April. February lived on the other side of the island. He was the oldest, the calmest and a rational one in our trio. However, when the fire was started by me and April, his rationality was erased, the fire in his eyes was inextinguishable. April was a year younger than me and lived next door. She was our treasure, the one I deeply cherished and loved. Even to this day, every time I open my eyes I still regret unsaid words. I cannot get from my memory her dark blue eyes, deep as the sea, her a bit fluffy hair, light as the highest cloud, and the laugh, that wind so finely carried to my heart.\nAt 12 years of age, April just vanished. Through sleepless nights the whole island desperately searched for her, only to find her lifeless body wave-borne on the next full moon. It was the day when the cry of my soul was heard on ships in the sea. At 15 years of age, February caught mild inflammation. To us, islanders, that means a straight road to death as we lack medicine here. Only my tears remember how much I cried by the side of my bedridden friend as he was slowly passing away. Even during his last moments, he smiled at me as his fire in the eyes flicked. His soul longed for peace, for meeting April again. He loved her too.\nWhat have I done wrong for God to take them from me in such a cruel way? This island is cursed. It is a cage that is tearing me from inside and outside, driving me to madness.\nThe Memory Night is a night when we light up the bonfire, the flames of which dance higher than our heads, as a memory of whom we have lost. The last time was when I visited February’s grandmother to pick up the wood, I caught a glimpse of the nearly fallen-apart book on the bookshelf. Was it God’s will or my heart and soul, I was drawn to it. The elderly lady, who has been taking care of me since my parents were murdered by the storm, allowed me to take that book.\nI cannot say whether it was the blessed or cursed book.\nThe story of Icarus, the one who found hope, the muse, found what to stretch for and what to live for, even when being confined in the cold labyrinth, even when it meant his death. That day I could not avert my gaze from the yellow sun, which closer to daybreak changed to orange and reddish and then to the flames of the Memory Night. My mind had hopelessly wandered off to the world of ancient king Minos and Minotaurus, the world of poetry cruelty, the world where people can fly.\nCould not fit myself on the bed, could not close my eyes, could not loosen up. The witching hour was upon me. How far was the shore? How far was the bed built on the lake of tears? How far was God’s forgotten heaven? When I came to my senses, I was already at the cliff. The cliff, magnificent yet frightening, beckoned me. Beckoned me to try being Icarus, beckoned me to lose everything I had, beckoned me to cut everything tying me to this land.\nWhen I was ready to start my flight, the wind, cruel just as my life, blew into my face, forcing my eyes to open. The rustle of leaves. The crack of trees. The crying sounds of birds. It was the same. The second coming of Big Storm, from which onward my warm life became a cold one.\nMy mind was still on the edge of the cliff yet my legs carried me further and further from it. I could not see where I was running - the rain obstructed my vision, and my tears mixed with raindrops made it even harder, both physically and mentally. I was lost, I did not know where to turn, I did not know where to scarce. From my mother’s and father’s gaze. From February’s and from April’s. I could not see the path before me.\nThe next day, my uncle found me clogged in a corner. I did not want to see and did not want to be seen. My uncle pulled back my hands from my face and got me on my feet.\n“Nightmares again?” he somewhat shouted at me. It was not a shout driven by anger, but a shout out of concern.\nI backed up to the wall behind me and collapsed again. Yes, I know, I am selfish. I am not the only one who lost their loved ones. Uncle lost his younger brother. Grandma Amanda lost his grandson. The whole island lost the spring, together with April.\nMy tears started overflowing. “I am sorry,” crushing my throat I spoke. “I am sorry, I am sorry, I … I cannot anymore…” I hushed. Uncle bent over to me and put his large and rough palm on my shoulder.\n“I am the one who is sorry, March. I know how hard life is for you… Please…”\nhis tears started coming out.\n“Please… Look at me…” he hushed.\nI turned my face from the floor to him. And there I saw… I saw the same expression as mine, the helpless boy, who had lost his sun.\n“I am the one who you still have, yet I cannot take care of you properly… I am ashamed as a sailor, that I conquer the seas in the hope of finding new light, yet cannot be where I am needed… There was a storm in the sea and I could not even be here, this year’s Memory Night…”\nSomewhere the melody started playing. I turned around. There was my father sitting in the kitchen with a guitar, playing the song he most enjoyed. The song that he had written for my mother. Even after decades, she remembers each note, each word. I hear the knock on the door. There, April and February are waiting for me. Once again, spring had come. Just as my father’s guitar strokes became faster, running wild for culmination, the haze started clearing up.\nI woke up.\nStill sleepy, I slid into my slippers. Slowly, step by step descending the staircase, I noticed my smiling uncle.\n“Happy birthday, March!” his teeth sparked between the lips.\n“You have made it!” I could not hold in the impulse and ran to him, opening my arms for a hug.\n“Of course, I am the captain now. I can take weekends almost any time now.”\nHe patted me on my head and my tears started coming out. “While I did not forget,” he hastily turned around.\nIn his hands was the guitar. The same guitar I saw in the dream.\n“When you were born, we were on the 9th cloud” - he softly said - “Your father, my younger brother, when he looked into your eyes for the first time, had said that you are as the melody of life. He mentioned gifting you his favourite guitar, the one that your mother painted over when they were younger, on your 16th birthday.”\nMy knees buckled. I collapsed to the ground. It was the first time I felt the warm rays of the sunshine that I had lost a long time ago. The music from my dream was meant to be heard. I felt I was not alone, I felt that I was the carrier of voices, melodies and suns of the ones, who were lost.\nThe blessed instrument was bestowed upon me. I found the determination to master it, being that my wings would bring me to the sun. After that, my uncle had always brought me more books about the music. Sitting on a dune, watching the yellow sun become orange and reddish, resembling the Memory Nights, my fingers pickled on different sounds. It was as if my beloved father joked, my mother laughed, February murmured and April chuckled. It was as if my lost family was right beside me.\nAfter a couple of years, my uncle said with pleasure that he would get married and live on the continent. My tears, not of pain, but of joy, had flooded me once again. I was truly joyous that my uncle had the family life he longed for after all these years. Being the man of the seas, I thought it would be challenging for him to settle down, however, thank God, I was wrong. He offered me to come with him, with an adventurous sparkle in his eyes, to come to the outside world. That startled me.\n“I… I.. Cannot, I am sorry… There is the place I belong, where the voices of my beloved and lost ones are…”\nUncle regretfully looked at me, yet acknowledged my decision. “If you are to change your decision,” said he, “we leave at noon”.\nI immersed myself into everyday chores - washing clothes and dishes, and tidying up the house. When I was sweeping the floor and singing the song of my father and mother, I heard a melody. I turned around. April was playing the guitar. I could not believe it. She noticed me noticing her, as she softly put it on the table and suddenly ran out of the house, swinging the door open. All I could do was to follow her, as fast as possible. She ran through the gardens. Even hurriedly following her, I could not reach her - she was not slowing down. Through the gardens. Through the forest. We ran off to the shore. The wind, messing with my eyes, once again covered my vision. I could not see, but moreover, I could not stop. The warm sand under my feet suddenly changed into a cold water surface. The haze in my head cleared, and I managed to open my eyes. “Wait!” I shouted. April was nowhere to be found. Again. Only the uncle’s frigate was seen, slowly gliding from me, realising the sails. Yet I didn’t stop. Footprints left behind were just like the bridge. Bridge to the yellow sun. Not orange nor reddish, not in colours of flames, but yellow. It was my sun, not of my guitar, the sun I, the Icarus with wings, am yet to fly to.\nAs my feet moved forward, as my heartbeat felt warmer, as I was in the middle of a blessed flight, notes played by me reached the ears of others. The voices of my dear ones, the voice of my own were being heard. With the last chord, with the first warm morning, with the first Memory Night, with the fire in my heart and soul, my tears, slowly creeping down my face, joined the billions of others dispersed over the whole world just as stars so far away."
+  },
+  {
+    "objectID": "posts/red_latern/index.html",
+    "href": "posts/red_latern/index.html",
+    "title": "Brother’s lantern: Part 1",
+    "section": "",
+    "text": "The trains doors slid open.\nUsually, train stations have this announcement that proudly warns people to mind the gap between the platform and the train. However, on this station, there was no platform at all. I took a step forward. It felt a bit uncomfortable. It was not as if I was going into the unknown, but instead, something from my past was grabbing me and dragging me closer.\n“Professor Shui, where should we head next?” asked Patrick. I felt relieved, as with me were my students from the lab. I needed someone to hold me the moment I go crazy. Three students joined me on the expedition to the Yangmingshan.\nWhen we stepped out of the train the sun was at its zenith, and the sky was clear. We could hear bird’s songs as they flew above. There was an adventurous atmosphere hanging around students -Patrick, Alice and Andrew. When I think back, I find it quite ironic – behind me were smiles and laughs, the warmness - and I headed and directed them in the opposite direction. Then I had a hunch, that the night would bring the frost to their lives.\n“There is a small town within fifteen minutes of walking. We need to go through the valley so it is that direction,” waking up from deep thoughts I replied and pointed to the right of the crossroad.\nFifteen minutes passed with flying colours: Patrick, being energetic and positive, started to croon. Alice joined in and after a couple of stanzas. Andrew, a more reserved person, gave up and joined them.\nElevated by singing songs we passed fields of various crops at the bottom of the valley. We paced faster when we saw the village in front of us.\nWe wandered around the village. We had been travelling for a while and as a matter of fact, at some point everybody got hungry. Without further ado, we went into the first open eatery we saw. We chose a delightful spot in the corner by the window, where breathtaking scenery made us feel otherworldly aesthetical pleasure.\nAn old lady who was serving the food stared at us in the beginning. I thought it probably was because of students were foreigners. Hoped so. Her face softened when I asked her how high the clouds were today. The question itself might seem puzzling or senseless, nevertheless, in the past, it was a fast way to check the state of the village. Deep down I desired that at least this tradition had lived on.\n“The clouds are low. So low that we cannot see ourselves,” she answered, “so low, that I cannot distinguish you and the ghost. Why do you know the language art of clouds?”\nBecause I am who created it, I wanted to say yet hesitated. Instead, I decided to say: “Because it is part of my past.”\n“May the wind guide and water protect you during your wanders and travels,” encouragingly smiled she. We thanked her for the food and set off. Food made my inner child that was hidden somewhere deep down cry. Tears of the past moments that I cannot return to. The nostalgia. The constraint. Only with ageing has my perception shifted to favouring every second we live. Every breath. Every tick of the never-stopping clock. It is admiration that I feel towards Patrick, Alice and Andrew. The sprout of youth. I felt that only once in lieu of giving the wings and the sky to roam in, ripped me of everything I had. Nevertheless, it was my choice. My choice to cast aside everything I hated. It was out of my sight that I would be forced to abandon what I cherish as well.\nWhen we got to the foot of the mountain it was already golden hour. We needed to find a place to camp the night. Stopping before the mountain and beholding its overwhelming aura, suddenly, out of my head one memory jumped out and I started rushingly chanting mantra. That mantra was given to the mountain god, who oversees whoever steps onto it. That mantra was one more thing that melancholically echoed in my heart.\nAlice looked at me with a sprinkle of revelation. At some point, I believed I could not surprise them anymore.\nWith the mantra’s last word, I took a deep breath. It was the feeling of a strong need to do so both physically and mentally.\nTBC Part 1"
+  },
+  {
+    "objectID": "posts/moonlight_venice/index.html",
+    "href": "posts/moonlight_venice/index.html",
+    "title": "Moonlight, Venice",
+    "section": "",
+    "text": "With a bang, the door blew open. I knew it would happen. Before me stood a young lady officer, without trembling pointing her gun straight to my heart.\nEven behind my mask I could not hide the grin – her uniform was smitten and had a bit of dirt on it – seems to be the result of a long pursuit. Reflected in her eyes, the moonlight was like a hawk’s screech just the second before it dived to its prey. The hunt. Without hesitation. Without even the smallest twitch.\nYet unlike her, my heart was trembling, it was smitten just like her form, dirtied through ages. My hands were moving not by mind, but by soul, itself, slowly taking off the mask from the face, from the mind, from the heart. It was the feeling of hot, yet cold to the bones fresh waterfall washing all that I had brought along the way. It did not stop by my hand, lips and tongue continued what my subconsciousness intended. I spoke words, spoke truths, spoke lies in the language that was long from gone, yet it was the first time I decided to break the water’s surface, to try to reach beyond, to try to reach what I see on the other side of the glasslike surface. I simply begged via pronouncing the words, Exorsa please just talk to me.\n\nI see how you did it Exorsa grinned.\nI pushed away the curtain I was hiding behind. My presence was found out; I couldn’t hide anymore.\nThe middle of London was loud as ever, cars roaring and endlessly moving from and to somewhere, newspaper dealers catching the attention of sirs and madams. Servants could be heard from the first floor preparing for the tea. The time when the city seems to be the most alive. A middle-aged woman, sitting by herself in a light gown, as everything around her is like a distant sea, drilled her sight onto the unfinished glass of red wine that was in front of her.\nHow much time do I have left, Mors? She looked at me with a corner of her eye.\nI looked at my wristwatch, Around a quarter of a minute by my calculations, I replied.\nHah, she almost let a laugh out, next time I will be the one to kill you first.\nThe gaze at the glass of wine averted. Her lifeless body finally became free of tension. With every step to her, it was as if I was drawn deeper and deeper, water crushing my lungs, without daylight nor moonlight reaching my eyes. I caringly took her into my arms and carefully, not to destroy her precious hairstyle, laid her down on the sofa that was next to the writing table. Her lifeless body touched the sofa. There was a small coffee table with a vase of roses behind me. I took one and put it in her hands. I could not hold it anymore; I fell onto my knees in front of her. Again, again, again. Is it the fate of us, cursed by stars, to hunt each other without a break? To hunt the only one who shares your curse. The only one who remembers you. The only one who notices your existence. To kill, to be killed and reborn again. Is that what humans call fate, that sea I am drowning in? What point of us, creatures, monstrous atrocities, celestial beings, walking on the water, if we cannot fly away to the sun nor drown at the bottom?\nHumans say fate is not changeable nor unchangeable. They say it is choices that we make to get to that certain point. Then, can I change? Can I truly live? I stood up and rushed to her writing table. My arms stretched to the glass of wine she had left behind and I gulped it down, emptying it, not leaving even the smallest drop.\n\nA full moon arose from behind the buildings of Venice. Two people, standing in the middle of the canal, on the water seemed to be distant from each other, yet close. One had a pistol in her hands, the other – the mask.\nExorsa thought, how the second before cornered person moved so fast, almost slipped through the hands. It seemed he partially awakened the celestial power this time too. Now, his facial expression appeared somewhat strange as well as a waste of time. Nonetheless, she continued to stand the aggressive stance with her finger on the trigger.\nGunshot. Miss. Another gunshot. Another miss. Exorsa became more alert. It was unheard of for Mors to dodge bullets, he deflects them.\nListen to what I have to say. Mors started talking again. One more gunshot, one more miss. Maybe it is not time to kill each other - he calmly continued as if it was a casual chat between two neighbours on Sunday morning - is it not the time to stop the cycle? Don’t you feel the same way I do, my only guiding star in the sea of eternity?\nOne more gunshot, one more miss. With a frozen stance, not relieving the tension even in the smallest muscle, Exorsa’s aggressive eyes were for a second changed to lifelessness. Dark as the bottom of the sea. Expressionless. To not drag the circus out, she in the end decided to answer, I do not have any feelings nor emotions. From the beginning, I got rid of them as I understood that I would not last otherwise. I exist for one sole reason, the mission that was given by the ones who summoned us to eternally chase and destroy you.\nA tear. A tear from my face that was once again hidden by the mask. When the tear reached the water’s surface, the fired bullet was lost in the fog. The masked man disappeared as a mirage. Only a young officer remained on empty Venice streets, illuminated by moonlight playing in the haze."
+  },
+  {
+    "objectID": "posts/DS_miniproof_mean/index.html",
+    "href": "posts/DS_miniproof_mean/index.html",
+    "title": "Proof of mean corresponding to the minimum of squared Euclidean distance",
+    "section": "",
+    "text": "Let \\(x_1, x_2, \\ldots x_n\\) be observations of a quantitative variable. Let \\(\\mu = \\frac{1}{n} \\sum_{i=1}^n x_i\\) be the mean of the data set mentioned previously. We need to prove that the squared Euclidean distance between the point defined by the mean and all other points of the data set is at minimum, that is, \\[ \\mu = \\arg \\min_y \\biggl\\{ \\frac{1}{n} \\sum_{i=1}^n (x_i - y)^2 \\biggl\\} \\]"
+  },
+  {
+    "objectID": "posts/DS_miniproof_mean/index.html#introduction",
+    "href": "posts/DS_miniproof_mean/index.html#introduction",
+    "title": "Proof of mean corresponding to the minimum of squared Euclidean distance",
+    "section": "",
+    "text": "Let \\(x_1, x_2, \\ldots x_n\\) be observations of a quantitative variable. Let \\(\\mu = \\frac{1}{n} \\sum_{i=1}^n x_i\\) be the mean of the data set mentioned previously. We need to prove that the squared Euclidean distance between the point defined by the mean and all other points of the data set is at minimum, that is, \\[ \\mu = \\arg \\min_y \\biggl\\{ \\frac{1}{n} \\sum_{i=1}^n (x_i - y)^2 \\biggl\\} \\]"
+  },
+  {
+    "objectID": "posts/DS_miniproof_mean/index.html#proof",
+    "href": "posts/DS_miniproof_mean/index.html#proof",
+    "title": "Proof of mean corresponding to the minimum of squared Euclidean distance",
+    "section": "Proof",
+    "text": "Proof\nDefine \\(f(y) = \\frac{1}{n} \\sum_{i=1}^n (x_i - y)^2\\). We need to find \\(y\\) such that \\(f(y)\\) value is minimum.\nTaking the first-order derivative, we get: \\[\n\\begin{equation*}\n    \\begin{split}\n    f'(y) &= \\frac{d}{dy} \\biggl( \\frac{1}{n} \\sum_{i=1}^n (x_i - y)^2 \\biggl) \\\\\n    &= \\frac{1}{n} \\sum_{i=1}^n \\biggl( \\frac{d}{dy} (x_i- y)^2\\biggl) \\\\\n    &= \\frac{1}{n} \\sum_{i=1}^n 2(x_i - y)\\times (-1)\\\\\n    &= - \\frac{2}{n} \\sum_{i=1}^n (x_i - y) \\\\\n    &= -\\frac{2}{n} \\biggl( \\sum_{i=1}^n x_i - \\sum_{i=1}^n y \\biggl)\\\\\n    &= - \\frac{2}{n} \\biggl( \\sum_{i=1}^n x_i - n\\times y \\biggl) \\\\\n    &= -\\frac{2}{n} \\sum_{i=1}^n x_i + 2y\n    \\end{split}\n\\end{equation*}\n\\]\nThus \\(f'(y)\\) is a linear function.\nTo find the point of minimum, we need to calculate \\(f'(y)\\) zeros:\n\\[\n\\begin{equation*}\n    \\begin{split}\n    f'(y) = 0 &\\implies f'(y) = -\\frac{2}{n} \\sum_{i=1}^n x_i + 2y = 0 \\\\\n    &\\implies 2y = \\frac{2}{n}\\sum_{i=1}^n x_i \\\\\n    &\\implies y = \\frac{1}{n}\\sum_{i=1}^n x_i \\\\\n    &\\implies y = \\mu\n    \\end{split}\n\\end{equation*}\n\\]\nAs the \\(f'(y)\\) is a linear function with positive gradient, then:\n\\[y \\in (-\\infty, \\mu) \\implies f'(y) &lt; 0\\]\nand\n\\[y \\in (\\mu, +\\infty) \\implies f'(y) &gt; 0\\].\nHence \\(f(y)\\) is strictly decreasing when \\(x \\in (-\\infty, \\mu)\\) and strictly increasing when \\(x \\in (\\mu, +\\infty)\\). Therefore at point \\(y=\\mu\\) \\(f(y)\\) takes minimum value, that is, point \\(y=\\mu\\) is minimum.\nQED"
+  },
+  {
+    "objectID": "posts/brandy_ sandwich/index.html",
+    "href": "posts/brandy_ sandwich/index.html",
+    "title": "A glass of brandy and a sandwich",
+    "section": "",
+    "text": "I remember the smell of the rain. I remember the late August, the time when Bakewell bloomed. I remember sitting on the windowsill in the library in our house with a slightly open window seeing a garden full of greens being refreshed as if Eden grew anew and small birds singing swiftly. I remember and want to remember for eternity yet curse the moment I picked up a worn-down book about the adventures of Sherlock Holmes.\nThe mystery. The satisfaction of a solved case and glass of brandy. The thrill of chasing and bringing downfall to criminal masterminds and Lords of the underworld. It hung onto me, as a shadow following me everywhere I went, making me long for it. I felt empowered and aspired to become a resident of 221B Baker Street one day. Oh, that was naïve of me.\nMy father was a book illustrator, mother was a glass artisan. It is ironic: glass can be melted and transformed into a smooth shape, yet it can shatter with one breath. We lived near Bakewell, a small town in the United Kingdom. Moved to Rotherham and studied criminology at the University of Derby for my bachelor’s. And here I am now, in the kitchen of a golf course and small inn in Hagavollur, Iceland making toasts. At least somewhere my strange talent is needed. Next to me stood my childhood best friend, Simon Ashgrey.\nBack in Bakewell, we were known as the Ash duo. My grey hair colour and his surname brought more trouble to the lives of neighbours than you can imagine. But, you know, at the end of the day we were loved by everyone. To my demise, Simon’s family moved to Iceland two months before starting high school. It was said that they needed to help the old aunt to run her business there. We later found out that it was an inn and golf course. As the zone was degraded there, we would often exchange letters with him, ciphering and deciphering messages between ourselves.\nOh, Father tell me …\nThe inn opened for golfers to have a nice breakfast before handing to the range for warmup. It is so early in the morning, that you can see the sun only slightly, it is still hidden behind the horizon. It is fairly cold outside even now, in early September. The inn is decorated with wood and has a fireplace that makes it cosy; you can see mist covering the valley through panoramic windows. Simon turned on his morning playlist to welcome early birds inside the dining area.\n… do we get what we deserve?\nWe? Yesterday’s incident dug up memories that I begged on my knees to forget and thought we?\nThe tide that I had been fighting with for the last month had engulfed me once again. My face started uncontrollably twitching and my mouth laughing. I tried to stop and hide my face behind my hands, however, as a result, I was tearing apart my face and ash-coloured hair. I started to lose balance and hit the cabinet behind me, falling and losing myself in hysteria.\nWe? We? We? We? We? We? We? We? We? We? We? We? We? We? We? We?… I felt as if my consciousness started to flee somewhere out of my body. I could not control and handle myself anymore.\nAfter university, I interned in a police investigation unit. There, a naïve young boy from Bakewell who looked up to the one and only one Sherlock Holmes was hit by utterly disgusting reality. Murders. Corpse. Incomprehensible reasons. Bells of Chapel. Black clothes. Cry of victims’ loved ones. Wake up. Murder. Corpses. Without a reason, just for fun, they said straight to my face before the court. Bells of chapel…\nSince the beginning of the long-awaited era of my life, I started to doubt myself. Is this the world we all live in? What did I even want? Is it alright that I had so much inspiration growing up? Studies at university were heavy, but fine enough. Then when have I lost my thrill? When have I lost myself? Yes, that’s right. The moment you see the tears of everyone around the fallen one and the wicked fire in the eyes of those who were guilty. Those, who will not understand their sins and atone for them. Slowly, but steadily I started to lose my belief in our world, and my will to continue. Yet hours turned to days, days turned to months, months to seasons and seasons to a couple of years. I was working full-time and rose by several ranks. My every step was becoming heavier minute by minute.\nYes, that’s right. The moment you become one the mourning. I don’t remember that day vividly. A call for an investigation team was made. Me and my colleagues were dispatched. We arrived at the scene. I put on gloves and lifted the veil covering the victim’s face. The uncovered face was of my younger brother, Arthur. Further, my memory is in haze. Someone spotted a suspicious individual. The chase and the catch. The court. His smirk. The judge let him go. The grit of my teeth and an unsettling feeling in my chest. - No, no, no, no, no, no, no, no, no, no, no, no, no…\nArt, my brother! I screamed. Younger by three years, moved to be closer to me while attending the university. The proud legacy of the Ash duo. On the first day of new life, violently taken out. Killer on the free run, no punishment. Someone slapped me, Aug, wake up! Cold water poured onto my head and face, August Johnson, stood up and served Detective Fahrer her sandwich!\nMy boss insisted that I take a longer break to reinforce my mental health. After Art’s death, I took quite a hit. Simon came forward and offered to take me with him for some time. He needed additional hands and I needed someone to lean on. You can see how he put up with me and my hecticness that splurged and fought with my sanity, yet you can see pity and anger. Anger with himself that he cannot help me, that’s the fight for me and only me.\nWhoa, we get what we deserve…\nCold water as if pressed reset to my mind. At least I managed to get up and give Claire her almost burned down if not for Simon a hot sandwich. Detective Claire Fahrer. Yesterday in the early opening hours a lady in all pink attire nearly smashed through the front door of the reception. She spotted a dead man lying in the middle of the hole and ran to us. We closed the golf course for now. Police took half a day to bring all the equipment required for the record and investigation. Detective Fahrer was named as the main investigator on this case as police concluded that there was a chance that it was an intentional murder of millionaire Mr Seman, age 58 as half of his head was smashed with a blunt object. There were no initial leads, so Claire said she would stay for a couple of days to gather all the information she could. Simon seemed to be on the edge as well and his family’s business name is now tarnished with blood.\nWhile serving the sandwich I noticed something different in the scenery outside. Beasts - bulls, bears and everything in between – with fog in place of their flesh. Something flinched in memory, it was as if beasts were a mere parade in front of true calamity. Everybody was glued to the action unfolding before their shocked eyes. The sky and clouds were strangely coloured as well. You look up to the sky and you know that you will be no more. Without a doubt, it was the end—the beginning of the end and the end of the beginning. I touched my lips – I unconsciously smirked. The same smirk that that killer had. Is it not the moment we had waited for?\nAnd way down we go…"
+  },
+  {
+    "objectID": "posts/progress/index.html",
+    "href": "posts/progress/index.html",
+    "title": "Progress",
+    "section": "",
+    "text": "I find myself grappling with a fear, a fear that my generation may be the last to savour the warmth of bonfires beneath starry nights, the joy of sunrise, and the quiet bliss of reading a book.\nFear that we are last to live in the moment, to appreciate and remember it. The fact appears to be paradoxical – it is us, the first generation that was raised by both the tangible embrace of books and the ethereal allure of gadgets. The first generation immersed in vast applications of mathematical and computational sciences in everyday life. This, in essence, is what we term progress.\nMany argue that we were born too late for the grandeur of balls and explorations, and yet, too early for the marvels of cosmic travel. However, I contend that we live in an era of unparalleled significance. The relentless march of time, akin to the unyielding machinery of clocks, is beyond our control. Nevertheless, we, the developers of new technologies, and engineers of tomorrow possess the power to influence the course of technological and social development. The trajectory we set will determine whether we forge a society elevated by progress or one marred by its degradation.\nAcknowledging our inability to fully control this progression, we must recognize the agency we possess today to shape a more promising tomorrow. Some say it is our responsibility before our descendants, yet we can also say that we are just selfish. Selfish to preserve what holds significance to us in this moment. The imperative, however, is to take decisive action now.\nThe uncertainty of the outcome should not paralyze us into inaction. The fire in our eyes should move our bodies further. Even in the face of obscurity and variability, the acting remains. As humans, we regret past decisions regardless of our choices. Wouldn’t it be more worthwhile to try and influence the course of events than to rue our lack of initiative? Life’s brevity and the ever-evolving nature of generations serve as both a curse and a sanctuary. It is through our thoughts, endeavours, and outcomes that we wield the power to mould change.\nThat is, the knot between tradition and technology, the clash of the old and the new, defines our unique epoch. Progress, as we navigate it, demands thoughtful consideration and deliberate action. As the architects of our destiny, we must seize the present moment to chart a course for a future that we, our ancestors and descendants, can be proud of."
+  },
+  {
+    "objectID": "posts/mobius/index.html",
+    "href": "posts/mobius/index.html",
+    "title": "Mobius strip",
+    "section": "",
+    "text": "I open my eyes\nOnly to see the darkness outside.\nI open my eyes\nOnly to feel the coldness inside.\nShall I scream,\nNobody would even blink.\nShall I run,\nPointed to me would be the gun.\nI will never leave this ship,\nIt is just the Mobius strip.\nWhenever I look\nIt is just the same loop.\nThere is no light.\nAnd I know the reason, right?\nI don’t need to be a sage\nTo say, “I am in a cage”.\nIt is part of my mind.\nThat I see every night\nTill I close my eyes."
+  },
+  {
+    "objectID": "blog_page.html",
+    "href": "blog_page.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nProof of mean corresponding to the minimum of squared Euclidean distance\n\n\n\n\n\n\nMathematics\n\n\nMiniproof\n\n\n\nDuring Data Science lecture, we were just hit with the fact, but it is really easily provable.\n\n\n\n\n\nFeb 7, 2025\n\n\nVeronika Lohmanova\n\n\n\n\n\n\n\n\n\n\n\n\nA glass of brandy and a sandwich\n\n\n\n\n\n\nCreative writing\n\n\n\nAnd way down we go…\n\n\n\n\n\nMay 17, 2024\n\n\nVeronika Lohmanova\n\n\n\n\n\n\n\n\n\n\n\n\nMoonlight, Venice\n\n\n\n\n\n\nCreative writing\n\n\n\nWhat point of us, creatures, monstrous atrocities, celestial beings, walking on the water, if we cannot fly away to the sun nor drown at the bottom?\n\n\n\n\n\nApr 22, 2024\n\n\nVeronika Lohmanova\n\n\n\n\n\n\n\n\n\n\n\n\nMobius strip\n\n\n\n\n\n\nCreative writing\n\n\n\nPoetry to the topic of ‘escape’\n\n\n\n\n\nMar 22, 2024\n\n\nVeronika Lohmanova\n\n\n\n\n\n\n\n\n\n\n\n\nProgress\n\n\n\n\n\n\nCreative writing\n\n\nEssay\n\n\n\nMany argue that we were born too late for the grandeur of balls and explorations, and yet, too early for the marvels of cosmic travel.\n\n\n\n\n\nFeb 28, 2024\n\n\nVeronika Lohmanova\n\n\n\n\n\n\n\n\n\n\n\n\nBrother’s lantern: Part 1\n\n\n\n\n\n\nCreative writing\n\n\n\nAmongst darkest shadows I saw a light of red latern.\n\n\n\n\n\nFeb 28, 2024\n\n\nVeronika Lohmanova\n\n\n\n\n\n\n\n\n\n\n\n\nA glass of brandy and a sandwich\n\n\n\n\n\n\nCreative writing\n\n\n\nThere, April and February are waiting for me. Once again, spring had come.\n\n\n\n\n\nFeb 1, 2024\n\n\nVeronika Lohmanova\n\n\n\n\n\n\nNo matching items"
   }
 ]

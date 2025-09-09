@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Veronika Lohmanova">
+
+<title>Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē – Veronika Lohmanova</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d1b12f2568ecbe55642fee6aa00bd082.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Veronika Lohmanova</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Curriculum Vitae</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog_page.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="LSMAT_lekcija.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Veronika Lohmanova </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="saturs" class="level2">
+<h2 class="anchored" data-anchor-id="saturs">Saturs</h2>
+<ul>
+<li>Ievads varbūtību teorijā un statistikā</li>
+<li>Sadalījumi</li>
+<li>No izlases līdz populācijai</li>
+<li>Hipotēžu pārbaude</li>
+</ul>
+</section>
+<section id="varbūtības-teorija-vs-statistika" class="level2">
+<h2 class="anchored" data-anchor-id="varbūtības-teorija-vs-statistika">Varbūtības teorija vs statistika</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    A[Populācija]
+    B[Izlase]
+    A --&gt;|varbūtības teorija| B
+    B --&gt;|statistika| A
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<ul>
+<li>Populācija (ģenerālkopa, <em>population</em>): nenovērojams</li>
+<li>Izlase (<em>sample</em>): novērojams</li>
+</ul>
+<p>. . .</p>
+<section id="notācija-un-terminoloģija" class="level3">
+<h3 class="anchored" data-anchor-id="notācija-un-terminoloģija">Notācija un terminoloģija</h3>
+<ul>
+<li><span class="math inline">\(X\)</span> <em>gadījuma lielums</em> (random variable)</li>
+<li><span class="math inline">\(x\)</span> <em>noteiktā vērtība</em></li>
+<li><span class="math inline">\(X=x\)</span> <em>notikums</em></li>
+<li><span class="math inline">\(R(X)\)</span> visu iespējamu gadījuma lieluma vērtību kopa</li>
+<li><span class="math inline">\(\Omega\)</span> visu iespējamu eksperimenta rezultātu kopa</li>
+</ul>
+</section>
+</section>
+<section id="varbūtības-telpas" class="level2">
+<h2 class="anchored" data-anchor-id="varbūtības-telpas">Varbūtības telpas</h2>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p>Par varbūtību telpu sauc objektu kolekciju <span class="math inline">\((\Omega, F, P)\)</span>, kur</p>
+</blockquote>
+<div class="incremental">
+<ul class="incremental">
+<li><span class="math inline">\(\Omega\)</span>: visu iespējamu rezultātu kopa</li>
+<li><span class="math inline">\(F \subseteq 2^\Omega\)</span>: izmērāma kopa (measurable set)</li>
+<li><span class="math inline">\(P: F \to [0, 1]\)</span>: varbūtības mēra funkcija (probability measure)</li>
+</ul>
+</div>
+<p>. . .</p>
+<section id="kolmogorova-aksiomas" class="level3">
+<h3 class="anchored" data-anchor-id="kolmogorova-aksiomas">Kolmogorova aksiomas</h3>
+<p><span class="math display">\[P(\Omega) = 1\]</span></p>
+<p><span class="math display">\[A\cap B = \emptyset \implies P(A\cup B) = P(A) + P(B),\ \ \   \forall A, B \in F\]</span></p>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[ \implies P(A) = 1 - P(A^c)\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\implies  P(\emptyset) = 0\]</span></p>
+</div>
+</div>
+<!---
+## 
+![](genious_graph.png){width="50%" fig-align=center}
+--->
+</section>
+</section>
+<section id="sadalījumi" class="level1">
+<h1>Sadalījumi</h1>
+<section id="eksperiments-motivācija" class="level2">
+<h2 class="anchored" data-anchor-id="eksperiments-motivācija">Eksperiments: Motivācija</h2>
+<p>Kādā no galda spēlēm spēlētājam, kad ir viņam gājiens, vajag met spēles kauliņu. Atkarībā no cik reizes uzmetas <span class="math inline">\(6\)</span>, ir dažādas gājiena iespējas. Viena raundā jāmet kauliņš <span class="math inline">\(10\)</span> reizes.</p>
+<p>Runā, ka melnā tirgū pirāts nopirka maģisko kauliņu pie raganas. Mums kā spēļu sacensību organizatoriem ir aizdomās, ka pirāta metamais kauliņš uzkrīt uz <span class="math inline">\(6\)</span> biežāk nekā parastais metamais kauliņš.</p>
+<p>. . .</p>
+<p><strong>Jautājums:</strong> Ja mums ir dota informācija par katru raundu, vai mēs varam noskaidrot spēles gaitā ar kādu varbūtību tas uzkrīt uz <span class="math inline">\(6\)</span>?</p>
+<p>. . .</p>
+<section id="apzīmējumi" class="level3">
+<h3 class="anchored" data-anchor-id="apzīmējumi">Apzīmējumi</h3>
+<div class="incremental">
+<ul class="incremental">
+<li><span class="math inline">\(X\)</span>: Skaitlis, ko uzmet, <span class="math inline">\(R(X) = \{1, 2, 3, 4, 5, 6\}\)</span></li>
+<li><span class="math inline">\(Y\)</span>: Cik reizes uzmeta sešinieku viena raundā, <span class="math inline">\(R(Y) = \{0, 1, \dots, 10\}\)</span></li>
+<li><span class="math inline">\(P[X = 6] = ?\)</span></li>
+<li><span class="math inline">\(n_1 = 10, n_2 = 100, n_3 = 1000, n_4 = 10000\)</span>: raundu skaits vienā spēlē</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="eksperiments-n_1-10" class="level2">
+<h2 class="anchored" data-anchor-id="eksperiments-n_1-10">Eksperiments: <span class="math inline">\(n_1 = 10\)</span></h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="eksperiments-n_2-100" class="level2">
+<h2 class="anchored" data-anchor-id="eksperiments-n_2-100">Eksperiments: <span class="math inline">\(n_2 = 100\)</span></h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="eksperiments-n_3-1000" class="level2">
+<h2 class="anchored" data-anchor-id="eksperiments-n_3-1000">Eksperiments: <span class="math inline">\(n_3 = 1000\)</span></h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="eksperiments-n_4-10000" class="level2">
+<h2 class="anchored" data-anchor-id="eksperiments-n_4-10000">Eksperiments: <span class="math inline">\(n_4 = 10000\)</span></h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="kāpēc" class="level2">
+<h2 class="anchored" data-anchor-id="kāpēc">Kāpēc?</h2>
+<p>. . .</p>
+<p><span class="math display">\[ Y \sim \text{Binom}(10, p) \]</span></p>
+<p>. . .</p>
+<p><span class="math display">\[ p = P[X = 6] \]</span></p>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p>Ja kādu mēģinājumu atkārto <span class="math inline">\(m\)</span> reizes, un katrā atsevišķā reizē notikuma <span class="math inline">\(A\)</span> iestāšanās varbūtība ir vienāda ar <span class="math inline">\(p\)</span>, tad saka, ka gadījuma lielums <span class="math inline">\(Y\)</span>: «notikuma <span class="math inline">\(A\)</span> iestāšanās reižu skaits» ir sadalīts pēc <em>binomiāla sadalījuma</em> likuma <span class="math inline">\(Y \sim \text{Binom}(m, p)\)</span></p>
+</blockquote>
+</section>
+<section id="sadalījums" class="level2">
+<h2 class="anchored" data-anchor-id="sadalījums">Sadalījums</h2>
+<ul>
+<li>Sadalījums: funkcija kas nosaka notikumu iestāšanas varbūtību</li>
+</ul>
+<iframe width="900" height="450" src="https://www.math.wm.edu/~leemis/chart/UDR/UDR.html" title="Distribution chart"></iframe>
+<p><span class="math display">\[\text{Gadījuma lielums} \sim \text{sadalījuma nosaukms}(\text{parametri}) \]</span> <!-- Mention first-order/second-order functions--></p>
+</section>
+<section id="diskrētie-un-nepārtrauktie-sadalījumi" class="level2">
+<h2 class="anchored" data-anchor-id="diskrētie-un-nepārtrauktie-sadalījumi">Diskrētie un nepārtrauktie sadalījumi</h2>
+<p><em>Diskrētie:</em> <span class="math inline">\(R(X)\)</span> kopā ir noteiktās, skaitāmas vērtības</p>
+<p>. . .</p>
+<ul>
+<li><span class="math inline">\(X \sim \text{Bern}(\frac12)\)</span>, <span class="math inline">\(X\)</span> - Monēta nolaižas ar ciparu augša</li>
+<li><span class="math inline">\(Y \sim \text{Binom}(10, \frac12)\)</span>, <span class="math inline">\(Y\)</span> - Cik reizēs no 10 mēģinājumiem monēta nolaižas ar ciparu augšā</li>
+<li><span class="math inline">\(Z \sim \text{Geom}(\frac12)\)</span> - Cik mēģinājumus vajag, lai monēta pirmo reizi nolaižas ar ciparu augšā</li>
+</ul>
+<p>. . .</p>
+<p><em>Nepārtrauktie:</em> <span class="math inline">\(R(X)\)</span> kopa ir intervāls ar neskaitāmi daudz starpvērtībam</p>
+<p>. . .</p>
+<ul>
+<li><span class="math inline">\(X \sim \text{U}(1, 10)\)</span> - Nejaušs skaitlis intervālā <span class="math inline">\([1, 10]\)</span></li>
+<li><span class="math inline">\(Y \sim \text{Norm}(1.7, 0.3)\)</span> - Augums grupā</li>
+<li><span class="math inline">\(Z \sim \text{Exp}(\frac14)\)</span> - Konsultācijas garums veikalā, kad vidējais ir <span class="math inline">\(4\)</span> minūtes</li>
+</ul>
+</section>
+<section id="diskrētie-sadalījumi" class="level2">
+<h2 class="anchored" data-anchor-id="diskrētie-sadalījumi">Diskrētie sadalījumi</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><span class="math display">\[ X \sim \text{Bern}(p) \]</span></p>
+<p><span class="math display">\[ R(X) = \{0, 1\} \]</span></p>
+<p><em>varbūtību masas funkcija</em></p>
+<p>(probability mass function)</p>
+<p><span class="math display">\[p_X(x) :=P[X = x] = \begin{cases} 1-p &amp; \text{ja}\  x=0  \\ p &amp; \text{ja}\  x=1\\\end{cases}\]</span></p>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="diskrētie-sadalījumi-1" class="level2">
+<h2 class="anchored" data-anchor-id="diskrētie-sadalījumi-1">Diskrētie sadalījumi</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><span class="math display">\[X \sim \text{Bern}(p)\]</span> <span class="math display">\[R(X) = \{0, 1\}\]</span> <em>kumulatīva sadalījuma funkcija</em></p>
+<p>(cumulative distribution function)</p>
+<p><span class="math display">\[
+\begin{align}
+F_X(x) &amp;:= P[X \le  x] = \sum_{i=0}^x p_X(i)\\
+&amp;=
+\begin{cases}
+1 - p       &amp; \text{ja } x = 0 \\
+1 - p + p   &amp; \text{ja } x = 1 \\
+\end{cases}\\
+&amp;=
+\begin{cases}
+1 - p &amp; \text{ja } x = 0 \\
+1     &amp; \text{ja } x = 1 \\
+\end{cases}
+\end{align}
+\]</span></p>
+</div><div class="column" style="width:40%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="nepārtrauktie-sadalījumi" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi">Nepārtrauktie sadalījumi</h2>
+<iframe width="900" height="700" src="https://pickerwheel.com/tools/random-number-generator/" title="Wheel Of Fortunet"></iframe>
+</section>
+<section id="nepārtrauktie-sadalījumi-1" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-1">Nepārtrauktie sadalījumi</h2>
+<p><span class="math display">\[ P[X=x] = 0 \ \ \ \forall x \in R(X)\]</span></p>
+<p>. . .</p>
+<p><del>varbūtības masas funkcija</del> <em>Varbūtības blīvuma funkcija!</em></p>
+<p>. . .</p>
+<p><span class="math display">\[ f: \mathbb{R} \to \mathbb{R}^{+}_0\]</span></p>
+<p>. . .</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="nepārtrauktie-sadalījumi-2" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-2">Nepārtrauktie sadalījumi</h2>
+<p>Kā tad noteikt gadījuma notikuma varbūtību?</p>
+<p>. . .</p>
+<p>Ar intervālu!</p>
+<p>. . .</p>
+<p><em>kumulatīva sadalījuma funkcija</em></p>
+<blockquote class="blockquote">
+<p><span class="math display">\[F_X(x):= P[X \le x] = \int_{-\infty}^x f(t)\,dt\]</span></p>
+</blockquote>
+<p>. . .</p>
+<p><span class="math display">\[
+\begin{align}
+\implies P[a \le X \le b] &amp;= P[X \le b] - P[X \le a] \\
+&amp;= F(b) - F(a) \\
+&amp;=  \int_{-\infty}^b f(t)\,dt - \int_{-\infty}^a f(t)\,dt
+\end{align}
+\]</span></p>
+</section>
+<section id="nepārtrauktie-sadalījumi-3" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-3">Nepārtrauktie sadalījumi</h2>
+<p><span class="math display">\[
+\begin{align}
+P[a \le X \le b] &amp;= F(b) - F(a) \\
+&amp;=  \int_{-\infty}^b f(t)\,dt - \int_{-\infty}^a f(t)\,dt
+\end{align}
+\]</span></p>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p>Noteiktā integrāļa īpašība: Intervālu <span class="math inline">\([\alpha, \beta]\)</span> var sadalīt <span class="math inline">\([\alpha, \gamma]\cup[\gamma, \beta]\)</span>, tad <span class="math inline">\(\int_\alpha^\beta f(t)\,dt = \int_\alpha^\gamma f(t)\,dt + \int_\gamma^\beta f(t)\,dt\)</span></p>
+</blockquote>
+<p>. . .</p>
+<p><span class="math display">\[\int_{-\infty}^b f(t)\,dt = \int_{-\infty}^a f(t)\,dt + \int_a^b f(t)\,dt\]</span></p>
+<p>. . .</p>
+<p><span class="math display">\[\implies \int_a^b f(t)\,dt = \int_{-\infty}^b f(t)\,dt - \int_{-\infty}^a f(t)\,dt\]</span></p>
+</section>
+<section id="nepārtrauktie-sadalījumi-4" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-4">Nepārtrauktie sadalījumi</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<blockquote class="blockquote">
+<p><span class="math display">\[ P[a \le X \le b] = \int_a^b f(t)\,dt\]</span></p>
+</blockquote>
+<p>Piemērs: nepārtraukts vienmērīgs sadalījums</p>
+<p><span class="math inline">\(X \sim U(a, b), b&gt;a\)</span></p>
+<p><span class="math display">\[f_X(x) =
+\begin{cases}
+\frac1{b-a} &amp; \text{ja } \  a \le x \le b\\
+0 &amp; \text{citādi}
+\end{cases}
+\]</span></p>
+</div><div class="column" style="width:60%;">
+<div class="cell" data-layout-align="right">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="nepārtrauktie-sadalījumi-vienmērīgs" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-vienmērīgs">Nepārtrauktie sadalījumi: vienmērīgs</h2>
+<p>Piemērs: <span class="math inline">\(X \sim U(a, b)\)</span> Kā atrast kumulatīvo sadalījuma funkciju?</p>
+<p>. . .</p>
+<p>Trīs gadījumi:</p>
+<ol type="1">
+<li><span class="math inline">\(x &lt; a\)</span></li>
+<li><span class="math inline">\(x \in [a, b]\)</span></li>
+<li><span class="math inline">\(x &gt; b\)</span></li>
+</ol>
+<p>. . .</p>
+<ol type="1">
+<li><span class="math inline">\(x &lt; a\)</span></li>
+</ol>
+<p><span class="math display">\[F_X(x) = \int_{-\infty}^x f_X(t) \,dt = \int_{-\infty}^x 0 \,dt = 0\]</span></p>
+</section>
+<section id="nepārtrauktie-sadalījumi-vienmērīgs-1" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-vienmērīgs-1">Nepārtrauktie sadalījumi: vienmērīgs</h2>
+<p><span class="math inline">\(X \sim U(a, b), b&gt;a\)</span></p>
+<p>. . .</p>
+<ol start="2" type="1">
+<li><span class="math inline">\(x \in [a, b]\)</span> <span class="math display">\[
+\begin{align}
+F_X(x) &amp;= \int_{-\infty}^x f_X(t) \,dt = \int_{-\infty}^a f_X(t)\,dt + \int_a^x f_X(t)\,dt \\
+&amp;= \int_{-\infty}^a 0\,dt + \int_a^x \frac1{b-a}\,dt \\
+&amp;= 0 + \frac1{b-a}\int_a^x dt = \left[ \frac{t}{b-a}\right]_a^x = \frac{x-a}{b-a}
+\end{align}
+\]</span></li>
+</ol>
+<p>. . .</p>
+</section>
+<section id="nepārtrauktie-sadalījumi-vienmērīgs-2" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-vienmērīgs-2">Nepārtrauktie sadalījumi: vienmērīgs</h2>
+<p><span class="math inline">\(X \sim U(a, b), b&gt;a\)</span></p>
+<p>. . .</p>
+<ol start="3" type="1">
+<li><span class="math inline">\(x &gt; b\)</span></li>
+</ol>
+<p><span class="math display">\[
+\begin{align}
+F_X(x) &amp;= \int_{-\infty}^x f_X(t)dt = \int_{-\infty}^a f_X(t)\,dt + \int_{a}^b f_X(t)\,dt + \int_b^x f_X(t)\,dt \\
+&amp;= \int_{-\infty}^a 0\,dt + \int_{a}^b \frac1{b-a}\,dt + \int_b^x 0\,dt\\
+&amp;= 0 + \left[\frac{t}{b-a}\right]_a^b + 0 = \frac{b}{b-a} - \frac{a}{b-a} \\
+&amp;= \frac{b-a}{b-a} = 1
+\end{align}
+\]</span></p>
+</section>
+<section id="nepārtrauktie-sadalījumi-vienmērīgs-3" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-vienmērīgs-3">Nepārtrauktie sadalījumi: vienmērīgs</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><span class="math display">\[f_X(x) =
+\begin{cases}
+\frac1{b-a} &amp; \text{ja } \  a \le x \le b\\
+0 &amp; \text{citādi}
+\end{cases}
+\]</span></p>
+<p><span class="math display">\[F_X(x) =
+\begin{cases}
+0 &amp; \text{ja } \  x &lt;a\\
+\frac{x-a}{b-a} &amp; \text{ja } x \in [a, b] \\
+1 &amp; \text{ja } \  x &gt; b\\
+\end{cases}
+\]</span></p>
+<blockquote class="blockquote">
+<p><span class="math inline">\(f_X(x) = \frac{d}{dx} F_X(x)\)</span></p>
+</blockquote>
+</div><div class="column" style="width:60%;">
+<div class="cell" data-layout-align="right">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-10-1.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="nepārtrauktie-sadalījumi-vienmērīgs-4" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-vienmērīgs-4">Nepārtrauktie sadalījumi: vienmērīgs</h2>
+<p><span class="math display">\[ X \sim U(2, 5), P[3.5 \le X \le4.2]=?\]</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[
+\begin{align}
+&amp;P[3.5 \le X \le4.2] \\
+&amp;= F_X(4.2) - F_X(3.5)\\
+&amp;= \frac{4.2-2}{5-2} - \frac{3.5-2}{5-2} \\
+&amp;= \frac{2.2 - 1.5}{3}\\
+&amp;= \frac{0.7}{3} \approx 23.33\%
+\end{align}
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="right">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-11-1.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="nepārtrauktie-sadalījumi-5" class="level2">
+<h2 class="anchored" data-anchor-id="nepārtrauktie-sadalījumi-5">Nepārtrauktie sadalījumi</h2>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\lim_{x \to -\infty} F_X(x) = 0\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\lim_{x \to \infty} F_X(x) = 1\]</span></p>
+</div>
+</div>
+<p>. . .</p>
+<p>Kādi ir kritēriji pmf, pdf un cdf?</p>
+<p>. . .</p>
+<ul>
+<li><span class="math inline">\(F_X: \Omega = \mathbb{R} \to [0, 1]\)</span> ir ne dilstoša</li>
+<li><span class="math inline">\(p_X: \Omega \to [0, 1]\)</span></li>
+</ul>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[ \sum_{x \in R(X)} p_X(x) = 1\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[ \int_{x \in R(X)} f_X(x)dx = \int_{-\infty}^{\infty} f_X(x)dx = 1 \]</span></p>
+</div>
+</div>
+</section>
+<section id="kāpēc-matemātiska-analīze-varbūtību-teorijā" class="level2">
+<h2 class="anchored" data-anchor-id="kāpēc-matemātiska-analīze-varbūtību-teorijā">Kāpēc matemātiska analīze varbūtību teorijā?</h2>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Lai strādāt ar nepārtrauktām vērtībām!</li>
+</ol>
+</blockquote>
+<!---------------------------------------------->
+</section>
+</section>
+<section id="kas-tālāk" class="level1">
+<h1>Kas tālāk?</h1>
+<section id="sadalījuma-momenti" class="level2">
+<h2 class="anchored" data-anchor-id="sadalījuma-momenti">Sadalījuma momenti</h2>
+<p>. . .</p>
+<p><em>Sagaidāma vērtība</em> (svērtais aritmētiskais vidējais, expected value)</p>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[ \mathbb{E}[X] := \sum_{x\in R(X)} x p_X(x) \]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[ \mathbb{E}[X] :=\int_{-\infty}^{\infty} xf_X(x)dx \]</span></p>
+</div>
+</div>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[ \mathbb{E}[g(X)] := \sum_{x\in R(X)} g(x) p_X(x) \]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[ \mathbb{E}[g(X)] :=\int_{-\infty}^{\infty} g(x)f_X(x)dx \]</span></p>
+</div>
+</div>
+<p>. . .</p>
+<p>Īpašības:</p>
+<div class="incremental">
+<ul class="incremental">
+<li><span class="math inline">\(\mathbb{E}[aX + b] = a \mathbb{E}[X] + b\)</span></li>
+<li><span class="math inline">\(\mathbb{E}[X+Y] = \mathbb{E}[X] + \mathbb{E}[Y]\)</span></li>
+<li><span class="math inline">\(\mathbb{E}[X\cdot Y] = \mathbb{E}[X] \cdot \mathbb{E}[Y]\)</span>, ja <span class="math inline">\(X, Y\)</span> ir neatkarīgi</li>
+</ul>
+</div>
+</section>
+<section id="sadalījuma-momenti-1" class="level2">
+<h2 class="anchored" data-anchor-id="sadalījuma-momenti-1">Sadalījuma momenti</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[ \mathbb{E}[g(X)] := \sum_{x\in R(X)} g(x) p_X(x) \]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[ \mathbb{E}[g(X)] :=\int_{-\infty}^{\infty} g(x)f_X(x)dx \]</span></p>
+</div>
+</div>
+<p>. . .</p>
+<p><em>Dispersija</em> (variance) <span class="math display">\[ \text{Var}(X) := \mathbb{E}[\left( X - \mathbb{E}[X]\right)^2] \]</span></p>
+<p>. . .</p>
+<p><span class="math display">\[ \implies \text{Var}(X) = \mathbb{E}[X^2] - \mathbb{E}[X]^2\]</span></p>
+<p>. . .</p>
+<p><em>Standartnovirze</em> (standard deviation)</p>
+<p><span class="math display">\[ \text{SD}(X):= \sqrt{\text{Var}(X)}\]</span></p>
+<p>. . .</p>
+<p>Īpašības:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\(\text{Var}(aX + b) = a^2\text{Var}(X)\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\(\text{Var}(X \pm Y) = \text{Var}(X) + \text{Var}(Y)\)</span>, ja <span class="math inline">\(X, Y\)</span> ir neatkarīgi</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="sadalījuma-momenti-piemērs" class="level2">
+<h2 class="anchored" data-anchor-id="sadalījuma-momenti-piemērs">Sadalījuma momenti: piemērs</h2>
+<blockquote class="blockquote">
+<p>MD: Ja <span class="math inline">\(X\sim U(a, b), b &gt; a\)</span>, tad kas ir <span class="math inline">\(\mathbb{E}[X]\)</span>, <span class="math inline">\(\text{Var}[X]\)</span>?</p>
+</blockquote>
+</section>
+<section id="kāpēc-matemātiska-analīze-varbūtību-teorijā-1" class="level2">
+<h2 class="anchored" data-anchor-id="kāpēc-matemātiska-analīze-varbūtību-teorijā-1">Kāpēc matemātiska analīze varbūtību teorijā?</h2>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Lai strādāt ar nepārtrauktām vērtībām!</li>
+</ol>
+</blockquote>
+<p>. . .</p>
+<blockquote class="blockquote">
+<ol start="2" type="1">
+<li>Lai varētu veikt secinājumus balstoties uz nepatraukto vērtību teorētisko modeli!</li>
+</ol>
+</blockquote>
+<p>. . .</p>
+<p><del>nepatraukto vērtību</del> teorētisko modeli?</p>
+</section>
+<section id="sadalījuma-momenti-piemērs-1" class="level2">
+<h2 class="anchored" data-anchor-id="sadalījuma-momenti-piemērs-1">Sadalījuma momenti: piemērs</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><span class="math inline">\(X \sim \text{Po}(\lambda), \lambda&gt;0\)</span></li>
+<li>“cik reizes noteiktā intervālā notiks notikums ar vidējo <span class="math inline">\(\lambda\)</span>”</li>
+<li><span class="math inline">\(R(X) = \mathbb{N}_0 \cup {\infty}\)</span></li>
+<li><span class="math inline">\(p_X(x) = \frac{\lambda^x}{x!}e^{-\lambda}\)</span></li>
+</ul>
+<!--- Mention meteorites--->
+</div><div class="column" style="width:60%;">
+<div class="cell" data-layout-align="right">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-12-1.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="sadalījuma-momenti-piemērs-2" class="level2">
+<h2 class="anchored" data-anchor-id="sadalījuma-momenti-piemērs-2">Sadalījuma momenti: piemērs</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><span class="math display">\[
+\begin{align}
+\mathbb{E}[X] &amp;= \sum_{x=0}^\infty p_X(x) = \sum_{x=0}^\infty x \frac{\lambda^x}{x!} e^{-\lambda} \\
+&amp;= e^{-\lambda} \sum_{x=1}^\infty \frac{\lambda^x}{x!} = e^{-\lambda} \sum_{x=1}^{\infty}\frac{x\cdot\lambda^x}{x\cdot (x-1)!} \\
+&amp;= \lambda e^{-\lambda} \sum_{x=1}^\infty \frac{\lambda^{x-1}}{(x-1)!}
+\end{align}
+\]</span></p>
+<blockquote class="blockquote">
+<p>Teilora rinda! <span class="math inline">\(e^x = \sum_{n=0}^\infty \frac{x^n}{n!}\)</span></p>
+</blockquote>
+<p><span class="math display">\[\dots = \lambda e^{-\lambda} \sum_{m=0}^\infty \frac{\lambda^m}{m!} = \lambda e^{-\lambda}e^{\lambda}=\lambda\]</span></p>
+</div><div class="column" style="width:60%;">
+<div class="cell" data-layout-align="right">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-13-1.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="kāpēc-matemātiska-analīze-varbūtību-teorijā-2" class="level2">
+<h2 class="anchored" data-anchor-id="kāpēc-matemātiska-analīze-varbūtību-teorijā-2">Kāpēc matemātiska analīze varbūtību teorijā?</h2>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Lai strādāt ar nepārtrauktām vērtībām!</li>
+</ol>
+</blockquote>
+<blockquote class="blockquote">
+<ol start="2" type="1">
+<li>Lai varētu veikt secinājumus balstoties uz teorētisko modeli!</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="no-izlases-līdz-populācijai" class="level1">
+<h1>No izlases līdz populācijai</h1>
+<section id="statistika" class="level2">
+<h2 class="anchored" data-anchor-id="statistika">Statistika</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    A[Populācija]
+    B[Izlase]
+    A --&gt;|varbūtības teorija| B
+    B --&gt;|statistika| A
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<ul>
+<li>Populācija (ģenerālkopa, <em>population</em>): nenovērojams</li>
+<li>Izlase (<em>sample</em>): novērojams</li>
+</ul>
+<p>. . .</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    A[Statistika]
+    B[Aprakstojoša]
+    C[Secinošāja]
+    A --&gt; B
+    A --&gt; C
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>. . .</p>
+</section>
+<section id="izlases-statistika" class="level2">
+<h2 class="anchored" data-anchor-id="izlases-statistika">Izlases statistika</h2>
+<p>. . .</p>
+<p><em>Izlases statistika</em> (sample statistic) - vērtība, ko var aprēķināt no izlases datiem</p>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[  \bar{X} = \frac1n \sum_{i=1}^n X_i\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[ S^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - \bar{X})^2\]</span></p>
+</div>
+</div>
+<p>. . .</p>
+<p>Pie dotiem <span class="math inline">\(\{ x_i \}_{i=1}^n\)</span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[  \bar{x} = \frac1n \sum_{i=1}^n x_i\]</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[ s^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2\]</span></p>
+</div>
+</div>
+</section>
+<section id="novērtētājs" class="level2">
+<h2 class="anchored" data-anchor-id="novērtētājs">Novērtētājs</h2>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p>Kā mēs varam novērtēt kādu lielumu no populācijas?</p>
+</blockquote>
+<p>. . .</p>
+<section id="punkta-novērtētāji" class="level3">
+<h3 class="anchored" data-anchor-id="punkta-novērtētāji">Punkta novērtētāji</h3>
+<p><span class="math display">\[  \hat{\mu} = \bar{X} = \frac1n \sum_{i=1}^n X_i\]</span></p>
+</section>
+<section id="intervālu-novērtētāji" class="level3">
+<h3 class="anchored" data-anchor-id="intervālu-novērtētāji">Intervālu novērtētāji</h3>
+<p><span class="math display">\[ \left[ \bar{X} - z_\frac{\alpha}{2} \frac{\sigma}{\sqrt{n}}, \bar{X} + z_\frac{\alpha}{2} \frac{\sigma}{\sqrt{n}} \right]\]</span></p>
+<p>. . .</p>
+<p>Intervālu piemērs: ticamības intervāls!</p>
+</section>
+</section>
+<section id="intervālu-novērtētājs-piemērs" class="level2">
+<h2 class="anchored" data-anchor-id="intervālu-novērtētājs-piemērs">Intervālu novērtētājs: piemērs</h2>
+<p><span class="math display">\[X_1, X_2, \dots, X_n \sim \text{Norm}(\mu, \sigma^2)\]</span></p>
+<ul>
+<li><p><span class="math inline">\(\sigma\)</span> ir zināms</p></li>
+<li><p><span class="math inline">\(\mu\)</span> ir nezināms</p></li>
+</ul>
+<p>. . .</p>
+<p>Mēs gribām uztaisīt intervālu tā, ka <span class="math inline">\(\mu\)</span> ir tajā intervāla ar <span class="math inline">\(1-\alpha\)</span> varbūtību!</p>
+</section>
+<section id="centrāla-robežteorēma" class="level2">
+<h2 class="anchored" data-anchor-id="centrāla-robežteorēma">Centrāla robežteorēma</h2>
+<blockquote class="blockquote">
+<p>Ja <span class="math display">\[ X_1, X_2, \dots, X_n \]</span> ir neatkarīgi un ir sadalīts pēc viena sadalījuma, tad <span class="math display">\[ \lim_{n\to \infty} \frac1n \sum_{i=1}^n X_i \sim \text{Norm}\left(\mathbb{E}[X], \frac{\text{Var}(X)}{n}\right)  \]</span></p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="CLT.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Wikipedia: Central Limit Theorem</figcaption>
+</figure>
+</div>
+</section>
+<section id="normālais-sadalījums" class="level2">
+<h2 class="anchored" data-anchor-id="normālais-sadalījums">Normālais sadalījums</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[ X \sim \text{Norm}(\mu, \sigma^2) \]</span></p>
+<p><span class="math display">\[ f_X(x)  = \frac{1}{\sqrt{2\pi \sigma^2}} \, e^{ -\frac{(x - \mu)^2}{2\sigma^2} }\]</span></p>
+<p><span class="math display">\[ \Phi(x) = F_X(x) = \int_{-\infty}^{x} f_X(t) \, dt \]</span></p>
+</div><div class="column" data-widgth="50%">
+<div class="cell" data-layout-align="right">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-16-1.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="normālais-sadalījums-1" class="level2">
+<h2 class="anchored" data-anchor-id="normālais-sadalījums-1">Normālais sadalījums</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="3_sigma.jpg" class="img-fluid figure-img"></p>
+<figcaption>Sigma: MIT News</figcaption>
+</figure>
+</div>
+</section>
+<section id="intervālu-novērtētājs-piemērs-1" class="level2">
+<h2 class="anchored" data-anchor-id="intervālu-novērtētājs-piemērs-1">Intervālu novērtētājs: piemērs</h2>
+<p><span class="math display">\[X_1, X_2, \dots, X_n \sim \text{Norm}(\mu, \sigma^2)\]</span></p>
+<ul>
+<li><p><span class="math inline">\(\sigma\)</span> ir zināms</p></li>
+<li><p><span class="math inline">\(\mu\)</span> ir nezināms</p></li>
+</ul>
+<p>. . .</p>
+<p>Aproksimējam <span class="math inline">\(\bar{X} \sim \text{Norm}\left(\mathbb{E}[X], \frac{\text{Var}(X)}{n}\right) \implies \bar{X} \sim \text{Norm}\left(\mu, \frac{\sigma^2}{n} \right)\)</span></p>
+<p>. . .</p>
+<p><span class="math display">\[
+P[a \le \bar{X} \le b]  = 1 -\alpha
+\]</span></p>
+</section>
+<section id="intervālu-novērtētājs-piemērs-2" class="level2">
+<h2 class="anchored" data-anchor-id="intervālu-novērtētājs-piemērs-2">Intervālu novērtētājs: piemērs</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="intervālu-novērtētājs-piemērs-3" class="level2">
+<h2 class="anchored" data-anchor-id="intervālu-novērtētājs-piemērs-3">Intervālu novērtētājs: piemērs</h2>
+<p><span class="math display">\[X_1, X_2, \dots, X_n \sim \text{Norm}(\mu, \sigma^2)\]</span></p>
+<p>. . .</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;P\left[-z_{\frac{\alpha}{2}} \le \frac{\bar{X} - \mathbb{E}[\bar{X}]}{\sqrt{\text{Var}(\bar{X})}} \le z_{\frac{\alpha}{2}}\right]  
+= P\left[-z_{\frac{\alpha}{2}} \le \frac{\bar{X} - \mu}{\frac{\sigma}{\sqrt{n}}} \le z_{\frac{\alpha}{2}}\right]\\
+&amp;= P\left[-z_{\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}} \le \bar{X} - \mu \le z_{\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}} \right] \\
+&amp;= P\left[-z_{\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}} - \bar{X} \le  - \mu \le z_{\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}} - \bar{X} \right] \\
+&amp;= P\left[\bar{X}  -z_{\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}} \le   \mu \le \bar{X} + z_{\frac{\alpha}{2}} \frac{\sigma}{\sqrt{n}} \right] = 1 -\alpha
+\end{align}
+\]</span></p>
+</section>
+</section>
+<section id="hipotēžu-pārbaude" class="level1">
+<h1>Hipotēžu pārbaude</h1>
+<section id="filozofija" class="level2">
+<h2 class="anchored" data-anchor-id="filozofija">Filozofija</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><em>Frekvenistu pieeja</em> (frequenist)</p>
+<ul>
+<li><p>Varbūtība = ilgtermiņa biežums</p></li>
+<li><p>Ja <span class="math inline">\(6\)</span> dienas līja lietus, tad uz <span class="math inline">\(7\)</span> tas līs <span class="math inline">\(100\%\)</span></p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><em>Bejiesa pieeja</em> (Bayesian)</p>
+<ul>
+<li><p>Varbūtība = ticamības mērs</p></li>
+<li><p>Jāskatas pēc mākoņiem</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="hipotēžu-pārbaude-1" class="level2">
+<h2 class="anchored" data-anchor-id="hipotēžu-pārbaude-1">Hipotēžu pārbaude</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="hipotēžu-pārbaude-2" class="level2">
+<h2 class="anchored" data-anchor-id="hipotēžu-pārbaude-2">Hipotēžu pārbaude</h2>
+<ul>
+<li><span class="math inline">\(H_0\)</span>: <em>bāzes/nulles hipotēze</em> (nekas nemainas)</li>
+<li><span class="math inline">\(H_1\)</span>: <em>alternatīva hipotēze</em> (to, ko mēs gribām pieradīt)</li>
+</ul>
+<p>. . .</p>
+<p>Mēs nevaram pierādīt hipotēzi!</p>
+<p>. . .</p>
+<p>Mēs varām tikai spriest, vai ir izvēlētājam <em>nozīmes līmenim</em> (significance level) <span class="math inline">\(\alpha\)</span> ir pietiekami liecību, lai noraidīt/nenoraidīt nulles hipotēzi</p>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p>Mēs nevaram pierādīt, ka visi gulbji ir balti. Mēs varam tikai to noraidīt, atradot vienu melno gulbji.</p>
+</blockquote>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><em>Two-tailed</em></p>
+<p><span class="math display">\[H_0: \mu = 0 \]</span></p>
+<p><span class="math display">\[H_1: \mu \neq  0 \]</span></p>
+</div><div class="column" style="width:50%;">
+<p><em>One-tailed</em></p>
+<p><span class="math display">\[H_0: \mu = 0 \]</span></p>
+<p><span class="math display">\[H_1: \mu &lt; \text{vai} &gt;  0 \]</span></p>
+</div>
+</div>
+</section>
+<section id="hipotēžu-pārbaude-3" class="level2">
+<h2 class="anchored" data-anchor-id="hipotēžu-pārbaude-3">Hipotēžu pārbaude</h2>
+<ul>
+<li><span class="math inline">\(H_0\)</span>: <em>bāzes/nulles hipotēze</em> (nekas nemainās)</li>
+<li><span class="math inline">\(H_1\)</span>: <em>alternatīva hipotēze</em> (to, ko mēs gribām pieradīt)</li>
+</ul>
+<p>. . .</p>
+<p>Metodoloģija:</p>
+<ol type="1">
+<li>Aprēķināt izlases statistikas esošo vērtību varbūtību pēc <span class="math inline">\(H_0\)</span> (<em>p vērtība</em>)?</li>
+<li>Vai tā varbūtībā ir pietiekami liela? Tad noraidīt vai nenoraidīt nulles hipotēzi!</li>
+</ol>
+<blockquote class="blockquote">
+<p>Arī saucas Z-test vai T-test!</p>
+</blockquote>
+</section>
+<section id="hipotēžu-pārbaude-piemērs" class="level2">
+<h2 class="anchored" data-anchor-id="hipotēžu-pārbaude-piemērs">Hipotēžu pārbaude: piemērs</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] 1 2 1 2 3 3 2 4 2 3 3 3 0 3 1 1 1 3 4 3 3 3 2 2 1 5 3 2 1 1 4 2 2 0 0 1 2
+ [38] 2 2 3 2 3 5 1 4 1 1 3 3 2 3 1 2 1 3 1 2 1 1 2 0 1 4 1 1 2 2 4 1 0 3 3 0 2
+ [75] 2 2 3 3 2 2 2 2 4 1 3 2 1 4 3 1 2 2 2 2 1 2 3 2 3 1</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="right">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="LSMAT_lekcija_files/figure-revealjs/unnamed-chunk-20-1.png" class="img-fluid quarto-figure quarto-figure-right figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="hipotēžu-pārbaude-piemērs-1" class="level2">
+<h2 class="anchored" data-anchor-id="hipotēžu-pārbaude-piemērs-1">Hipotēžu pārbaude: piemērs</h2>
+<p><span class="math display">\[H_0: p = \frac16 \implies \mu = \mu_0 = 10 \cdot \frac16 = \frac53\]</span></p>
+<p><span class="math display">\[ H_1: p &gt; \frac16 \implies \mu &gt; 10 \cdot \frac16 = \frac53 \]</span></p>
+<p><span class="math display">\[ \alpha = 5\%, \ \ \ n=100\]</span></p>
+<p>. . .</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Aproksimējam <span class="math inline">\(t \sim T(n-1)\)</span></p>
+<p><span class="math inline">\(s^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x})^2\)</span></p>
+<p><span class="math inline">\(t = \frac{\bar{x} - \mu_0}{\frac{s}{\sqrt{n}}}\)</span></p>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  pirate_100
+t = 3.7797, df = 99, p-value = 0.0001342
+alternative hypothesis: true mean is greater than 1.666667
+95 percent confidence interval:
+ 1.904033      Inf
+sample estimates:
+mean of x 
+     2.09 </code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="kāpēc-matemātiska-analīze-varbūtību-teorijā-3" class="level2">
+<h2 class="anchored" data-anchor-id="kāpēc-matemātiska-analīze-varbūtību-teorijā-3">Kāpēc matemātiska analīze varbūtību teorijā?</h2>
+<blockquote class="blockquote">
+<ol type="1">
+<li>Lai strādāt ar nepārtrauktām vērtībām!</li>
+</ol>
+</blockquote>
+<blockquote class="blockquote">
+<ol start="2" type="1">
+<li>Lai varētu veikt secinājumus balstoties uz teorētisko modeli!</li>
+</ol>
+</blockquote>
+<blockquote class="blockquote">
+<ol start="3" type="1">
+<li>Lai varētu aproksimēt un taisit inferences!</li>
+</ol>
+</blockquote>
+</section>
+</section>
+<section id="paldies-par-uzmanību" class="level1">
+<h1>Paldies par uzmanību!</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+
+<script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
+</script>
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

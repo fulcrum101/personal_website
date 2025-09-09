@@ -26,4 +26,4 @@ Here are some talks I had given:
 | Matemātiska analīze varbūtību teorijā, statisikā un datu zinātnē | LSMAT diskusiju klubs 2025| 🇱🇻 | [presentation](talks/LSMAT/LSMAT_lekcija.html) |
 | Idealised ruler and collapsing compass: Euclidean geometry | MIMUC 2025   | 🇬🇧 | [presentation](/talks/MIMUC_presentation.pdf) |
 
-## Mathematics related blog posts
+## Science related blog posts

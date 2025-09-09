@@ -375,14 +375,14 @@
     "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs",
     "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
     "section": "Hipotēžu pārbaude: piemērs",
-    "text": "Hipotēžu pārbaude: piemērs\n\n\n\n\n  [1] 1 2 1 2 3 3 2 4 2 3 3 3 0 3 1 1 1 3 4 3 3 3 2 2 1 5 3 2 1 1 4 2 2 0 0 1 2\n [38] 2 2 3 2 3 5 1 4 1 1 3 3 2 3 1 2 1 3 1 2 1 1 2 0 1 4 1 1 2 2 4 1 0 3 3 0 2\n [75] 2 2 3 3 2 2 2 2 4 1 3 2 1 4 3 1 2 2 2 2 1 2 3 2 3 1"
+    "text": "Hipotēžu pārbaude: piemērs\n\n\n\n\n  [1] 3 1 3 1 1 3 3 5 1 2 2 3 1 2 5 1 3 2 4 1 1 2 4 4 3 4 2 3 3 2 4 5 2 1 3 2 1\n [38] 2 1 4 3 0 3 2 5 0 2 3 3 2 2 3 4 1 2 4 0 2 4 2 2 3 1 1 3 3 1 4 2 2 2 1 3 4\n [75] 3 1 3 3 2 3 1 3 1 2 1 0 3 3 2 4 0 3 1 0 3 0 2 4 3 2"
   },
   {
     "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs-1",
     "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs-1",
     "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
     "section": "Hipotēžu pārbaude: piemērs",
-    "text": "Hipotēžu pārbaude: piemērs\n\\[H_0: p = \\frac16 \\implies \\mu = \\mu_0 = 10 \\cdot \\frac16 = \\frac53\\]\n\\[ H_1: p &gt; \\frac16 \\implies \\mu &gt; 10 \\cdot \\frac16 = \\frac53 \\]\n\\[ \\alpha = 5\\%, \\ \\ \\ n=100\\]\n\n\n\nAproksimējam \\(t \\sim T(n-1)\\)\n\\(s^2 = \\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\\(t = \\frac{\\bar{x} - \\mu_0}{\\frac{s}{\\sqrt{n}}}\\)\n\n\n\n\n    One Sample t-test\n\ndata:  pirate_100\nt = 3.7797, df = 99, p-value = 0.0001342\nalternative hypothesis: true mean is greater than 1.666667\n95 percent confidence interval:\n 1.904033      Inf\nsample estimates:\nmean of x \n     2.09"
+    "text": "Hipotēžu pārbaude: piemērs\n\\[H_0: p = \\frac16 \\implies \\mu = \\mu_0 = 10 \\cdot \\frac16 = \\frac53\\]\n\\[ H_1: p &gt; \\frac16 \\implies \\mu &gt; 10 \\cdot \\frac16 = \\frac53 \\]\n\\[ \\alpha = 5\\%, \\ \\ \\ n=100\\]\n\n\n\nAproksimējam \\(t \\sim T(n-1)\\)\n\\(s^2 = \\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\\(t = \\frac{\\bar{x} - \\mu_0}{\\frac{s}{\\sqrt{n}}}\\)\n\n\n\n\n    One Sample t-test\n\ndata:  pirate_100\nt = 5.2086, df = 99, p-value = 5.183e-07\nalternative hypothesis: true mean is greater than 1.666667\n95 percent confidence interval:\n 2.111733      Inf\nsample estimates:\nmean of x \n     2.32"
   },
   {
     "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-3",

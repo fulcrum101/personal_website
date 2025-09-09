@@ -8,7 +8,7 @@ about:
       text: LinkedIn
       href: https://www.linkedin.com/in/vlohmanova/
     - icon: github
-      text: Github
+      text: GitHub
       href: https://github.com/fulcrum101
 ---
 

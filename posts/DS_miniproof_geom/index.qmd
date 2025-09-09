@@ -1,0 +1,54 @@
+---
+title: "Geometric interpretation of mean"
+description: "During Data Science lecture, my acquaintance came up with the question of how mean can be portrayed geometrically."
+author: "Veronika Lohmanova"
+date: "03/05/2025"
+categories:
+  - Mathematics
+  - Miniproof
+draft: true
+---
+
+## Introduction
+
+The problem can be defined as follows: given the data set of scalar quantitative observations $(x_1, x_2, \ldots, x_n)$ where $n \in \mathbb{Z}$ is the number of observations, define the point $A \in \mathbb{R}^n$ with corresponding coordinates as data set and point $B \in \mathbb{R}^n, B \in x_1 = x_2 = \ldots = x_n$ line such that Euclidean distance between $A$ and $B$ is minimum.
+
+## Proof
+
+Define radius vector $\vec{v}$ of point $A$ by $$
+\begin{equation*}
+\vec{v} = 
+\begin{bmatrix}
+    x_1 \\ x_2 \\ \vdots \\ x_n
+\end{bmatrix}  \in M_{n, 1} (\mathbb{R})
+\end{equation*}
+$$ and line's $x_1 = x_2 = \ldots = x_n$ direction vector $$
+\begin{equation*}
+\vec{i} = 
+\begin{bmatrix}
+    1 \\ 1 \\ \vdots \\ 1
+\end{bmatrix} \in M_{n, 1} (\{ 1 \})
+\end{equation*}
+$$ Define radius vector $\vec{l}$ of point $B$ by $$
+\begin{equation*}
+\vec{l} = 
+\begin{bmatrix}
+    a \\ a \\ \vdots \\ a
+\end{bmatrix}  \in M_{n, 1} (\mathbb{R}), a\in \mathbb{R}
+\end{equation*}
+$$ As the distance between $A$ and the line is at a minimum, then $AB$ is perpendicular to the $\vec{l}$. Hence, we can say that $\vec{l}$ is a projection of $\vec{v}$ on $\vec{i}$. Hence, from the property of scalar multiplication of vectors, we get: $$
+\begin{equation*}
+    \begin{split}
+        \vec{v} \cdot \vec{i} &= x_1 + x_2 + \ldots + x_n \\
+        &= \sum_{i=1}^n x_i \\
+        &= \vec{i} \cdot \text{proj}_{\vec{i}} \vec{v} \\
+        &= \vec{i} \cdot \vec{l} \\
+        &= \underbrace{a + a + \ldots + a}_{n \text{ times}} \\
+        &= na \\  
+    \end{split}
+\end{equation*}
+$$
+
+Therefore $$\sum_{i=1}^n x_i = na \implies a = \frac{1}{n} \sum_{i=1}^n x_i = \mu$$ where $\mu$ is mean of given data set.
+
+Thus point $B$ coordinates are $\underbrace{\mu, \mu, \ldots, \mu}_{n \text{ times}}$.

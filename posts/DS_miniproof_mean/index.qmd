@@ -1,0 +1,60 @@
+---
+title: "Proof of mean corresponding to the minimum of squared Euclidean distance"
+description: "During Data Science lecture, we were just hit with the fact, but it is really easily provable."
+author: "Veronika Lohmanova"
+date: "02/07/2025"
+categories:
+  - Mathematics
+  - Miniproof
+---
+
+## Introduction
+
+Let $x_1, x_2, \ldots x_n$ be observations of a quantitative variable. Let $\mu = \frac{1}{n} \sum_{i=1}^n x_i$ be the mean of the data set mentioned previously. We need to prove that the squared Euclidean distance between the point defined by the mean and all other points of the data set is at minimum, that is, $$ \mu = \arg \min_y \biggl\{ \frac{1}{n} \sum_{i=1}^n (x_i - y)^2 \biggl\} $$
+
+## Proof
+
+Define $f(y) = \frac{1}{n} \sum_{i=1}^n (x_i - y)^2$. We need to find $y$ such that $f(y)$ value is minimum.
+
+Taking the first-order derivative, we get: $$
+\begin{equation*}
+    \begin{split}
+    f'(y) &= \frac{d}{dy} \biggl( \frac{1}{n} \sum_{i=1}^n (x_i - y)^2 \biggl) \\
+    &= \frac{1}{n} \sum_{i=1}^n \biggl( \frac{d}{dy} (x_i- y)^2\biggl) \\
+    &= \frac{1}{n} \sum_{i=1}^n 2(x_i - y)\times (-1)\\
+    &= - \frac{2}{n} \sum_{i=1}^n (x_i - y) \\
+    &= -\frac{2}{n} \biggl( \sum_{i=1}^n x_i - \sum_{i=1}^n y \biggl)\\
+    &= - \frac{2}{n} \biggl( \sum_{i=1}^n x_i - n\times y \biggl) \\
+    &= -\frac{2}{n} \sum_{i=1}^n x_i + 2y
+    \end{split}
+\end{equation*}
+$$
+
+
+Thus $f'(y)$ is a linear function. 
+
+To find the point of minimum, we need to calculate $f'(y)$ zeros:
+
+$$
+\begin{equation*}
+    \begin{split}
+    f'(y) = 0 &\implies f'(y) = -\frac{2}{n} \sum_{i=1}^n x_i + 2y = 0 \\
+    &\implies 2y = \frac{2}{n}\sum_{i=1}^n x_i \\
+    &\implies y = \frac{1}{n}\sum_{i=1}^n x_i \\
+    &\implies y = \mu
+    \end{split}
+\end{equation*}
+$$
+
+As the $f'(y)$ is a linear function with positive gradient, then:
+
+$$y \in (-\infty, \mu) \implies f'(y) < 0$$
+
+and 
+
+$$y \in (\mu, +\infty) \implies f'(y) > 0$$.
+
+Hence $f(y)$ is strictly decreasing when $x \in (-\infty, \mu)$ and strictly increasing when $x \in (\mu, +\infty)$. Therefore at point $y=\mu$ $f(y)$ takes minimum value, that is, point $y=\mu$ is minimum.
+
+QED
+

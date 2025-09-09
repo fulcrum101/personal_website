@@ -1,12 +1,13 @@
 project:
   type: website
-  output-dir: docs
+#  output-dir: docs
 
 website:
-  title: "Personal website: Veronika Lohmanova"
+  title: "Veronika Lohmanova"
   navbar:
     right:
       - about.qmd
+      - blog_page.qmd
 format:
   html:
     theme:

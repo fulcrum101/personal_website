@@ -2,8 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Hi! Nice to meet you!",
+    "title": "Veronika Lohmanova",
     "section": "",
-    "text": "Hi! Nice to meet you!\nWelcome to my personal website!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 5, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Hi! Nice to meet you!\n\n\n\nWelcome to my personal website!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "in short, this is how my journey has been"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Curriculum Vitae",
+    "section": "Experience",
+    "text": "Experience\n\n\nResearch Assistant 🇬🇧\n\nThe University of Manchester - 06/2025 - 08/2025 (voluntary)\nProduced an introductory write-up on foundational concepts at the intersection of Conformal Prediction and Imprecise Probability under the supervision of Michele Caprio\n\n\n\nComputer Science Teacher 🇱🇻\n\nProgramming School No. 1 - 09/2023 - 05/2024\nIntroduced computer science concepts e.g. iteration, selection, working with files and API via Scratch and MIT App Inventor for \\(1^\\text{st}\\)-\\(6^\\text{th}\\) grade students \n\n\n\nTechnical Coordinator 🇱🇻\n\nLatvian Student Integration Bee - 10/2023 - 12/2023\nCoded and hosted static webpage with HTML and W3CSS with incorporated version control\nIntroduced and maintained custom domain emails for the organising committee"
+  },
+  {
+    "objectID": "about.html#volunteering-and-leadership",
+    "href": "about.html#volunteering-and-leadership",
+    "title": "Curriculum Vitae",
+    "section": "Volunteering and Leadership",
+    "text": "Volunteering and Leadership\n\n\nPresident 🇬🇧\n\nHackchester (the University of Manchester Cyber Security Society) - 10/2024 - 05/2025\nLed committee of \\(5\\) members\nSuccessfully planned and hosted weekly events over whole academic year\n\n\n\n\nLead Organiser 🇱🇻\n\nProblemCon++ - 09/2021 - 11/20222\nHosted \\(2\\) programming contests and a hackathon to bring students’ interest to the IT sphere\nObtained sponsorship from \\(9\\) companies, including major local companies and a leading IT education fund \n\n\n\n\n\n\n\nAcademic Awards\n\n\n\n\n\nMichael Jealous Memorial Prize (for excellence in Year 1 studies) and Golden Anniversary Prize (for best Year 1 student in CS Department)\nLetter of Recognition from the Prime Minister of the Republic of Latvia for achieved excellence in academic studies in school"
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "Veronika Lohmanova",
+    "section": "Resources",
+    "text": "Resources\n\n\n\nResource\nDescription\nLink\n\n\n\n\nQuarto Docs\nOfficial documentation for Quarto\nquarto.org\n\n\nPandoc Guide\nReference for markdown/table syntax\npandoc.org\n\n\nGitHub Repo\nExample blog source code\ngithub.com"
   }
 ]

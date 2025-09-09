@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Hi! Nice to meet you!",
+    "title": "Veronika Lohmanova",
     "section": "",
-    "text": "Hi! Nice to meet you!\nWelcome to my personal website!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 5, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Hi! Nice to meet you!\n\n\n\nWelcome to my personal website!"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -61,5 +61,376 @@
     "title": "Curriculum Vitae",
     "section": "Academic awards",
     "text": "Academic awards\n\n\nMichael Jealous Memorial Prize (for excellence in Year 1 studies) and Golden Anniversary Prize (for best Year 1 student)\nLetter of Recognition from the Prime Minister of the Republic of Latvia for achieved excellence in academic studies"
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "Veronika Lohmanova",
+    "section": "Resources",
+    "text": "Resources\nHere are some talks I had given:\n\n\n\nName\nEvent\nLanguage\nLink\n\n\n\n\nMatemātiska analīze varbūtību teorijā, statisikā un datu zinātnē\nLSMAT diskusiju klubs 2025\n🇱🇻\npresentation\n\n\nIdealised ruler and collapsing compass: Euclidean geometry\nMIMUC 2025\n🇬🇧\npresentation"
+  },
+  {
+    "objectID": "index.html#resources-1",
+    "href": "index.html#resources-1",
+    "title": "Veronika Lohmanova",
+    "section": "Resources",
+    "text": "Resources\n\n\n\nMonth\nSavings\n\n\n\n\nJanuary\n$250\n\n\nFebruary\n$80\n\n\nMarch\n$420"
+  },
+  {
+    "objectID": "blog_page.html",
+    "href": "blog_page.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 8, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 5, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#saturs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#saturs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Saturs",
+    "text": "Saturs\n\nIevads varbūtību teorijā un statistikā\nSadalījumi\nNo izlases līdz populācijai\nHipotēžu pārbaude"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#varbūtības-teorija-vs-statistika",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#varbūtības-teorija-vs-statistika",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Varbūtības teorija vs statistika",
+    "text": "Varbūtības teorija vs statistika\n\n\n\n\n\ngraph LR\n    A[Populācija]\n    B[Izlase]\n    A --&gt;|varbūtības teorija| B\n    B --&gt;|statistika| A\n\n\n\n\n\n\n\n\nPopulācija (ģenerālkopa, population): nenovērojams\nIzlase (sample): novērojams\n\n\n\nNotācija un terminoloģija\n\n\\(X\\) gadījuma lielums (random variable)\n\\(x\\) noteiktā vērtība\n\\(X=x\\) notikums\n\\(R(X)\\) visu iespējamu gadījuma lieluma vērtību kopa\n\\(\\Omega\\) visu iespējamu eksperimenta rezultātu kopa"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#varbūtības-telpas",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#varbūtības-telpas",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Varbūtības telpas",
+    "text": "Varbūtības telpas\n\n\nPar varbūtību telpu sauc objektu kolekciju \\((\\Omega, F, P)\\), kur\n\n\n\n\\(\\Omega\\): visu iespējamu rezultātu kopa\n\\(F \\subseteq 2^\\Omega\\): izmērāma kopa (measurable set)\n\\(P: F \\to [0, 1]\\): varbūtības mēra funkcija (probability measure)\n\n\n\n\nKolmogorova aksiomas\n\\[P(\\Omega) = 1\\]\n\\[A\\cap B = \\emptyset \\implies P(A\\cup B) = P(A) + P(B),\\ \\ \\   \\forall A, B \\in F\\]\n. . .\n\n\n\\[ \\implies P(A) = 1 - P(A^c)\\]\n\n\\[\\implies  P(\\emptyset) = 0\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-motivācija",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-motivācija",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: Motivācija",
+    "text": "Eksperiments: Motivācija\nKādā no galda spēlēm spēlētājam, kad ir viņam gājiens, vajag met spēles kauliņu. Atkarībā no cik reizes uzmetas \\(6\\), ir dažādas gājiena iespējas. Viena raundā jāmet kauliņš \\(10\\) reizes.\nRunā, ka melnā tirgū pirāts nopirka maģisko kauliņu pie raganas. Mums kā spēļu sacensību organizatoriem ir aizdomās, ka pirāta metamais kauliņš uzkrīt uz \\(6\\) biežāk nekā parastais metamais kauliņš.\n\nJautājums: Ja mums ir dota informācija par katru raundu, vai mēs varam noskaidrot spēles gaitā ar kādu varbūtību tas uzkrīt uz \\(6\\)?\n\n\nApzīmējumi\n\n\n\\(X\\): Skaitlis, ko uzmet, \\(R(X) = \\{1, 2, 3, 4, 5, 6\\}\\)\n\\(Y\\): Cik reizes uzmeta sešinieku viena raundā, \\(R(Y) = \\{0, 1, \\dots, 10\\}\\)\n\\(P[X = 6] = ?\\)\n\\(n_1 = 10, n_2 = 100, n_3 = 1000, n_4 = 10000\\): raundu skaits vienā spēlē"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_1-10",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_1-10",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: \\(n_1 = 10\\)",
+    "text": "Eksperiments: \\(n_1 = 10\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_2-100",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_2-100",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: \\(n_2 = 100\\)",
+    "text": "Eksperiments: \\(n_2 = 100\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_3-1000",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_3-1000",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: \\(n_3 = 1000\\)",
+    "text": "Eksperiments: \\(n_3 = 1000\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_4-10000",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#eksperiments-n_4-10000",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Eksperiments: \\(n_4 = 10000\\)",
+    "text": "Eksperiments: \\(n_4 = 10000\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc?",
+    "text": "Kāpēc?\n\n\\[ Y \\sim \\text{Binom}(10, p) \\]\n\n\n\\[ p = P[X = 6] \\]\n\n\n\nJa kādu mēģinājumu atkārto \\(m\\) reizes, un katrā atsevišķā reizē notikuma \\(A\\) iestāšanās varbūtība ir vienāda ar \\(p\\), tad saka, ka gadījuma lielums \\(Y\\): «notikuma \\(A\\) iestāšanās reižu skaits» ir sadalīts pēc binomiāla sadalījuma likuma \\(Y \\sim \\text{Binom}(m, p)\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījums",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījums",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījums",
+    "text": "Sadalījums\n\nSadalījums: funkcija kas nosaka notikumu iestāšanas varbūtību\n\n\n\\[\\text{Gadījuma lielums} \\sim \\text{sadalījuma nosaukms}(\\text{parametri}) \\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-un-nepārtrauktie-sadalījumi",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-un-nepārtrauktie-sadalījumi",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Diskrētie un nepārtrauktie sadalījumi",
+    "text": "Diskrētie un nepārtrauktie sadalījumi\nDiskrētie: \\(R(X)\\) kopā ir noteiktās, skaitāmas vērtības\n\n\n\\(X \\sim \\text{Bern}(\\frac12)\\), \\(X\\) - Monēta nolaižas ar ciparu augša\n\\(Y \\sim \\text{Binom}(10, \\frac12)\\), \\(Y\\) - Cik reizēs no 10 mēģinājumiem monēta nolaižas ar ciparu augšā\n\\(Z \\sim \\text{Geom}(\\frac12)\\) - Cik mēģinājumus vajag, lai monēta pirmo reizi nolaižas ar ciparu augšā\n\n\n\nNepārtrauktie: \\(R(X)\\) kopa ir intervāls ar neskaitāmi daudz starpvērtībam\n\n\n\n\\(X \\sim \\text{U}(1, 10)\\) - Nejaušs skaitlis intervālā \\([1, 10]\\)\n\\(Y \\sim \\text{Norm}(1.7, 0.3)\\) - Augums grupā\n\\(Z \\sim \\text{Exp}(\\frac14)\\) - Konsultācijas garums veikalā, kad vidējais ir \\(4\\) minūtes"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-sadalījumi",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-sadalījumi",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Diskrētie sadalījumi",
+    "text": "Diskrētie sadalījumi\n\n\n\\[ X \\sim \\text{Bern}(p) \\]\n\\[ R(X) = \\{0, 1\\} \\]\nvarbūtību masas funkcija\n(probability mass function)\n\\[p_X(x) :=P[X = x] = \\begin{cases} 1-p & \\text{ja}\\  x=0  \\\\ p & \\text{ja}\\  x=1\\\\\\end{cases}\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-sadalījumi-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#diskrētie-sadalījumi-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Diskrētie sadalījumi",
+    "text": "Diskrētie sadalījumi\n\n\n\\[X \\sim \\text{Bern}(p)\\] \\[R(X) = \\{0, 1\\}\\] kumulatīva sadalījuma funkcija\n(cumulative distribution function)\n\\[\n\\begin{align}\nF_X(x) &:= P[X \\le  x] = \\sum_{i=0}^x p_X(i)\\\\\n&=\n\\begin{cases}\n1 - p       & \\text{ja } x = 0 \\\\\n1 - p + p   & \\text{ja } x = 1 \\\\\n\\end{cases}\\\\\n&=\n\\begin{cases}\n1 - p & \\text{ja } x = 0 \\\\\n1     & \\text{ja } x = 1 \\\\\n\\end{cases}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\n\\[ P[X=x] = 0 \\ \\ \\ \\forall x \\in R(X)\\]\n\nvarbūtības masas funkcija Varbūtības blīvuma funkcija!\n\n\n\\[ f: \\mathbb{R} \\to \\mathbb{R}^{+}_0\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\nKā tad noteikt gadījuma notikuma varbūtību?\n\nAr intervālu!\n\n\nkumulatīva sadalījuma funkcija\n\n\\[F_X(x):= P[X \\le x] = \\int_{-\\infty}^x f(t)\\,dt\\]\n\n\n\n\\[\n\\begin{align}\n\\implies P[a \\le X \\le b] &= P[X \\le b] - P[X \\le a] \\\\\n&= F(b) - F(a) \\\\\n&=  \\int_{-\\infty}^b f(t)\\,dt - \\int_{-\\infty}^a f(t)\\,dt\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\n\\[\n\\begin{align}\nP[a \\le X \\le b] &= F(b) - F(a) \\\\\n&=  \\int_{-\\infty}^b f(t)\\,dt - \\int_{-\\infty}^a f(t)\\,dt\n\\end{align}\n\\]\n\n\nNoteiktā integrāļa īpašība: Intervālu \\([\\alpha, \\beta]\\) var sadalīt \\([\\alpha, \\gamma]\\cup[\\gamma, \\beta]\\), tad \\(\\int_\\alpha^\\beta f(t)\\,dt = \\int_\\alpha^\\gamma f(t)\\,dt + \\int_\\gamma^\\beta f(t)\\,dt\\)\n\n\n\n\\[\\int_{-\\infty}^b f(t)\\,dt = \\int_{-\\infty}^a f(t)\\,dt + \\int_a^b f(t)\\,dt\\]\n\n\n\\[\\implies \\int_a^b f(t)\\,dt = \\int_{-\\infty}^b f(t)\\,dt - \\int_{-\\infty}^a f(t)\\,dt\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-4",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-4",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\n\n\n\n\\[ P[a \\le X \\le b] = \\int_a^b f(t)\\,dt\\]\n\nPiemērs: nepārtraukts vienmērīgs sadalījums\n\\(X \\sim U(a, b), b&gt;a\\)\n\\[f_X(x) =\n\\begin{cases}\n\\frac1{b-a} & \\text{ja } \\  a \\le x \\le b\\\\\n0 & \\text{citādi}\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\nPiemērs: \\(X \\sim U(a, b)\\) Kā atrast kumulatīvo sadalījuma funkciju?\n\nTrīs gadījumi:\n\n\\(x &lt; a\\)\n\\(x \\in [a, b]\\)\n\\(x &gt; b\\)\n\n\n\n\n\\(x &lt; a\\)\n\n\\[F_X(x) = \\int_{-\\infty}^x f_X(t) \\,dt = \\int_{-\\infty}^x 0 \\,dt = 0\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\n\\(X \\sim U(a, b), b&gt;a\\)\n\n\n\\(x \\in [a, b]\\) \\[\n\\begin{align}\nF_X(x) &= \\int_{-\\infty}^x f_X(t) \\,dt = \\int_{-\\infty}^a f_X(t)\\,dt + \\int_a^x f_X(t)\\,dt \\\\\n&= \\int_{-\\infty}^a 0\\,dt + \\int_a^x \\frac1{b-a}\\,dt \\\\\n&= 0 + \\frac1{b-a}\\int_a^x dt = \\left[ \\frac{t}{b-a}\\right]_a^x = \\frac{x-a}{b-a}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\n\\(X \\sim U(a, b), b&gt;a\\)\n\n\n\\(x &gt; b\\)\n\n\\[\n\\begin{align}\nF_X(x) &= \\int_{-\\infty}^x f_X(t)dt = \\int_{-\\infty}^a f_X(t)\\,dt + \\int_{a}^b f_X(t)\\,dt + \\int_b^x f_X(t)\\,dt \\\\\n&= \\int_{-\\infty}^a 0\\,dt + \\int_{a}^b \\frac1{b-a}\\,dt + \\int_b^x 0\\,dt\\\\\n&= 0 + \\left[\\frac{t}{b-a}\\right]_a^b + 0 = \\frac{b}{b-a} - \\frac{a}{b-a} \\\\\n&= \\frac{b-a}{b-a} = 1\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\n\n\n\\[f_X(x) =\n\\begin{cases}\n\\frac1{b-a} & \\text{ja } \\  a \\le x \\le b\\\\\n0 & \\text{citādi}\n\\end{cases}\n\\]\n\\[F_X(x) =\n\\begin{cases}\n0 & \\text{ja } \\  x &lt;a\\\\\n\\frac{x-a}{b-a} & \\text{ja } x \\in [a, b] \\\\\n1 & \\text{ja } \\  x &gt; b\\\\\n\\end{cases}\n\\]\n\n\\(f_X(x) = \\frac{d}{dx} F_X(x)\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-4",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-vienmērīgs-4",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi: vienmērīgs",
+    "text": "Nepārtrauktie sadalījumi: vienmērīgs\n\\[ X \\sim U(2, 5), P[3.5 \\le X \\le4.2]=?\\]\n\n\n\\[\n\\begin{align}\n&P[3.5 \\le X \\le4.2] \\\\\n&= F_X(4.2) - F_X(3.5)\\\\\n&= \\frac{4.2-2}{5-2} - \\frac{3.5-2}{5-2} \\\\\n&= \\frac{2.2 - 1.5}{3}\\\\\n&= \\frac{0.7}{3} \\approx 23.33\\%\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-5",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#nepārtrauktie-sadalījumi-5",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Nepārtrauktie sadalījumi",
+    "text": "Nepārtrauktie sadalījumi\n\n\n\n\\[\\lim_{x \\to -\\infty} F_X(x) = 0\\]\n\n\\[\\lim_{x \\to \\infty} F_X(x) = 1\\]\n\n\n\nKādi ir kritēriji pmf, pdf un cdf?\n\n\n\n\\(F_X: \\Omega = \\mathbb{R} \\to [0, 1]\\) ir ne dilstoša\n\\(p_X: \\Omega \\to [0, 1]\\)\n\n\n\n\n\n\\[ \\sum_{x \\in R(X)} p_X(x) = 1\\]\n\n\\[ \\int_{x \\in R(X)} f_X(x)dx = \\int_{-\\infty}^{\\infty} f_X(x)dx = 1 \\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc matemātiska analīze varbūtību teorijā?",
+    "text": "Kāpēc matemātiska analīze varbūtību teorijā?\n\nLai strādāt ar nepārtrauktām vērtībām!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti",
+    "text": "Sadalījuma momenti\n\nSagaidāma vērtība (svērtais aritmētiskais vidējais, expected value)\n\n\n\n\n\\[ \\mathbb{E}[X] := \\sum_{x\\in R(X)} x p_X(x) \\]\n\n\\[ \\mathbb{E}[X] :=\\int_{-\\infty}^{\\infty} xf_X(x)dx \\]\n\n\n\n\n\n\\[ \\mathbb{E}[g(X)] := \\sum_{x\\in R(X)} g(x) p_X(x) \\]\n\n\\[ \\mathbb{E}[g(X)] :=\\int_{-\\infty}^{\\infty} g(x)f_X(x)dx \\]\n\n\n\nĪpašības:\n\n\n\\(\\mathbb{E}[aX + b] = a \\mathbb{E}[X] + b\\)\n\\(\\mathbb{E}[X+Y] = \\mathbb{E}[X] + \\mathbb{E}[Y]\\)\n\\(\\mathbb{E}[X\\cdot Y] = \\mathbb{E}[X] \\cdot \\mathbb{E}[Y]\\), ja \\(X, Y\\) ir neatkarīgi"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti",
+    "text": "Sadalījuma momenti\n\n\n\\[ \\mathbb{E}[g(X)] := \\sum_{x\\in R(X)} g(x) p_X(x) \\]\n\n\\[ \\mathbb{E}[g(X)] :=\\int_{-\\infty}^{\\infty} g(x)f_X(x)dx \\]\n\n\nDispersija (variance) \\[ \\text{Var}(X) := \\mathbb{E}[\\left( X - \\mathbb{E}[X]\\right)^2] \\]\n\n\n\\[ \\implies \\text{Var}(X) = \\mathbb{E}[X^2] - \\mathbb{E}[X]^2\\]\n\n\nStandartnovirze (standard deviation)\n\\[ \\text{SD}(X):= \\sqrt{\\text{Var}(X)}\\]\n\n\nĪpašības:\n\n\n\n\\(\\text{Var}(aX + b) = a^2\\text{Var}(X)\\)\n\n\n\n\\(\\text{Var}(X \\pm Y) = \\text{Var}(X) + \\text{Var}(Y)\\), ja \\(X, Y\\) ir neatkarīgi"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti: piemērs",
+    "text": "Sadalījuma momenti: piemērs\n\nMD: Ja \\(X\\sim U(a, b), b &gt; a\\), tad kas ir \\(\\mathbb{E}[X]\\), \\(\\text{Var}[X]\\)?"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc matemātiska analīze varbūtību teorijā?",
+    "text": "Kāpēc matemātiska analīze varbūtību teorijā?\n\nLai strādāt ar nepārtrauktām vērtībām!\n\n\n\nLai varētu veikt secinājumus balstoties uz nepatraukto vērtību teorētisko modeli!\n\n\n\nnepatraukto vērtību teorētisko modeli?"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti: piemērs",
+    "text": "Sadalījuma momenti: piemērs\n\n\n\n\\(X \\sim \\text{Po}(\\lambda), \\lambda&gt;0\\)\n“cik reizes noteiktā intervālā notiks notikums ar vidējo \\(\\lambda\\)”\n\\(R(X) = \\mathbb{N}_0 \\cup {\\infty}\\)\n\\(p_X(x) = \\frac{\\lambda^x}{x!}e^{-\\lambda}\\)"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#sadalījuma-momenti-piemērs-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Sadalījuma momenti: piemērs",
+    "text": "Sadalījuma momenti: piemērs\n\n\n\\[\n\\begin{align}\n\\mathbb{E}[X] &= \\sum_{x=0}^\\infty p_X(x) = \\sum_{x=0}^\\infty x \\frac{\\lambda^x}{x!} e^{-\\lambda} \\\\\n&= e^{-\\lambda} \\sum_{x=1}^\\infty \\frac{\\lambda^x}{x!} = e^{-\\lambda} \\sum_{x=1}^{\\infty}\\frac{x\\cdot\\lambda^x}{x\\cdot (x-1)!} \\\\\n&= \\lambda e^{-\\lambda} \\sum_{x=1}^\\infty \\frac{\\lambda^{x-1}}{(x-1)!}\n\\end{align}\n\\]\n\nTeilora rinda! \\(e^x = \\sum_{n=0}^\\infty \\frac{x^n}{n!}\\)\n\n\\[\\dots = \\lambda e^{-\\lambda} \\sum_{m=0}^\\infty \\frac{\\lambda^m}{m!} = \\lambda e^{-\\lambda}e^{\\lambda}=\\lambda\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc matemātiska analīze varbūtību teorijā?",
+    "text": "Kāpēc matemātiska analīze varbūtību teorijā?\n\nLai strādāt ar nepārtrauktām vērtībām!\n\n\nLai varētu veikt secinājumus balstoties uz teorētisko modeli!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#statistika",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#statistika",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Statistika",
+    "text": "Statistika\n\n\n\n\n\ngraph LR\n    A[Populācija]\n    B[Izlase]\n    A --&gt;|varbūtības teorija| B\n    B --&gt;|statistika| A\n\n\n\n\n\n\n\n\nPopulācija (ģenerālkopa, population): nenovērojams\nIzlase (sample): novērojams\n\n\n\n\n\n\n\n\ngraph TD\n    A[Statistika]\n    B[Aprakstojoša]\n    C[Secinošāja]\n    A --&gt; B\n    A --&gt; C"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#izlases-statistika",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#izlases-statistika",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Izlases statistika",
+    "text": "Izlases statistika\n\nIzlases statistika (sample statistic) - vērtība, ko var aprēķināt no izlases datiem\n\n\n\n\n\\[  \\bar{X} = \\frac1n \\sum_{i=1}^n X_i\\]\n\n\\[ S^2 = \\frac{1}{n-1} \\sum_{i=1}^n (X_i - \\bar{X})^2\\]\n\n\n\nPie dotiem \\(\\{ x_i \\}_{i=1}^n\\)\n\n\n\\[  \\bar{x} = \\frac1n \\sum_{i=1}^n x_i\\]\n\n\\[ s^2 = \\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})^2\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#novērtētājs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#novērtētājs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Novērtētājs",
+    "text": "Novērtētājs\n\n\nKā mēs varam novērtēt kādu lielumu no populācijas?\n\n\n\nPunkta novērtētāji\n\\[  \\hat{\\mu} = \\bar{X} = \\frac1n \\sum_{i=1}^n X_i\\]\nIntervālu novērtētāji\n\\[ \\left[ \\bar{X} - z_\\frac{\\alpha}{2} \\frac{\\sigma}{\\sqrt{n}}, \\bar{X} + z_\\frac{\\alpha}{2} \\frac{\\sigma}{\\sqrt{n}} \\right]\\]\n. . .\nIntervālu piemērs: ticamības intervāls!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Intervālu novērtētājs: piemērs",
+    "text": "Intervālu novērtētājs: piemērs\n\\[X_1, X_2, \\dots, X_n \\sim \\text{Norm}(\\mu, \\sigma^2)\\]\n\n\\(\\sigma\\) ir zināms\n\\(\\mu\\) ir nezināms\n\n\nMēs gribām uztaisīt intervālu tā, ka \\(\\mu\\) ir tajā intervāla ar \\(1-\\alpha\\) varbūtību!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#centrāla-robežteorēma",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#centrāla-robežteorēma",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Centrāla robežteorēma",
+    "text": "Centrāla robežteorēma\n\nJa \\[ X_1, X_2, \\dots, X_n \\] ir neatkarīgi un ir sadalīts pēc viena sadalījuma, tad \\[ \\lim_{n\\to \\infty} \\frac1n \\sum_{i=1}^n X_i \\sim \\text{Norm}\\left(\\mathbb{E}[X], \\frac{\\text{Var}(X)}{n}\\right)  \\]\n\n\nWikipedia: Central Limit Theorem"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#normālais-sadalījums",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#normālais-sadalījums",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Normālais sadalījums",
+    "text": "Normālais sadalījums\n\n\n\\[ X \\sim \\text{Norm}(\\mu, \\sigma^2) \\]\n\\[ f_X(x)  = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} \\, e^{ -\\frac{(x - \\mu)^2}{2\\sigma^2} }\\]\n\\[ \\Phi(x) = F_X(x) = \\int_{-\\infty}^{x} f_X(t) \\, dt \\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#normālais-sadalījums-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#normālais-sadalījums-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Normālais sadalījums",
+    "text": "Normālais sadalījums\n\nSigma: MIT News"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Intervālu novērtētājs: piemērs",
+    "text": "Intervālu novērtētājs: piemērs\n\\[X_1, X_2, \\dots, X_n \\sim \\text{Norm}(\\mu, \\sigma^2)\\]\n\n\\(\\sigma\\) ir zināms\n\\(\\mu\\) ir nezināms\n\n\nAproksimējam \\(\\bar{X} \\sim \\text{Norm}\\left(\\mathbb{E}[X], \\frac{\\text{Var}(X)}{n}\\right) \\implies \\bar{X} \\sim \\text{Norm}\\left(\\mu, \\frac{\\sigma^2}{n} \\right)\\)\n\n\n\\[\nP[a \\le \\bar{X} \\le b]  = 1 -\\alpha\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Intervālu novērtētājs: piemērs",
+    "text": "Intervālu novērtētājs: piemērs"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#intervālu-novērtētājs-piemērs-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Intervālu novērtētājs: piemērs",
+    "text": "Intervālu novērtētājs: piemērs\n\\[X_1, X_2, \\dots, X_n \\sim \\text{Norm}(\\mu, \\sigma^2)\\]\n\n\\[\n\\begin{align}\n&P\\left[-z_{\\frac{\\alpha}{2}} \\le \\frac{\\bar{X} - \\mathbb{E}[\\bar{X}]}{\\sqrt{\\text{Var}(\\bar{X})}} \\le z_{\\frac{\\alpha}{2}}\\right]  \n= P\\left[-z_{\\frac{\\alpha}{2}} \\le \\frac{\\bar{X} - \\mu}{\\frac{\\sigma}{\\sqrt{n}}} \\le z_{\\frac{\\alpha}{2}}\\right]\\\\\n&= P\\left[-z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} \\le \\bar{X} - \\mu \\le z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} \\right] \\\\\n&= P\\left[-z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} - \\bar{X} \\le  - \\mu \\le z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} - \\bar{X} \\right] \\\\\n&= P\\left[\\bar{X}  -z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} \\le   \\mu \\le \\bar{X} + z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}} \\right] = 1 -\\alpha\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#filozofija",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#filozofija",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Filozofija",
+    "text": "Filozofija\n\n\nFrekvenistu pieeja (frequenist)\n\nVarbūtība = ilgtermiņa biežums\nJa \\(6\\) dienas līja lietus, tad uz \\(7\\) tas līs \\(100\\%\\)\n\n\nBejiesa pieeja (Bayesian)\n\nVarbūtība = ticamības mērs\nJāskatas pēc mākoņiem"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude",
+    "text": "Hipotēžu pārbaude"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-2",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-2",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude",
+    "text": "Hipotēžu pārbaude\n\n\\(H_0\\): bāzes/nulles hipotēze (nekas nemainas)\n\\(H_1\\): alternatīva hipotēze (to, ko mēs gribām pieradīt)\n\n\nMēs nevaram pierādīt hipotēzi!\n\n\nMēs varām tikai spriest, vai ir izvēlētājam nozīmes līmenim (significance level) \\(\\alpha\\) ir pietiekami liecību, lai noraidīt/nenoraidīt nulles hipotēzi\n\n\n\nMēs nevaram pierādīt, ka visi gulbji ir balti. Mēs varam tikai to noraidīt, atradot vienu melno gulbji.\n\n\n\n\n\nTwo-tailed\n\\[H_0: \\mu = 0 \\]\n\\[H_1: \\mu \\neq  0 \\]\n\nOne-tailed\n\\[H_0: \\mu = 0 \\]\n\\[H_1: \\mu &lt; \\text{vai} &gt;  0 \\]"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude",
+    "text": "Hipotēžu pārbaude\n\n\\(H_0\\): bāzes/nulles hipotēze (nekas nemainās)\n\\(H_1\\): alternatīva hipotēze (to, ko mēs gribām pieradīt)\n\n\nMetodoloģija:\n\nAprēķināt izlases statistikas esošo vērtību varbūtību pēc \\(H_0\\) (p vērtība)?\nVai tā varbūtībā ir pietiekami liela? Tad noraidīt vai nenoraidīt nulles hipotēzi!\n\n\nArī saucas Z-test vai T-test!"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude: piemērs",
+    "text": "Hipotēžu pārbaude: piemērs\n\n\n\n\n  [1] 1 2 1 2 3 3 2 4 2 3 3 3 0 3 1 1 1 3 4 3 3 3 2 2 1 5 3 2 1 1 4 2 2 0 0 1 2\n [38] 2 2 3 2 3 5 1 4 1 1 3 3 2 3 1 2 1 3 1 2 1 1 2 0 1 4 1 1 2 2 4 1 0 3 3 0 2\n [75] 2 2 3 3 2 2 2 2 4 1 3 2 1 4 3 1 2 2 2 2 1 2 3 2 3 1"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs-1",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#hipotēžu-pārbaude-piemērs-1",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Hipotēžu pārbaude: piemērs",
+    "text": "Hipotēžu pārbaude: piemērs\n\\[H_0: p = \\frac16 \\implies \\mu = \\mu_0 = 10 \\cdot \\frac16 = \\frac53\\]\n\\[ H_1: p &gt; \\frac16 \\implies \\mu &gt; 10 \\cdot \\frac16 = \\frac53 \\]\n\\[ \\alpha = 5\\%, \\ \\ \\ n=100\\]\n\n\n\nAproksimējam \\(t \\sim T(n-1)\\)\n\\(s^2 = \\frac{1}{n-1} \\sum_{i=1}^n (x_i - \\bar{x})^2\\)\n\\(t = \\frac{\\bar{x} - \\mu_0}{\\frac{s}{\\sqrt{n}}}\\)\n\n\n\n\n    One Sample t-test\n\ndata:  pirate_100\nt = 3.7797, df = 99, p-value = 0.0001342\nalternative hypothesis: true mean is greater than 1.666667\n95 percent confidence interval:\n 1.904033      Inf\nsample estimates:\nmean of x \n     2.09"
+  },
+  {
+    "objectID": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-3",
+    "href": "talks/LSMAT/LSMAT_lekcija.html#kāpēc-matemātiska-analīze-varbūtību-teorijā-3",
+    "title": "Matemātiska analīze varbūtību teorijā, statistikā un datu zinātnē",
+    "section": "Kāpēc matemātiska analīze varbūtību teorijā?",
+    "text": "Kāpēc matemātiska analīze varbūtību teorijā?\n\nLai strādāt ar nepārtrauktām vērtībām!\n\n\nLai varētu veikt secinājumus balstoties uz teorētisko modeli!\n\n\nLai varētu aproksimēt un taisit inferences!"
+  },
+  {
+    "objectID": "index.html#mathematics-related-blog-posts",
+    "href": "index.html#mathematics-related-blog-posts",
+    "title": "Veronika Lohmanova",
+    "section": "Mathematics related blog posts",
+    "text": "Mathematics related blog posts"
   }
 ]

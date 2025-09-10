@@ -9,7 +9,7 @@ website:
       - about.qmd
       - blog_page.qmd
   draft-mode: unlinked
-  
+  favicon: favicon.ico
 format:
   html:
     theme:

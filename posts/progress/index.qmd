@@ -6,8 +6,8 @@ date: "02/28/2024"
 categories:
   - "Creative writing"
   - Essay
+draft: true
 ---
-
 
 I find myself grappling with a fear, a fear that my generation may be the last to savour the warmth of bonfires beneath starry nights, the joy of sunrise, and the quiet bliss of reading a book.
 

@@ -30,8 +30,7 @@ Taking the first-order derivative, we get: $$
 \end{equation*}
 $$
 
-
-Thus $f'(y)$ is a linear function. 
+Thus $f'(y)$ is a linear function.
 
 To find the point of minimum, we need to calculate $f'(y)$ zeros:
 
@@ -50,11 +49,10 @@ As the $f'(y)$ is a linear function with positive gradient, then:
 
 $$y \in (-\infty, \mu) \implies f'(y) < 0$$
 
-and 
+and
 
 $$y \in (\mu, +\infty) \implies f'(y) > 0$$.
 
 Hence $f(y)$ is strictly decreasing when $x \in (-\infty, \mu)$ and strictly increasing when $x \in (\mu, +\infty)$. Therefore at point $y=\mu$ $f(y)$ takes minimum value, that is, point $y=\mu$ is minimum.
 
 QED
-

@@ -5,8 +5,8 @@ author: "Veronika Lohmanova"
 date: "02/28/2024"
 categories:
   - "Creative writing"
+draft: true
 ---
-
 
 The trains doors slid open.
 

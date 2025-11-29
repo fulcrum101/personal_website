@@ -8,7 +8,7 @@ website:
     right:
       - about.qmd
       - blog_page.qmd
-  draft-mode: unlinked
+  draft-mode:  unlinked
   favicon: favicon.ico
 format:
   html:

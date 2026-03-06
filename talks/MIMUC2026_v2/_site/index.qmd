@@ -82,7 +82,7 @@ Rationale
 
 ::: {.r-stack}
 ::: {.fragment}
-![Source: [@cats_uncertainty]](./images/cats.png){style="text-align: left;"}
+![Source: [@cats_uncertainty]](./images/cats.png){style="text-align: center;"}
 
 
 ::::{.columns .fragment}
@@ -116,7 +116,7 @@ Rationale
 ::::
 ::: 
 
-![Source: [KYM](https://knowyourmeme.com/memes/shrugging-tom)](./images/tom_shrug.jpg){.fragment}
+![Source: [KYM](https://knowyourmeme.com/memes/shrugging-tom)](./images/tom_shrug.jpg){.fragment style="text-align: center;"}
 
 :::
 
@@ -131,10 +131,10 @@ Rationale
 
 ::::{.columns}
 ::: {.column width="50%"}
-![Source: [Edology](https://www.edology.com/blog/artificial-intelligence-and-machine-learning/bias-variance-the-impact-and-relevance-in-artificial-intelligence-and-machine-learning)](./images/bias_variance.png){fig-align="center" width="90%"}
+![Source: [Edology](https://www.edology.com/blog/artificial-intelligence-and-machine-learning/bias-variance-the-impact-and-relevance-in-artificial-intelligence-and-machine-learning)](./images/bias_variance.png){fig-align="center" width="60%" style="text-align: center;"}
 :::
 ::: {.column width="50%" .fragment}
-![Ellsberg paradox [@Ellsberg1961]](images/ellsberg_paradox.png){width="90%" style="text-align: right;"}
+![Ellsberg paradox [@Ellsberg1961]](images/ellsberg_paradox.png){width="60%" style="text-align: right;" style="text-align: center;"}
 :::
 ::::
 
@@ -176,10 +176,10 @@ $$x+y+z = 1$$
 ::: {.column width="50%"}
 
 :::{.fragment fragment-index=3}
-![Source: [@lv]](./images/credal2.png){width="65%" style="text-align: right;" fig-align="center"}
+![Source: [@lv]](./images/credal2.png){width="50%" style="text-align: right;" fig-align="center"}
 :::
 :::{.fragment fragment-index=4}
-![Source: [@intro_to_ip].](images/credal.png){width="90%" style="text-align: right;" fig-align="center"}
+![Source: [@intro_to_ip].](images/credal.png){width="70%" style="text-align: right;" fig-align="center"}
 :::
 :::
 ::::
@@ -242,7 +242,7 @@ Toolbox
 - [x] We know how to draw inference on the credal set [- Lower and upper probabilities]{style='color: {{< brand color primary >}}' .fragment}
 - [x] We know how it relates to uncertainty decomposition [- Lower and upper Shannon entropies]{style='color: {{< brand color primary >}}' .fragment}
 
-![Source: [KYM](https://knowyourmeme.com/memes/wat)](./images/wat.jpg){.fragment style="text-align: center;"}
+![Source: [KYM](https://knowyourmeme.com/memes/wat)](./images/wat.jpg){.fragment style="text-align: center;" width="35%"}
 
 
 ## Conformal Prediction (CP) {auto-animate="true" data-id="CP"}

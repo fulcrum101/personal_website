@@ -1,0 +1,19 @@
+{
+  "hash": "7a86b89e02e1bca53576d1b95360d4bc",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\npagetitle: \"MIMUC2026\"\ntitle: \"The game of mind and dice\"\nsubtitle: \"Uncertainty Quantification\"\nauthor: \"Veronika Lohmanova\"\ninstitute: \"The University of Manchester\"\nformat: \n  revealjs:\n    slide-numebr: true\n    footer: \"Veronika Lohmanova, MIMUC2026\"\n    brand: _brand.yml\n    incremental: true\n    slide-number: true\n    show-slide-number: all\n    center-title-slide: true\n    logo: logo.png\n    progress: true\n    navigation-mode: linear\n    touch: true\n    controls: true\n    controls-back-arrows: faded\n    center: false\n    cap-location: bottom\n    fig-align: center\n    fig-cap-location: bottom\n    tbl-cap-location: bottom\n    bibliography: references.bib\n    citations-hover: true\n    citeproc: true\n    reference-location: margin\n    lang: en-GB\n    transition: slide\n    scrollable: false\n---\n\n# hello\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n\n##\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,24 @@
+color:
+  palette:
+    purple: "#5d2b84"
+    yellow: "#fcd030"
+    gray: "#7f8084"
+    white: "#FFFFFF"
+    black: "#000000"
+    
+  foreground: black
+  background: white
+  primary: purple
+  secondary: yellow
+  info: purple
+
+typography:
+  base: 
+    family: Arial
+  headings: 
+    family: Arial
+    color: primary
+    weight: bold
+  link:
+    decoration: underline
+    color: secondary

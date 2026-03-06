@@ -7,7 +7,7 @@ website:
   navbar:
     right:
       - about.qmd
-  draft-mode:  unlinked
+  draft-mode:  gone
   favicon: favicon.ico
 format:
   html:

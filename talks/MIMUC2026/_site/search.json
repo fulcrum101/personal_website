@@ -1,0 +1,198 @@
+[
+  {
+    "objectID": "index.html#conformal-prediction-cp",
+    "href": "index.html#conformal-prediction-cp",
+    "title": "The game of mind and dice",
+    "section": "Conformal Prediction (CP)",
+    "text": "Conformal Prediction (CP)\n\n\nIntroduced by Vovk, Gammerman, and Shafer (2005)\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1, Y_1), (X_2, Y_2), \\dots, (X_n, Y_n) \\} \\subseteq \\mathcal{X} \\times \\mathcal{Y}\\)\nKey assumption: \\(\\mathcal{D}_\\text{cal} \\cup (X_{n+1}, Y_{n+1})\\) is exchangeable\n\n\n\n\n\\(s: \\mathcal{X} \\times \\mathcal{Y} \\to [0, 1]\\) - (non)conformity function\n\\(\\alpha\\) - user specified coverage level\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)"
+  },
+  {
+    "objectID": "index.html#ellsberg-paradox",
+    "href": "index.html#ellsberg-paradox",
+    "title": "The game of mind and dice",
+    "section": "Ellsberg paradox",
+    "text": "Ellsberg paradox\n\n\n\n\n\n\n\n\n\nI - 50 red, 50 black\nII - ? red \\(+\\) ? black \\(= 100\\)\nEllsberg (1961)\n\n\n\n\nRed I, Black I or indifferent? - Indifferent\nRed II, Black II or indifferent? - Indifferent\nRed I or Red II? - Red I \\(\\succeq\\) Red II\nBlack I or Black II? - Black I \\(\\succeq\\) Black II\n\n\n\n\\[\np_{R_I} &gt; p_{R_{II}}\n\\]\n\n\\[\np_{B_I} &gt; p_{B_{II}}\n\\]\n\\[\n\\iff 1 - p_{R_I} &gt; 1 - p_{R_{II}}\n\\]\n\n\\[\n\\iff p_{R_{I}} &lt; p_{R_{II}}\n\\]"
+  },
+  {
+    "objectID": "index.html#ellsberg-paradox-1",
+    "href": "index.html#ellsberg-paradox-1",
+    "title": "The game of mind and dice",
+    "section": "Ellsberg paradox",
+    "text": "Ellsberg paradox\n\n\n\nRed I, Black I or indifferent? - Indifferent\nRed II, Black II or indifferent? - Indifferent\nRed I or Red II? - Red I \\(\\succeq\\) Red II\nBlack I or Black II? - Black I \\(\\succeq\\) Black II\n\n\n\n\\[\np_{R_I} &gt; p_{R_{II}}\n\\]\n\n\\[\np_{B_I} &gt; p_{B_{II}}\n\\]\n\\[\n\\iff 1 - p_{R_I} &gt; 1 - p_{R_{II}}\n\\]\n\n\\[\n\\iff p_{R_{I}} &lt; p_{R_{II}}\n\\]"
+  },
+  {
+    "objectID": "index.html#example-dempster-shafer-theory",
+    "href": "index.html#example-dempster-shafer-theory",
+    "title": "The game of mind and dice",
+    "section": "Example: Dempster-Shafer theory",
+    "text": "Example: Dempster-Shafer theory"
+  },
+  {
+    "objectID": "index.html#conformal-prediction-transitionfade-auto-animatetrue",
+    "href": "index.html#conformal-prediction-transitionfade-auto-animatetrue",
+    "title": "The game of mind and dice",
+    "section": "Conformal prediction {transition=“fade” auto-animate=“true”",
+    "text": "Conformal prediction {transition=“fade” auto-animate=“true”\n\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)\nStatistical guarantee: \\(\\mathbb{P}\\left[ Y_{n+1} \\in \\mathcal{C}\\left(X_{n+1}\\right) \\right] \\ge 1-\\alpha\\)"
+  },
+  {
+    "objectID": "index.html#conformal-prediction",
+    "href": "index.html#conformal-prediction",
+    "title": "The game of mind and dice",
+    "section": "Conformal prediction",
+    "text": "Conformal prediction\n\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)\nStatistical guarantee: \\(\\mathbb{P}\\left[ Y_{n+1} \\in \\mathcal{C}\\left(X_{n+1}\\right) \\right] \\ge 1-\\alpha\\)"
+  },
+  {
+    "objectID": "index.html#conformal-prediction-cp-auto-animatetrue",
+    "href": "index.html#conformal-prediction-cp-auto-animatetrue",
+    "title": "The game of mind and dice",
+    "section": "Conformal Prediction (CP) {auto-animate=“true”",
+    "text": "Conformal Prediction (CP) {auto-animate=“true”\n\nIntroduced by Vovk, Gammerman, and Shafer (2005)\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1, Y_1), (X_2, Y_2), \\dots, (X_n, Y_n) \\} \\subseteq \\mathcal{X} \\times \\mathcal{Y}\\)\nKey assumption: \\(\\mathcal{D}_\\text{cal} \\cup (X_{n+1}, Y_{n+1})\\) is exchangeable\n\\(s: \\mathcal{X} \\times \\mathcal{Y} \\to [0, 1]\\) - (non)conformity function\n\\(\\alpha\\) - user specified coverage level\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)"
+  },
+  {
+    "objectID": "index.html#conformal-prediction-cp-1",
+    "href": "index.html#conformal-prediction-cp-1",
+    "title": "The game of mind and dice",
+    "section": "Conformal Prediction (CP)",
+    "text": "Conformal Prediction (CP)\n\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)\n\n\nSource: (Lohmanova Under review). Example of conformal prediction at significance level \\(\\alpha = 0.05\\) applied to a logistic regression classifier with three classes. The model’s predicted label is , but the conformal predictor yields a prediction set \\(C(x_{\\text{new}}) = \\{\\text{Class 1}, \\text{Class 2}\\}\\)."
+  },
+  {
+    "objectID": "index.html#conformal-prediction-cp-transitionfade-auto-animatetrue",
+    "href": "index.html#conformal-prediction-cp-transitionfade-auto-animatetrue",
+    "title": "The game of mind and dice",
+    "section": "Conformal Prediction (CP) transition=“fade” auto-animate=“true”}",
+    "text": "Conformal Prediction (CP) transition=“fade” auto-animate=“true”}\n\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)\nStatistical guarantee: \\(\\mathbb{P}\\left[ Y_{n+1} \\in \\mathcal{C}\\left(X_{n+1}\\right) \\right] \\ge 1-\\alpha\\)"
+  },
+  {
+    "objectID": "index.html#conformal-prediction-cp-2",
+    "href": "index.html#conformal-prediction-cp-2",
+    "title": "The game of mind and dice",
+    "section": "Conformal Prediction (CP)",
+    "text": "Conformal Prediction (CP)\n\nStatistical guarantee: \\[\\mathbb{P}\\left[ Y_{n+1} \\in \\mathcal{C}\\left(X_{n+1}\\right) \\right] \\ge 1-\\alpha\\]\n\n\nSource: (Lohmanova Under review). Example of conformal prediction at significance level \\(\\alpha = 0.05\\) applied to a logistic regression classifier with three classes. The model’s predicted label is , but the conformal predictor yields a prediction set \\(C(x_{\\text{new}}) = \\{\\text{Class 1}, \\text{Class 2}\\}\\)."
+  },
+  {
+    "objectID": "index.html#imprecise-probabilistic-conformal-prediction-ipcp",
+    "href": "index.html#imprecise-probabilistic-conformal-prediction-ipcp",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilistic Conformal Prediction (IPCP)",
+    "text": "Imprecise Probabilistic Conformal Prediction (IPCP)\n\nSource: Si et al. (2026). Raw expert annotations (left) vs. the final goldstandard ground truth (right) on a sample image from CytoCrowd."
+  },
+  {
+    "objectID": "index.html#imprecise-probabilistic-cp",
+    "href": "index.html#imprecise-probabilistic-cp",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilistic CP",
+    "text": "Imprecise Probabilistic CP\n\nCaprio et al. (2025)\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1,  \\boldsymbol{\\Lambda_1}), (X_2, \\boldsymbol{\\Lambda_2}), \\dots, (X_n, \\boldsymbol{\\Lambda_n}) \\} \\subseteq \\mathcal{X} \\times \\Delta^{K-1}\\)\n\\(\\implies \\mathcal{C}(X_{n+1}) = \\{ \\lambda \\in \\Delta^{K-1}:S(X_{n+1}, \\lambda) \\ge \\tau \\}\\) plausibility region\n\n\n\n\\(S(x, \\boldsymbol{\\lambda}) = \\sum_{i=1}^K \\lambda_i s(x, k_i)\\)\n\\(\\mathcal{P} = \\{\\text{Cat}(\\lambda) : \\lambda \\in \\mathcal{C}(X_{n+1}) \\}\\) credal region\n\n\n\n\nStatistical guarantee: \\[\\mathbb{P}\\left[  \\text{Cat}\\left(\\Lambda_{n+1}\\right) \\in \\mathcal{P}\\right] \\ge 1-\\alpha\\]"
+  },
+  {
+    "objectID": "index.html#imprecise-probabilistic-cp-1",
+    "href": "index.html#imprecise-probabilistic-cp-1",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilistic CP",
+    "text": "Imprecise Probabilistic CP\n\nCaprio et al. (2025)\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1,  \\boldsymbol{\\Lambda_1}), (X_2, \\boldsymbol{\\Lambda_2}), \\dots, (X_n, \\boldsymbol{\\Lambda_n} \\} \\subseteq \\mathcal{X} \\times \\Delta^{K-1}\\)\n\\(\\implies \\mathcal{C}(X_{n+1}) = \\{ \\lambda \\in \\Delta^{K-1}:S(X_{n+1}, \\lambda) \\ge \\tau \\}\\) plausibility region\n\\(S(x, \\boldsymbol{\\lambda}) = \\sum_{i=1}^K \\lambda_i s(x, k_i)\\)\n\\(\\mathcal{P} = \\{\\text{Cat}(\\lambda) : \\lambda \\in \\mathcal{C}(X_{n+1}) \\}\\) credal region\nStatistical guarantee: \\[\\mathbb{P}\\left[  \\text{Cat}\\left(\\Lambda_{n+1}\\right) \\in \\mathcal{P}\\right] \\ge 1-\\alpha\\]"
+  },
+  {
+    "objectID": "index.html#application-medical-imaging",
+    "href": "index.html#application-medical-imaging",
+    "title": "The game of mind and dice",
+    "section": "Application: medical imaging",
+    "text": "Application: medical imaging\n\nSource: (Si et al. 2026). Raw expert annotations (left) vs. the final goldstandard ground truth (right) on a sample image from CytoCrowd."
+  },
+  {
+    "objectID": "index.html#imprecise-probabilistic-machine-learning-ipml",
+    "href": "index.html#imprecise-probabilistic-machine-learning-ipml",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilistic Machine Learning (IPML)",
+    "text": "Imprecise Probabilistic Machine Learning (IPML)"
+  },
+  {
+    "objectID": "index.html#imprecise-probabilities",
+    "href": "index.html#imprecise-probabilities",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities",
+    "text": "Imprecise Probabilities\n\nSource: (Chau 2026). A skeleton demonstrating the connection between various uncertainty calculi. \\(A \\to B\\) means \\(A\\) generalises \\(B\\), meaning that \\(B\\) is a specific instance of \\(A\\)."
+  },
+  {
+    "objectID": "index.html#key-takeaways",
+    "href": "index.html#key-takeaways",
+    "title": "The game of mind and dice",
+    "section": "Key takeaways",
+    "text": "Key takeaways\n\nProbability theory and statistics are an incredibly interesting phenomena\nWEWTYIW principle - “Why Everything We Teach You Is Wrong”\nKolmogorovian axiomatisation is actually not enough when reasoning about uncertainty \\(\\implies\\) we need new models (IPs)\nUncertainty can be aleatoric and epistemic\nConformal Prediction is actually magical black box\nWe need to teach AI about uncertainty"
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "The game of mind and dice",
+    "section": "References",
+    "text": "References\n\n\nAbellán, J., G. J. Klir, and S. Moral. 2006. ‘Disaggregated Total Uncertainty Measure for Credal Sets’. International Journal of General Systems 35 (February): 29–44. https://doi.org/10.1080/03081070500473490.\n\n\nAugustin, Thomas, Frank P. A. Coolen, Gert de Cooman, and Matthias C. M. Troffaes, eds. 2014. Introduction to Imprecise Probabilities. Wiley. https://doi.org/10.1002/9781118763117.\n\n\nBordini, Vitor Martin, Sébastien Destercke, and Benjamin Quost. 2026. ‘Cautious Self-Learning via Labelwise Uncertainty Quantification’. \" WUML 2026 (https://sites.google.com/view/wuml2026/program?authuser=0)\".\n\n\nCaprio, Michele, Yusuf Sale, and Eyke Hüllermeier. 2025. ‘Conformal Prediction Regions Are Imprecise Highest Density Regions’, April.\n\n\nCaprio, Michele, David Stutz, Shuo Li, and Arnaud Doucet. 2025. ‘Conformalized Credal Regions for Classification with Ambiguous Ground Truth’. https://arxiv.org/abs/2411.04852.\n\n\nChau, Siu Lun. 2026. ‘Recent Advances in Imprecise Probabilistic Machine Learning’. https://chau999.github.io/assets/research_presentation/2026-IIPM.pdf.\n\n\nChoquet, Gustave. 1954. ‘Theory of Capacities’. Annales de l’Institut Fourier 5: 131–295. https://doi.org/10.5802/aif.53.\n\n\nDempster, A. P. 1967. ‘Upper and Lower Probabilities Induced by a Multivalued Mapping’. The Annals of Mathematical Statistics 38 (April): 325–39. https://doi.org/10.1214/aoms/1177698950.\n\n\nEllsberg, Daniel. 1961. ‘Risk, Ambiguity, and the Savage Axioms’. The Quarterly Journal of Economics 75 (November): 643. https://doi.org/10.2307/1884324.\n\n\nHüllermeier, Eyke, and Willem Waegeman. 2021. ‘Aleatoric and Epistemic Uncertainty in Machine Learning: An Introduction to Concepts and Methods’. Machine Learning 110 (March): 457–506. https://doi.org/10.1007/s10994-021-05946-3.\n\n\nKahneman, Daniel. 2013. Thinking, Fast and Slow. Farrar, Straus; Giroux.\n\n\nKolmogorov, Andrey N. 1950. Foundations of the Theory of Probability. GFY BIB MA Kol. Chelsea Publishing Company. https://books.google.lv/books?id=p6bJ0AEACAAJ.\n\n\nLohmanova, Veronika. Under review. ‘Foundational Aspects of Imprecise Probabilistic Conformal Prediction (IPCP)’.\n\n\nShafer, Glenn. 1976. A Mathematical Theory of Evidence. Princeton University Press.\n\n\nShannon, C. E. 1948. ‘A Mathematical Theory of Communication’. Bell System Technical Journal 27 (July): 379–423. https://doi.org/10.1002/j.1538-7305.1948.tb01338.x.\n\n\nSi, Yonghao, Xingyuan Zeng, Zhao Chen, Libin Zheng, Caleb Cao, Lei Chen, and Jian Yin. 2026. ‘CytoCrowd: A Multi-Annotator Benchmark Dataset for Cytology Image Analysis’, February. https://doi.org/10.48550/arXiv.2602.06674.\n\n\nValiant, Leslie. 2024. The Importance of Being Educable : A New Theory of Human Uniqueness. Princeton University Press.\n\n\nVovk, Vladimir, Alexander Gammerman, and Glenn Shafer. 2005. Algorithmic Learning in a Random World. Springer-Verlag. https://doi.org/10.1007/b106715.\n\n\nWaegeman, Willem. 2026. ‘\"Disentangling Aleatoric and Epistemic Uncertainty in ML: Opportunities and Challenges\"’. \" WUML 2026 (https://youtu.be/Q64FEk5wfQw?si=aXUv1xAcO8bZ-_Kc)\".\n\n\nWalley, Peter. 1991. Statistical Reasoning with Imprecise Probabilities. Chapman & Hall."
+  },
+  {
+    "objectID": "index.html#imprecise-probabilities-1",
+    "href": "index.html#imprecise-probabilities-1",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities",
+    "text": "Imprecise Probabilities\n\n\n\n\n\nSource: (Chau 2026).\n\n\n\n\n\n\nSource: (Lohmanova Under review)\n\n\n\n\n\nCredal sets \\(\\mathcal{P}\\) (Walley 1991):\n\nClosed and convex sets of probability distributions \\(\\forall P_1, P_2  \\in \\mathcal{P}\\) \\[\\{ \\lambda P_1 + (1 - \\lambda)P_2 \\mid \\lambda \\in [0, 1]\\} \\subseteq \\mathcal P\\]\nFor finite space, represented as simplex \\(\\Delta^{\\lvert \\Omega \\rvert - 1} := \\{ \\boldsymbol{\\lambda} \\in \\mathbb{R}^{\\lvert \\Omega \\rvert}_{\\ge 0} \\mid \\sum_{i=1}^{\\lvert \\Omega \\rvert}\\lambda_i = 1\\}\\)\n\n\n\n\n\n\nSource: (Augustin et al. 2014)."
+  },
+  {
+    "objectID": "index.html#imprecise-probabilities-2",
+    "href": "index.html#imprecise-probabilities-2",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities",
+    "text": "Imprecise Probabilities\n\n\n\n\n\nSource: (Chau 2026).\n\n\n\n\n\n\nSource: (Lohmanova Under review)\n\n\n\n\nCredal sets \\(\\mathcal{P}\\) (Walley 1991):\n\nClosed and convex sets of probability distributions\n\n\nLower/upper probabilities\n\\[\n\\bar{\\mathbb{P}} \\left[ A\\right] = \\sup_{P \\in \\mathcal{P}} P(A)\n\\] \\[\n\\underline{\\mathbb{P}} \\left[ A\\right] = \\inf_{P \\in \\mathcal{P}} P(A)\n\\] \\(\\forall A \\in \\sigma(\\Omega)\\) (Caprio, Sale, and Hüllermeier 2025)"
+  },
+  {
+    "objectID": "index.html#imprecise-probabilities-capacities",
+    "href": "index.html#imprecise-probabilities-capacities",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities: capacities",
+    "text": "Imprecise Probabilities: capacities\n\nSource: (Chau 2026). A skeleton demonstrating the connection between various uncertainty calculi. \\(A \\to B\\) means \\(A\\) generalises \\(B\\), meaning that \\(B\\) is a specific instance of \\(A\\)."
+  },
+  {
+    "objectID": "index.html#imprecise-probabilities-dst",
+    "href": "index.html#imprecise-probabilities-dst",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities: DST",
+    "text": "Imprecise Probabilities: DST\n\n\n\n\n\nSource: (Chau 2026).\n\n\n\nSet function \\(\\nu: \\sigma(\\mathcal{\\Omega}) \\to [0,1]\\) is a (Choquet) capacity iff:\n\n\\(\\nu(\\emptyset) = 0\\)\n\\(\\nu(\\mathcal{\\Omega}) = 1\\)\n\\(\\forall A, B \\in \\sigma(\\mathcal{\\Omega}), A\\subseteq B\\) \\(\\implies \\nu(A) \\le \\nu(B)\\)\n\n\n\nDempster (1967) and Shafer (1976)\n\n\\(m: 2^\\Omega \\to [0, 1]\\)\n\\(m (\\emptyset) = 0\\) and \\(\\sum_{A \\in 2^\\Omega} m(A) = 1\\)\n\n\n\\(\\text{Bel}(A) = \\sum_{B\\subseteq A} m(B)\\) \\(=\\underline{P}\\)\n\\(\\text{Pl}(A) = \\sum_{B\\cap A \\neq \\emptyset} m(B)\\) \\(=\\bar{P}\\)\n\\(\\text{Bel}(A) \\le \\text{Pl}(A)\\)\n\n\n\\[\\text{Pl}(A) = 1 - \\text{Bel}(A^C)\\]\n\n\n2-monotonicity: \\(\\forall A_1, A_2 \\in 2^\\Omega\\) \\[\n\\begin{align*}\n\\nu(A_1 \\cup A_2) \\ge \\nu(A_1) &+ \\nu(A_2) \\\\\n& - \\nu(A_1 \\cap A_2)\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "index.html#imprecise-probabilities-dst-1",
+    "href": "index.html#imprecise-probabilities-dst-1",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities: DST",
+    "text": "Imprecise Probabilities: DST\n\n\n\n\nRed I, Black I or indifferent? - Indifferent\nRed II, Black II or indifferent? - Indifferent\nRed I or Red II? - Red I \\(\\succeq\\) Red II\nBlack I or Black II? - Black I \\(\\succeq\\) Black II\n\n\n\n\n\\(m: 2^\\Omega \\to [0, 1]\\)\n\\(m (\\emptyset) = 0\\) and \\(\\sum_{A \\in 2^\\Omega} m(A) = 1\\)\n\\(\\text{Bel}(A) = \\sum_{B\\subseteq A} m(B) =\\underline{P}\\)\n\\(\\text{Pl}(A) = \\sum_{B\\cap A \\neq \\emptyset} m(B) =\\bar{P}\\)\n\\(\\text{Bel}(A) \\le \\text{Pl}(A)\\)\n\\(\\text{Pl}(A) = 1 - \\text{Bel}(A^C)\\)\n\n\n\n\\[m_I(\\{R\\}) = m_I(\\{B\\}) = 0.5\\]\n\\[m_{II}(\\{ R, B\\}) = 1.0\\]\n\n\n\n\n\n\n\n\n\n\nBet\nMass\nBel\nPl\n\n\n\n\nRed I\n\\(0.5\\)\n\\(\\boldsymbol{0.5}\\)\n\\(0.5\\)\n\n\nBlack I\n\\(0.5\\)\n\\(0.5\\)\n\\(0.5\\)\n\n\nRI or BI\n\\(0.0\\)\n\\(1.0\\)\n\\(1.0\\)\n\n\n\n\n\n\n\n\nRed II\n\\(0.0\\)\n\\(\\boldsymbol{0.0}\\)\n\\(1.0\\)\n\n\nBlack II\n\\(0.0\\)\n\\(0.0\\)\n\\(1.0\\)\n\n\nRII or BII\n\\(1.0\\)\n\\(1.0\\)\n\\(1.0\\)"
+  },
+  {
+    "objectID": "index.html#imprecise-probabilities-3",
+    "href": "index.html#imprecise-probabilities-3",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities",
+    "text": "Imprecise Probabilities\n\n\n\n\n\nSource: (Chau 2026).\n\n\n\nBased on Kolmogorov (1950):\n\n\\((\\mathcal{\\Omega}, \\sigma(\\mathcal{\\Omega}), \\mathbb{P})\\) is a probability space\n\n\\(\\mathbb{P}[A] \\ge 0 \\quad \\forall A \\in \\sigma(\\mathcal{\\Omega})\\)\n\\(\\mathbb{P}[\\mathcal{\\Omega}] = 1\\)\n\\(\\mathbb{P}\\left[ \\bigcup_{i=1}^\\infty   A_i  \\right] = \\sum_{i=1}^\\infty \\mathbb{P}[A_i]\\) where \\(A_i \\in \\sigma(\\Omega)\\) are disjoint\n\n\n\n\nChoquet (1954):\n\nLet \\((\\mathcal{\\Omega}, \\sigma(\\mathcal{\\Omega}))\\) be a measurable space (\\(\\mathcal{\\Omega} \\neq \\emptyset\\))\nSet function \\(\\nu: \\sigma(\\mathcal{\\Omega}) \\to [0,1]\\) is a (Choquet) capacity iff:\n\n\\(\\nu(\\emptyset) = 0\\)\n\\(\\nu(\\mathcal{\\Omega}) = 1\\)\n\\(\\forall A, B \\in \\sigma(\\mathcal{\\Omega}), A\\subseteq B\\) \\(\\implies \\nu(A) \\le \\nu(B)\\)\n\n\n\n\\[\n\\begin{align*}\n&1 = \\mathbb{P}[\\mathcal{\\Omega}] = \\mathbb{P}[\\emptyset] + \\mathbb{P}[\\emptyset^C] \\\\\n&\\implies \\mathbb{P}[\\emptyset] = 0 \\\\\n&\\mathbb{P}[B]= \\mathbb{P}[(B\\setminus A) \\cup A] \\\\\n&= \\mathbb{P}[B\\setminus A] + \\mathbb{P}[A]\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "index.html#uncertainty-decomposition",
+    "href": "index.html#uncertainty-decomposition",
+    "title": "The game of mind and dice",
+    "section": "Uncertainty decomposition",
+    "text": "Uncertainty decomposition\n\n\naleatoric\n(irreducible, conflict)\n\nepistemic\n(reducible, non-specifity)\n\n\n\n\n\nSource: (Bordini, Destercke, and Quost 2026)\n\n\n\n\n\ntotal\n\\(TU(\\mathcal{P})  = AU(\\mathcal{P}) + EU(\\mathcal{P})\\)"
+  },
+  {
+    "objectID": "index.html#uncertainty-decomposition-1",
+    "href": "index.html#uncertainty-decomposition-1",
+    "title": "The game of mind and dice",
+    "section": "Uncertainty decomposition",
+    "text": "Uncertainty decomposition\n\nSource: (Waegeman 2026). Sources of epistemic uncertainty in deep learning."
+  },
+  {
+    "objectID": "index.html#uncertainty-decomposition-2",
+    "href": "index.html#uncertainty-decomposition-2",
+    "title": "The game of mind and dice",
+    "section": "Uncertainty decomposition",
+    "text": "Uncertainty decomposition\n\nShannon entropy (Shannon 1948): \\(H(P) = - \\mathbb{E}_P \\left[ \\log_2 P(X)\\right]\\)\nLower and upper Shannon entropies (Abellán, Klir, and Moral 2006): \\[\\underline{H}(\\mathcal{P}) = \\inf_{P \\in \\mathcal{P}} H(P)\\] \\[\\bar{H}(\\mathcal{P}) = \\sup_{P \\in \\mathcal{P}} H(P)\\]\n\n\n\\[ TU(\\mathcal{P})  = AU(\\mathcal{P}) + EU(\\mathcal{P})\\]\n\\[ \\bar{H}(\\mathcal{P}) = \\underline{H}(\\mathcal{P})  + (\\bar{H}(\\mathcal{P}) - \\underline{H}(\\mathcal{P}))\\]"
+  },
+  {
+    "objectID": "index.html#uncertainty-decomposition-3",
+    "href": "index.html#uncertainty-decomposition-3",
+    "title": "The game of mind and dice",
+    "section": "Uncertainty decomposition",
+    "text": "Uncertainty decomposition\n\nSource: (Hüllermeier and Waegeman 2021)"
+  }
+]

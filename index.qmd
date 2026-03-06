@@ -13,7 +13,6 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
-
 ::: {.callout-note icon="false"}
 # Hi! Nice to meet you!
 
@@ -26,16 +25,16 @@ Papers:
 
 | Title | Authors | Status | More |
 |-------------------|------------------|------------------|------------------|
-| Bayesian Conformal Prediction as a Decision Risk Problem | [F. Wu](https://fanyi-kaitlyn-wu.github.io/), **V. Lohmanova**, [S. Kaski](https://kaski-lab.com/), [M. Caprio](https://michelecaprio.wixsite.com/caprio) | [Preprint](https://arxiv.org/abs/2602.03331) | [Poster](more/WUML2026_poster.pdf) | 
-| Foundational aspects of Imprecise Probabilistic Conformal Prediction (IPCP) | **V. Lohmanova** | Under review | [*CantinaRoll*](https://youtu.be/eMffCtOeigI?si=z1LklAOwC_gTiJGQ) |
+| Bayesian Conformal Prediction as a Decision Risk Problem | [F. Wu](https://fanyi-kaitlyn-wu.github.io/){target="_blank" .no-link-color}, **V. Lohmanova**, [S. Kaski](https://kaski-lab.com/){target="_blank"}, [M. Caprio](https://michelecaprio.wixsite.com/caprio){target="_blank"} | [Preprint](https://arxiv.org/abs/2602.03331){target="_blank"} | [Poster](more/WUML2026_poster.pdf){target="_blank"} | 
+| Foundational aspects of Imprecise Probabilistic Conformal Prediction (IPCP) | **V. Lohmanova** | Under review | [*CantinaRoll*](https://youtu.be/eMffCtOeigI?si=z1LklAOwC_gTiJGQ){target="_blank"} |
 
 
 Here are some presentations I had given:
 
 | Name | Event | Language | Link |
 |-------------------|------------------|------------------|------------------|
-| The game of mind and dice: Uncertainty Quantification | MIMUC 2026 | 🇬🇧 | [presentation](talks/MIMUC2026/_site/index.html) |
-| Matemātiska analīze varbūtību teorijā, statisikā un datu zinātnē | LSMAT diskusiju klubs 2025 | 🇱🇻 | [presentation](talks/LSMAT/LSMAT_lekcija.html) |
-| Idealised ruler and collapsing compass: Euclidean geometry | MIMUC 2025 | 🇬🇧 | [presentation](/talks/MIMUC_presentation.pdf) |
+| The game of mind and dice: Uncertainty Quantification | MIMUC 2026 | 🇬🇧 | [Slides](talks/MIMUC2026/_site/index.html){target="_blank"} |
+| Matemātiska analīze varbūtību teorijā, statisikā un datu zinātnē | LSMAT diskusiju klubs 2025 | 🇱🇻 | [Slides](talks/LSMAT/LSMAT_lekcija.html){target="_blank"} |
+| Idealised ruler and collapsing compass: Euclidean geometry | MIMUC 2025 | 🇬🇧 | [Slides](/talks/MIMUC_presentation.pdf){target="_blank"} |
 
-## Science related blog posts
+## Science related blog posts-

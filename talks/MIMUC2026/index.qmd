@@ -427,6 +427,8 @@ $$ \bar{H}(\mathcal{P}) = \underline{H}(\mathcal{P})  + (\bar{H}(\mathcal{P}) - 
 [**Thank you for attention!**]{style='color: {{< brand color primary >}}'}
 
 Any questions?
+
+![](images/pers_website.png)
 :::
 :::
 :::{.column width="50%"}

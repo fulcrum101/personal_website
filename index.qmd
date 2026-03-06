@@ -33,7 +33,7 @@ Here are some presentations I had given:
 
 | Name | Event | Language | Link |
 |-------------------|------------------|------------------|------------------|
-| The game of mind and dice: Uncertainty Quantification | MIMUC 2026 | 🇬🇧 | [Slides](talks/MIMUC2026/_site/index.html){target="_blank"} |
+| The game of mind and dice: Uncertainty Quantification | MIMUC 2026 | 🇬🇧 | [Slides v2](talks/MIMUC2026_v2/_site/index.html){target="_blank"} [Slides v1](talks/MIMUC2026/_site/index.html){target="_blank"} |
 | Matemātiska analīze varbūtību teorijā, statisikā un datu zinātnē | LSMAT diskusiju klubs 2025 | 🇱🇻 | [Slides](talks/LSMAT/LSMAT_lekcija.html){target="_blank"} |
 | Idealised ruler and collapsing compass: Euclidean geometry | MIMUC 2025 | 🇬🇧 | [Slides](/talks/MIMUC_presentation.pdf){target="_blank"} |
 

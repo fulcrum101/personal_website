@@ -32,7 +32,7 @@
     "href": "index.html#resources",
     "title": "Veronika Lohmanova",
     "section": "Resources",
-    "text": "Resources\nPapers:\n\n\n\nTitle\nAuthors\nStatus\nMore\n\n\n\n\nBayesian Conformal Prediction as a Decision Risk Problem\nF. Wu, V. Lohmanova, S. Kaski, M. Caprio\nPreprint\nPoster\n\n\nFoundational aspects of Imprecise Probabilistic Conformal Prediction (IPCP)\nV. Lohmanova\nUnder review\nCantinaRoll\n\n\n\nHere are some presentations I had given:\n\n\n\nName\nEvent\nLanguage\nLink\n\n\n\n\nThe game of mind and dice: Uncertainty Quantification\nMIMUC 2026\n🇬🇧\nSlides\n\n\nMatemātiska analīze varbūtību teorijā, statisikā un datu zinātnē\nLSMAT diskusiju klubs 2025\n🇱🇻\nSlides\n\n\nIdealised ruler and collapsing compass: Euclidean geometry\nMIMUC 2025\n🇬🇧\nSlides"
+    "text": "Resources\nPapers:\n\n\n\nTitle\nAuthors\nStatus\nMore\n\n\n\n\nBayesian Conformal Prediction as a Decision Risk Problem\nF. Wu, V. Lohmanova, S. Kaski, M. Caprio\nPreprint\nPoster\n\n\nFoundational aspects of Imprecise Probabilistic Conformal Prediction (IPCP)\nV. Lohmanova\nUnder review\nCantinaRoll\n\n\n\nHere are some presentations I had given:\n\n\n\nName\nEvent\nLanguage\nLink\n\n\n\n\nThe game of mind and dice: Uncertainty Quantification\nMIMUC 2026\n🇬🇧\nSlides v2 Slides v1\n\n\nMatemātiska analīze varbūtību teorijā, statisikā un datu zinātnē\nLSMAT diskusiju klubs 2025\n🇱🇻\nSlides\n\n\nIdealised ruler and collapsing compass: Euclidean geometry\nMIMUC 2025\n🇬🇧\nSlides"
   },
   {
     "objectID": "index.html#mathematics-related-blog-posts",
@@ -600,5 +600,187 @@
     "title": "Veronika Lohmanova",
     "section": "Science related blog posts-",
     "text": "Science related blog posts-"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html",
+    "href": "talks/MIMUC2026_v2/index.html",
+    "title": "The game of mind and dice",
+    "section": "",
+    "text": "Why mind? Why dice? (Rationale)\nIPs are nice (Toolbox)\nWhat we can do with it? (Application to ML)"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#ellsberg-paradox",
+    "href": "talks/MIMUC2026_v2/index.html#ellsberg-paradox",
+    "title": "The game of mind and dice",
+    "section": "Ellsberg paradox",
+    "text": "Ellsberg paradox\n\n\n\n\n\n\n\n\n\nI - 50 red, 50 black\nII - ? red \\(+\\) ? black \\(= 100\\)\n@Ellsberg1961\n\n\n\n\n\nRed I, Black I or indifferent? - Indifferent\nRed II, Black II or indifferent? - Indifferent\nRed I or Red II? - Red I \\(\\succeq\\) Red II\nBlack I or Black II? - Black I \\(\\succeq\\) Black II\n\n\n\n\\[\np_{R_I} &gt; p_{R_{II}}\n\\]\n\n\\[\np_{B_I} &gt; p_{B_{II}}\n\\]\n\\[\n\\iff 1 - p_{R_I} &gt; 1 - p_{R_{II}}\n\\]\n\n\\[\n\\iff p_{R_{I}} &lt; p_{R_{II}}\n\\]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilities",
+    "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilities",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities",
+    "text": "Imprecise Probabilities\n\nToolbox\n\n\n\n\n\nSource: [@alan]. A skeleton demonstrating the connection between various uncertainty calculi. \\(A \\to B\\) means \\(A\\) generalises \\(B\\), meaning that \\(B\\) is a specific instance of \\(A\\)."
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-1",
+    "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-1",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities",
+    "text": "Imprecise Probabilities\n\n\n\n\n\nSource: [@alan].\n\n\n\n\n\n\nSource: [@lv]\n\n\n\n\n\nCredal sets \\(\\mathcal{P}\\) [@Walley1991]:\n\nClosed and convex sets of probability distributions \\(\\forall P_1, P_2  \\in \\mathcal{P}\\) \\[\\{ \\lambda P_1 + (1 - \\lambda)P_2 \\mid \\lambda \\in [0, 1]\\} \\subseteq \\mathcal P\\]\nFor finite space, represented as simplex \\(\\Delta^{\\lvert \\Omega \\rvert - 1} := \\{ \\boldsymbol{\\lambda} \\in \\mathbb{R}^{\\lvert \\Omega \\rvert}_{\\ge 0} \\mid \\sum_{i=1}^{\\lvert \\Omega \\rvert}\\lambda_i = 1\\}\\)\n\n\n\n\n\n\nSource: [@intro_to_ip]."
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-2",
+    "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-2",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities",
+    "text": "Imprecise Probabilities\n\n\n\n\n\nSource: [@alan].\n\n\n\n\n\n\nSource: [@lv]\n\n\n\n\n\nCredal sets \\(\\mathcal{P}\\) [@Walley1991]:\n\nClosed and convex sets of probability distributions\n\n\n\nLower/upper probabilities\n\\[\n\\bar{\\mathbb{P}} \\left[ A\\right] = \\sup_{P \\in \\mathcal{P}} P(A)\n\\] \\[\n\\underline{\\mathbb{P}} \\left[ A\\right] = \\inf_{P \\in \\mathcal{P}} P(A)\n\\] \\(\\forall A \\in \\sigma(\\Omega)\\) [@ihds]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-3",
+    "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-3",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities",
+    "text": "Imprecise Probabilities\n\n\n\n\n\nSource: [@alan].\n\n\n\nBased on @kolmogorov1950:\n\n\\((\\mathcal{\\Omega}, \\sigma(\\mathcal{\\Omega}), \\mathbb{P})\\) is a probability space\n\n\\(\\mathbb{P}[A] \\ge 0 \\quad \\forall A \\in \\sigma(\\mathcal{\\Omega})\\)\n\\(\\mathbb{P}[\\mathcal{\\Omega}] = 1\\)\n\\(\\mathbb{P}\\left[ \\bigcup_{i=1}^\\infty   A_i  \\right] = \\sum_{i=1}^\\infty \\mathbb{P}[A_i]\\) where \\(A_i \\in \\sigma(\\Omega)\\) are disjoint\n\n\n\n\n@Choquet1954:\n\n\nLet \\((\\mathcal{\\Omega}, \\sigma(\\mathcal{\\Omega}))\\) be a measurable space (\\(\\mathcal{\\Omega} \\neq \\emptyset\\))\nSet function \\(\\nu: \\sigma(\\mathcal{\\Omega}) \\to [0,1]\\) is a (Choquet) capacity iff:\n\n\\(\\nu(\\emptyset) = 0\\)\n\\(\\nu(\\mathcal{\\Omega}) = 1\\)\n\\(\\forall A, B \\in \\sigma(\\mathcal{\\Omega}), A\\subseteq B\\) \\(\\implies \\nu(A) \\le \\nu(B)\\)\n\n\n\n\n\\[\n\\begin{align*}\n&1 = \\mathbb{P}[\\mathcal{\\Omega}] = \\mathbb{P}[\\emptyset] + \\mathbb{P}[\\emptyset^C] \\\\\n&\\implies \\mathbb{P}[\\emptyset] = 0 \\\\\n&\\mathbb{P}[B]= \\mathbb{P}[(B\\setminus A) \\cup A] \\\\\n&= \\mathbb{P}[B\\setminus A] + \\mathbb{P}[A]\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-dst",
+    "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-dst",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities: DST",
+    "text": "Imprecise Probabilities: DST\n\n\n\n\n\nSource: [@alan].\n\n\n\n\nSet function \\(\\nu: \\sigma(\\mathcal{\\Omega}) \\to [0,1]\\) is a (Choquet) capacity iff:\n\n\\(\\nu(\\emptyset) = 0\\)\n\\(\\nu(\\mathcal{\\Omega}) = 1\\)\n\\(\\forall A, B \\in \\sigma(\\mathcal{\\Omega}), A\\subseteq B\\) \\(\\implies \\nu(A) \\le \\nu(B)\\)\n\n\n\n\n@Dempster1967 and @Shafer1976\n\n\n\\(m: 2^\\Omega \\to [0, 1]\\)\n\\(m (\\emptyset) = 0\\) and \\(\\sum_{A \\in 2^\\Omega} m(A) = 1\\)\n\n\n\n\\(\\text{Bel}(A) = \\sum_{B\\subseteq A} m(B)\\) \\(=\\underline{P}\\)\n\\(\\text{Pl}(A) = \\sum_{B\\cap A \\neq \\emptyset} m(B)\\) \\(=\\bar{P}\\)\n\\(\\text{Bel}(A) \\le \\text{Pl}(A)\\)\n\n\n\\[\\text{Pl}(A) = 1 - \\text{Bel}(A^C)\\]\n\n\n2-monotonicity: \\(\\forall A_1, A_2 \\in 2^\\Omega\\) \\[\n\\begin{align*}\n\\nu(A_1 \\cup A_2) \\ge \\nu(A_1) &+ \\nu(A_2) \\\\\n& - \\nu(A_1 \\cap A_2)\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-dst-1",
+    "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-dst-1",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilities: DST",
+    "text": "Imprecise Probabilities: DST\n\n\n\n\nRed I, Black I or indifferent? - Indifferent\nRed II, Black II or indifferent? - Indifferent\nRed I or Red II? - Red I \\(\\succeq\\) Red II\nBlack I or Black II? - Black I \\(\\succeq\\) Black II\n\n\n\n\n\\(m: 2^\\Omega \\to [0, 1]\\)\n\\(m (\\emptyset) = 0\\) and \\(\\sum_{A \\in 2^\\Omega} m(A) = 1\\)\n\\(\\text{Bel}(A) = \\sum_{B\\subseteq A} m(B) =\\underline{P}\\)\n\\(\\text{Pl}(A) = \\sum_{B\\cap A \\neq \\emptyset} m(B) =\\bar{P}\\)\n\\(\\text{Bel}(A) \\le \\text{Pl}(A)\\)\n\\(\\text{Pl}(A) = 1 - \\text{Bel}(A^C)\\)\n\n\n\n\\[m_I(\\{R\\}) = m_I(\\{B\\}) = 0.5\\]\n\\[m_{II}(\\{ R, B\\}) = 1.0\\]\n\n\n\n\n\n\n\n\n\n\nBet\nMass\nBel\nPl\n\n\n\n\nRed I\n\\(0.5\\)\n\\(\\boldsymbol{0.5}\\)\n\\(0.5\\)\n\n\nBlack I\n\\(0.5\\)\n\\(0.5\\)\n\\(0.5\\)\n\n\nRI or BI\n\\(0.0\\)\n\\(1.0\\)\n\\(1.0\\)\n\n\n\n\n\n\n\n\nRed II\n\\(0.0\\)\n\\(\\boldsymbol{0.0}\\)\n\\(1.0\\)\n\n\nBlack II\n\\(0.0\\)\n\\(0.0\\)\n\\(1.0\\)\n\n\nRII or BII\n\\(1.0\\)\n\\(1.0\\)\n\\(1.0\\)"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#uncertainty-decomposition",
+    "href": "talks/MIMUC2026_v2/index.html#uncertainty-decomposition",
+    "title": "The game of mind and dice",
+    "section": "Uncertainty decomposition",
+    "text": "Uncertainty decomposition\n\nShannon entropy [@Shannon1948]: \\(H(P) = - \\mathbb{E}_P \\left[ \\log_2 P(X)\\right]\\)\nLower and upper Shannon entropies [@Abelln2006]: \\[\\underline{H}(\\mathcal{P}) = \\inf_{P \\in \\mathcal{P}} H(P)\\] \\[\\bar{H}(\\mathcal{P}) = \\sup_{P \\in \\mathcal{P}} H(P)\\]\n\n\n\\[ TU(\\mathcal{P})  = AU(\\mathcal{P}) + EU(\\mathcal{P})\\]\n\\[ \\bar{H}(\\mathcal{P}) = \\underline{H}(\\mathcal{P})  + (\\bar{H}(\\mathcal{P}) - \\underline{H}(\\mathcal{P}))\\]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#uncertainty-decomposition-1",
+    "href": "talks/MIMUC2026_v2/index.html#uncertainty-decomposition-1",
+    "title": "The game of mind and dice",
+    "section": "Uncertainty decomposition",
+    "text": "Uncertainty decomposition\n\n\n\nSource: [@Waegeman]. Sources of epistemic uncertainty in deep learning."
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#uncertainty-decomposition-2",
+    "href": "talks/MIMUC2026_v2/index.html#uncertainty-decomposition-2",
+    "title": "The game of mind and dice",
+    "section": "Uncertainty decomposition",
+    "text": "Uncertainty decomposition\n\nShannon entropy [@Shannon1948]: \\(H(P) = - \\mathbb{E}_P \\left[ \\log_2 P(X)\\right]\\)\nLower and upper Shannon entropies [@Abelln2006]: \\[\\underline{H}(\\mathcal{P}) = \\inf_{P \\in \\mathcal{P}} H(P)\\] \\[\\bar{H}(\\mathcal{P}) = \\sup_{P \\in \\mathcal{P}} H(P)\\]\n\n\n\\[ TU(\\mathcal{P})  = AU(\\mathcal{P}) + EU(\\mathcal{P})\\]\n\\[ \\bar{H}(\\mathcal{P}) = \\underline{H}(\\mathcal{P})  + (\\bar{H}(\\mathcal{P}) - \\underline{H}(\\mathcal{P}))\\]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#uncertainty-decomposition-3",
+    "href": "talks/MIMUC2026_v2/index.html#uncertainty-decomposition-3",
+    "title": "The game of mind and dice",
+    "section": "Uncertainty decomposition",
+    "text": "Uncertainty decomposition\n\n\n\nSource: [@Hllermeier2021]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp",
+    "href": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp",
+    "title": "The game of mind and dice",
+    "section": "Conformal Prediction (CP)",
+    "text": "Conformal Prediction (CP)\n\nToolbox\n\n\n\nIntroduced by @VladimirVovk2005\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1, Y_1), (X_2, Y_2), \\dots, (X_n, Y_n) \\} \\subseteq \\mathcal{X} \\times \\mathcal{Y}\\)\nKey assumption: \\(\\mathcal{D}_\\text{cal} \\cup (X_{n+1}, Y_{n+1})\\) is exchangeable\n\n\n\n\n\\(s: \\mathcal{X} \\times \\mathcal{Y} \\to [0, 1]\\) - (non)conformity function\n\\(\\alpha\\) - user specified miscoverage level\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp-1",
+    "href": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp-1",
+    "title": "The game of mind and dice",
+    "section": "Conformal Prediction (CP)",
+    "text": "Conformal Prediction (CP)\n\nToolbox\n\n\n\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)\n\n\n\n\n\nSource: [@lv]. Example of conformal prediction at significance level \\(\\alpha = 0.05\\) applied to a logistic regression classifier with three classes. The model’s predicted label is Class 1, but the conformal predictor yields a prediction set \\(C(x_{\\text{new}}) = \\{\\text{Class 1}, \\text{Class 2}\\}\\)."
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp-2",
+    "href": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp-2",
+    "title": "The game of mind and dice",
+    "section": "Conformal Prediction (CP)",
+    "text": "Conformal Prediction (CP)\n\nToolbox\n\n\nStatistical guarantee: \\[\\mathbb{P}\\left[ Y_{n+1} \\in \\mathcal{C}\\left(X_{n+1}\\right) \\right] \\ge 1-\\alpha\\]\n\n\n\n\nSource: [@lv]. Example of conformal prediction at significance level \\(\\alpha = 0.05\\) applied to a logistic regression classifier with three classes. The model’s predicted label is Class 1, but the conformal predictor yields a prediction set \\(C(x_{\\text{new}}) = \\{\\text{Class 1}, \\text{Class 2}\\}\\)."
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#application-medical-imaging",
+    "href": "talks/MIMUC2026_v2/index.html#application-medical-imaging",
+    "title": "The game of mind and dice",
+    "section": "Application: medical imaging",
+    "text": "Application: medical imaging\n\nApplication\n\n\n\n\nSource: [@dataset_ex]. Raw expert annotations (left) vs. the final goldstandard ground truth (right) on a sample image from CytoCrowd."
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilistic-cp",
+    "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilistic-cp",
+    "title": "The game of mind and dice",
+    "section": "Imprecise Probabilistic CP",
+    "text": "Imprecise Probabilistic CP\n\nApplication\n\n\n\n@caprio2025\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1,  \\boldsymbol{\\Lambda_1}), (X_2, \\boldsymbol{\\Lambda_2}), \\dots, (X_n, \\boldsymbol{\\Lambda_n}) \\} \\subseteq \\mathcal{X} \\times \\Delta^{K-1}\\)\n\\(\\implies \\mathcal{C}(X_{n+1}) = \\{ \\lambda \\in \\Delta^{K-1}:S(X_{n+1}, \\lambda) \\ge \\tau \\}\\) plausibility region\n\n\n\n\n\\(S(x, \\boldsymbol{\\lambda}) = \\sum_{i=1}^K \\lambda_i s(x, k_i)\\)\n\\(\\mathcal{P} = \\{\\text{Cat}(\\lambda) : \\lambda \\in \\mathcal{C}(X_{n+1}) \\}\\) credal region\n\n\n\n\nStatistical guarantee: \\[\\mathbb{P}\\left[  \\text{Cat}\\left(\\Lambda_{n+1}\\right) \\in \\mathcal{P}\\right] \\ge 1-\\alpha\\]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#key-takeaways",
+    "href": "talks/MIMUC2026_v2/index.html#key-takeaways",
+    "title": "The game of mind and dice",
+    "section": "Key takeaways",
+    "text": "Key takeaways\n\nProbability theory and statistics are an incredibly interesting phenomena\nWEWTYIW principle - “Why Everything We Teach You Is Wrong”\nKolmogorovian axiomatisation is actually not enough when reasoning about uncertainty \\(\\implies\\) we need new models (IPs)\nUncertainty can be aleatoric and epistemic\nConformal Prediction is actually magical black box\nWe need to teach AI about uncertainty"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#references",
+    "href": "talks/MIMUC2026_v2/index.html#references",
+    "title": "The game of mind and dice",
+    "section": "References",
+    "text": "References"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/about.html",
+    "href": "talks/MIMUC2026_v2/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#cat-vs-dog",
+    "href": "talks/MIMUC2026_v2/index.html#cat-vs-dog",
+    "title": "The game of mind and dice",
+    "section": "Cat vs Dog",
+    "text": "Cat vs Dog\n\nRationale"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#cat-vs-dog-1",
+    "href": "talks/MIMUC2026_v2/index.html#cat-vs-dog-1",
+    "title": "The game of mind and dice",
+    "section": "Cat vs Dog",
+    "text": "Cat vs Dog\n\nRationale\n\n\n\n\n\n\nSource: [@cats_uncertainty]\n\n\n\n\naleatoric\n(irreducible, conflict)\n\nepistemic\n(reducible, non-specifity)\n\n\n\n\ntotal\n\\(TU  = AU + EU\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource: KYM"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#classical-probabilities",
+    "href": "talks/MIMUC2026_v2/index.html#classical-probabilities",
+    "title": "The game of mind and dice",
+    "section": "Classical probabilities",
+    "text": "Classical probabilities\n\nRationale\n\n\n\n\n\n\nSource: Edology\n\n\n\n\n\n\nEllsberg paradox [@Ellsberg1961]\n\n\n\n\n\n\nIf I do not know anything about event \\(A\\), I want to encode \\(\\mathbb{P}[A] = 0\\), but that implies that I know everything about \\(A^C\\) since now \\(\\mathbb{P}[A^C]= 1\\) [@alan]."
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#credal-sets",
+    "href": "talks/MIMUC2026_v2/index.html#credal-sets",
+    "title": "The game of mind and dice",
+    "section": "Credal sets",
+    "text": "Credal sets\n\nToolbox\n\n\n\n\nCredal sets \\(\\mathcal{P}\\) [@Walley1991]:\n\nClosed and convex sets of probability distributions \\(\\forall P_1, P_2  \\in \\mathcal{P}\\) \\[\\{ \\lambda P_1 + (1 - \\lambda)P_2 \\mid \\lambda \\in [0, 1]\\} \\subseteq \\mathcal P\\]\nFor finite space, represented as simplex \\(\\Delta^{\\lvert \\Omega \\rvert - 1} := \\{ \\boldsymbol{v} \\in \\mathbb{R}^{\\lvert \\Omega \\rvert}_{\\ge 0} \\mid \\sum_{i=1}^{\\lvert \\Omega \\rvert}v_i = 1\\}\\)\n\n\n\n\\[x+y+z = 1\\]\n\n\n\n\n\n\nSource: [@lv]\n\n\n\n\n\n\n\nSource: [@intro_to_ip]."
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#lower-and-upper-probabilities",
+    "href": "talks/MIMUC2026_v2/index.html#lower-and-upper-probabilities",
+    "title": "The game of mind and dice",
+    "section": "Lower and upper probabilities",
+    "text": "Lower and upper probabilities\n\nToolbox\n\n\n\n\nCredal sets \\(\\mathcal{P}\\) [@Walley1991]:\n\nClosed and convex sets of probability distributions\n\n\n\n\n\n\nSource: [@lv]\n\n\n\n\n\nLower/upper probabilities\n\\[\n\\bar{\\mathbb{P}} \\left[ A\\right] = \\sup_{P \\in \\mathcal{P}} P(A)\n\\] \\[\n\\underline{\\mathbb{P}} \\left[ A\\right] = \\inf_{P \\in \\mathcal{P}} P(A)\n\\] \\(\\forall A \\in \\sigma(\\Omega)\\) [@ihds]"
+  },
+  {
+    "objectID": "talks/MIMUC2026_v2/index.html#progress-check",
+    "href": "talks/MIMUC2026_v2/index.html#progress-check",
+    "title": "The game of mind and dice",
+    "section": "Progress check",
+    "text": "Progress check\n\nToolbox\n\n\nWe know how to create our abstract model - Credal sets\nWe know how to draw inference on the credal set - Lower and upper probabilities\nWe know how it relates to uncertainty decomposition - Lower and upper Shannon entropies\n\n\n\n\n\nSource: KYM"
   }
 ]

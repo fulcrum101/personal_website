@@ -1,0 +1,362 @@
+---
+pagetitle: "MIMUC2026"
+title: "The game of mind and dice"
+subtitle: "Uncertainty Quantification"
+author: "Veronika Lohmanova"
+institute: "The University of Manchester"
+format: 
+  revealjs:
+    footer: "Veronika Lohmanova, MIMUC2026"
+    brand: _brand.yml
+    incremental: true
+    slide-number: true
+    show-slide-number: all
+    center-title-slide: true
+    logo: logo.png
+    progress: true
+    navigation-mode: linear
+    touch: true
+    controls: true
+    controls-back-arrows: faded
+    center: false
+    cap-location: top
+    fig-align: center
+    fig-cap-location: margin
+    tbl-cap-location: bottom
+    bibliography: references.bib
+    citations-hover: true
+    citeproc: true
+    reference-location: margin
+    lang: en-GB
+    transition: slide
+    scrollable: false
+    auto-animate-easing: ease-in-out
+    html-math-method: mathjax
+    self-contained-math: true
+    smaller: true
+    embed-resources: true
+filters:
+  - reveal-header
+---
+
+# Plan
+
+:::{.fragment .larger style='color: {{< brand color primary >}}'}
+1. **Why mind? Why dice? [(Rationale)]{style='color: {{< brand color gray >}}'}**
+2. **IPs are nice [(Toolbox)]{style='color: {{< brand color gray >}}'}**
+3. **What we can do with it? [(Application to ML)]{style='color: {{< brand color gray >}}'}**
+:::
+
+# Rationale
+
+![Source: [IMDb](https://www.imdb.com/title/tt2084970/?ref_=mv_close)](/images/imitation.png)
+
+::: {.fragment style='color: {{< brand color primary >}}'}
+$$ (\text{Imitation Game})^{-1}: \text{Human} \to \text{Agent} $$
+:::
+
+## Cat vs Dog
+
+::: header
+
+Rationale
+
+:::
+
+::::{.columns}
+:::{.column width="50%"}
+![](images/garfield.jpg){width="70%"  fig-align="center"}
+:::
+:::{.column width="50%"}
+![](images/kimi.jpg){width="70%" fig-align="center"}
+:::
+::::
+
+## Cat vs Dog 
+
+::: header
+
+Rationale
+
+:::
+
+::: {.r-stack}
+::: {.fragment}
+![Source: [@cats_uncertainty]](./images/cats.png){style="text-align: left;"}
+
+
+::::{.columns .fragment}
+::: {.column width="50%" style="text-align: center;"}
+
+[**aleatoric**]{style='color: {{< brand color primary >}}'}
+
+(irreducible, conflict)
+
+:::
+::: {.column width="50%" style="text-align: center;"}
+
+[**epistemic**]{style='color: {{< brand color primary >}}'}
+
+(reducible, non-specifity)
+
+:::
+::::
+:::: {.columns}
+::: {.column width="50%" .fragment}
+
+[**total**]{style='color: {{< brand color primary >}}'}
+
+[$TU  = AU + EU$]{style='color: {{< brand color primary >}}'}
+
+:::
+:::{.column width="30%" style="text-align: right;"}
+
+![](./images/ae_uncertainty.png){width="20%" .fragment fig-align="right"}
+:::
+::::
+::: 
+
+![Source: [KYM](https://knowyourmeme.com/memes/shrugging-tom)](./images/tom_shrug.jpg){.fragment}
+
+:::
+
+## Classical probabilities
+
+::: header
+
+Rationale
+
+:::
+
+
+::::{.columns}
+::: {.column width="50%"}
+![Source: [Edology](https://www.edology.com/blog/artificial-intelligence-and-machine-learning/bias-variance-the-impact-and-relevance-in-artificial-intelligence-and-machine-learning)](./images/bias_variance.png){fig-align="center" width="90%"}
+:::
+::: {.column width="50%" .fragment}
+![Ellsberg paradox [@Ellsberg1961]](images/ellsberg_paradox.png){width="90%" style="text-align: right;"}
+:::
+::::
+
+:::{.fragment}
+> If I do not know anything about event $A$, I want to encode $\mathbb{P}[A] = 0$, but that implies that I know everything about $A^C$ since now  $\mathbb{P}[A^C]= 1$ [@alan].
+:::
+
+# Toolbox
+
+## Imprecise Probabilities
+::: header
+
+Toolbox
+
+:::
+
+![Source: [@alan]. A skeleton demonstrating the connection between various uncertainty calculi. $A \to B$ means $A$ generalises $B$, meaning that $B$ is a specific instance of $A$.](./images/diff_methods.png){.fragment}
+
+## Credal sets
+::: header
+
+Toolbox
+
+:::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+:::{.fragment fragment-index=1 .nonincremental}
+[**Credal sets $\mathcal{P}$**]{style='color: {{< brand color primary >}}'} [@Walley1991]:
+
+- Closed and convex sets of probability distributions $\forall P_1, P_2  \in \mathcal{P}$ $$\{ \lambda P_1 + (1 - \lambda)P_2 \mid \lambda \in [0, 1]\} \subseteq \mathcal P$$
+- For finite space, represented as simplex $\Delta^{\lvert \Omega \rvert - 1} := \{ \boldsymbol{v} \in \mathbb{R}^{\lvert \Omega \rvert}_{\ge 0} \mid \sum_{i=1}^{\lvert \Omega \rvert}v_i = 1\}$
+:::
+:::{.fragment fragment-index=2 style='color: {{< brand color gray >}}'}
+$$x+y+z = 1$$
+:::
+:::
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=3}
+![Source: [@lv]](./images/credal2.png){width="65%" style="text-align: right;" fig-align="center"}
+:::
+:::{.fragment fragment-index=4}
+![Source: [@intro_to_ip].](images/credal.png){width="90%" style="text-align: right;" fig-align="center"}
+:::
+:::
+::::
+
+## Lower and upper probabilities
+::: header
+
+Toolbox
+
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+:::{.nonincremental style='color: {{< brand color gray >}}'}
+**Credal sets $\mathcal{P}$** [@Walley1991]:
+
+- Closed and convex sets of probability distributions
+:::
+
+:::{.fragment fragment-index=2}
+![Source: [@lv]](./images/ihds.png){width="70%" style="text-align: left;" fig-align="left"}
+:::
+:::
+::: {.column width="50%"}
+
+:::{.fragment fragment-index=1}
+[**Lower/upper probabilities**]{style='color: {{< brand color primary >}}'}
+
+$$
+\bar{\mathbb{P}} \left[ A\right] = \sup_{P \in \mathcal{P}} P(A)
+$$
+$$
+\underline{\mathbb{P}} \left[ A\right] = \inf_{P \in \mathcal{P}} P(A)
+$$
+$\forall A \in \sigma(\Omega)$ [@ihds]
+:::
+:::
+::::
+
+## Uncertainty decomposition
+
+- Shannon entropy [@Shannon1948]: $H(P) = - \mathbb{E}_P \left[ \log_2 P(X)\right]$
+- [**Lower**]{style='color: {{< brand color primary >}}'} and [**upper**]{style='color: {{< brand color primary >}}'} Shannon entropies [@Abelln2006]: $$\underline{H}(\mathcal{P}) = \inf_{P \in \mathcal{P}} H(P)$$ $$\bar{H}(\mathcal{P}) = \sup_{P \in \mathcal{P}} H(P)$$
+
+:::{.fragment style='color: {{< brand color primary >}}'}
+$$ TU(\mathcal{P})  = AU(\mathcal{P}) + EU(\mathcal{P})$$
+
+$$ \bar{H}(\mathcal{P}) = \underline{H}(\mathcal{P})  + (\bar{H}(\mathcal{P}) - \underline{H}(\mathcal{P}))$$
+:::
+
+
+## Progress check
+::: header
+
+Toolbox
+
+:::
+
+- [x] We know how to create our abstract model [- Credal sets]{style='color: {{< brand color primary >}}' .fragment}
+- [x] We know how to draw inference on the credal set [- Lower and upper probabilities]{style='color: {{< brand color primary >}}' .fragment}
+- [x] We know how it relates to uncertainty decomposition [- Lower and upper Shannon entropies]{style='color: {{< brand color primary >}}' .fragment}
+
+![Source: [KYM](https://knowyourmeme.com/memes/wat)](./images/wat.jpg){.fragment style="text-align: center;"}
+
+
+## Conformal Prediction (CP) {auto-animate="true" data-id="CP"}
+::: header
+
+Toolbox
+
+:::
+
+::: {.fragment .nonincremental}
+- Introduced by @VladimirVovk2005
+- $\mathcal{D}_\text{cal} = \{ (X_1, Y_1), (X_2, Y_2), \dots, (X_n, Y_n) \} \subseteq \mathcal{X} \times \mathcal{Y}$
+- **Key assumption:** $\mathcal{D}_\text{cal} \cup (X_{n+1}, Y_{n+1})$ is **exchangeable**
+:::
+::: {.fragment .nonincremental}
+- $s: \mathcal{X} \times \mathcal{Y} \to [0, 1]$ - (non)conformity function
+- $\alpha$ - user specified miscoverage level
+- Form a prediction set $\mathcal{C}(X_{n+1}) = \{y \in \mathcal{Y} : s(X_{n+1}, y) \ge \tau \}$ where $\tau = q(\{s(x, y) \mid (x, y) \in \mathcal{D}_\text{cal}\}, \alpha)$
+:::
+
+## Conformal Prediction (CP) {transition="fade" auto-animate="true" data-id="CP"}
+::: header
+
+Toolbox
+
+:::
+
+::: {.nonincremental}
+- Form a prediction set $\mathcal{C}(X_{n+1}) = \{y \in \mathcal{Y} : s(X_{n+1}, y) \ge \tau \}$ where $\tau = q(\{s(x, y) \mid (x, y) \in \mathcal{D}_\text{cal}\}, \alpha)$
+:::
+
+![Source: [@lv]. Example of conformal prediction at significance level $\alpha = 0.05$ applied to a logistic regression classifier with three classes. The model’s predicted label is *Class 1*, but the conformal predictor yields a prediction set $C(x_{\text{new}}) = \{\text{Class 1}, \text{Class 2}\}$.](images/CP_demo.png){style="text-align: right;"}
+
+## Conformal Prediction (CP) {auto-animate="true" data-id="CP"}
+::: header
+
+Toolbox
+
+:::
+
+> **Statistical guarantee**: 
+[$$\mathbb{P}\left[ Y_{n+1} \in \mathcal{C}\left(X_{n+1}\right) \right] \ge 1-\alpha$$]{style='color: {{< brand color primary >}}'}
+
+![Source: [@lv]. Example of conformal prediction at significance level $\alpha = 0.05$ applied to a logistic regression classifier with three classes. The model’s predicted label is *Class 1*, but the conformal predictor yields a prediction set $C(x_{\text{new}}) = \{\text{Class 1}, \text{Class 2}\}$.](images/CP_demo.png){style="text-align: right;"}
+
+
+
+# Imprecise Probabilistic ML
+
+## Application: medical imaging
+::: header
+
+Application
+
+:::
+
+![Source: [@dataset_ex]. Raw expert annotations (left) vs. the final goldstandard ground truth (right) on a sample image from CytoCrowd.](images/datasetshow.png){style="text-align: right;"}
+
+## Imprecise Probabilistic CP
+::: header
+
+Application
+
+:::
+
+::: {.nonincremental}
+- @caprio2025
+- $\mathcal{D}_\text{cal} = \{ (X_1,  \boldsymbol{\Lambda_1}), (X_2, \boldsymbol{\Lambda_2}), \dots, (X_n, \boldsymbol{\Lambda_n}) \} \subseteq \mathcal{X} \times \Delta^{K-1}$
+- $\implies \mathcal{C}(X_{n+1}) = \{ \lambda \in \Delta^{K-1}:S(X_{n+1}, \lambda) \ge \tau \}$ plausibility region
+:::
+:::{.fragment .nonincremental}
+- $S(x, \boldsymbol{\lambda}) = \sum_{i=1}^K \lambda_i s(x, k_i)$
+- $\mathcal{P} = \{\text{Cat}(\lambda) : \lambda \in \mathcal{C}(X_{n+1}) \}$ credal region
+:::
+:::{.fragment .nonincremental}
+>Statistical guarantee: [$$\mathbb{P}\left[  \text{Cat}\left(\Lambda_{n+1}\right) \in \mathcal{P}\right] \ge 1-\alpha$$]{style='color: {{< brand color primary >}}'}
+:::
+
+# Key takeaways
+
+- Probability theory and statistics are [incredibly]{style='color: {{< brand color primary >}}'} interesting phenomena
+- [**WEWTYIW**]{style='color: {{< brand color primary >}}'} principle - "Why Everything We Teach You Is Wrong"
+- Kolmogorovian axiomatisation is actually [not enough]{style='color: {{< brand color primary >}}'} when reasoning about uncertainty $\implies$ we need new models (IPs)
+- Uncertainty can be [aleatoric]{style='color: {{< brand color primary >}}'} and [epistemic]{style='color: {{< brand color primary >}}'}
+- Conformal Prediction is actually [magical ~~black~~ box]{style='color: {{< brand color primary >}}'}
+- We need to teach AI about uncertainty
+
+:::{.fragment}
+<div style="display: flex; justify-content: flex-end;">
+  <div class="tenor-gif-embed" data-postid="9303086736446991732" data-share-method="host" data-aspect-ratio="1" data-width="25%">
+    <a href="https://tenor.com/view/like-gif-9303086736446991732">Like GIF</a> from <a href="https://tenor.com/search/like-gifs">Like GIFs</a>
+  </div>
+</div>
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+:::
+
+## References {.smaller .scrollable}
+
+::: {#refs}
+:::
+
+# 
+::::{.columns style="display: flex; align-items: center;"}
+:::{.column width="50%"}
+::: {.center}
+[**Thank you for attention!**]{style='color: {{< brand color primary >}}'}
+
+Any questions?
+
+![](images/pers_website.png)
+:::
+:::
+:::{.column width="50%"}
+![](images/tartu_museum.jpeg){fig-align="right"}
+![](images/cat_meme.jpg){fig-align="right"}
+:::
+::::

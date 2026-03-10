@@ -35,8 +35,6 @@ format:
     self-contained-math: true
     smaller: true
     embed-resources: true
-filters:
-  - reveal-header
 ---
 
 # Plan
@@ -57,11 +55,6 @@ $$ (\text{Imitation Game})^{-1}: \text{Human} \to \text{Agent} $$
 
 ## Cat vs Dog
 
-::: header
-
-Rationale
-
-:::
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -73,12 +66,6 @@ Rationale
 ::::
 
 ## Cat vs Dog 
-
-::: header
-
-Rationale
-
-:::
 
 ::: {.r-stack}
 ::: {.fragment}
@@ -122,12 +109,6 @@ Rationale
 
 ## Classical probabilities
 
-::: header
-
-Rationale
-
-:::
-
 
 ::::{.columns}
 ::: {.column width="50%"}
@@ -145,20 +126,10 @@ Rationale
 # Toolbox
 
 ## Imprecise Probabilities
-::: header
-
-Toolbox
-
-:::
 
 ![Source: [@alan]. A skeleton demonstrating the connection between various uncertainty calculi. $A \to B$ means $A$ generalises $B$, meaning that $B$ is a specific instance of $A$.](./images/diff_methods.png){.fragment}
 
 ## Credal sets
-::: header
-
-Toolbox
-
-:::
 
 :::: {.columns}
 
@@ -185,11 +156,6 @@ $$x+y+z = 1$$
 ::::
 
 ## Lower and upper probabilities
-::: header
-
-Toolbox
-
-:::
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -232,11 +198,6 @@ $$ \bar{H}(\mathcal{P}) = \underline{H}(\mathcal{P})  + (\bar{H}(\mathcal{P}) - 
 
 
 ## Progress check
-::: header
-
-Toolbox
-
-:::
 
 - [x] We know how to create our abstract model [- Credal sets]{style='color: {{< brand color primary >}}' .fragment}
 - [x] We know how to draw inference on the credal set [- Lower and upper probabilities]{style='color: {{< brand color primary >}}' .fragment}
@@ -246,11 +207,6 @@ Toolbox
 
 
 ## Conformal Prediction (CP) {auto-animate="true" data-id="CP"}
-::: header
-
-Toolbox
-
-:::
 
 ::: {.fragment .nonincremental}
 - Introduced by @VladimirVovk2005
@@ -264,11 +220,6 @@ Toolbox
 :::
 
 ## Conformal Prediction (CP) {transition="fade" auto-animate="true" data-id="CP"}
-::: header
-
-Toolbox
-
-:::
 
 ::: {.nonincremental}
 - Form a prediction set $\mathcal{C}(X_{n+1}) = \{y \in \mathcal{Y} : s(X_{n+1}, y) \ge \tau \}$ where $\tau = q(\{s(x, y) \mid (x, y) \in \mathcal{D}_\text{cal}\}, \alpha)$
@@ -277,11 +228,6 @@ Toolbox
 ![Source: [@lv]. Example of conformal prediction at significance level $\alpha = 0.05$ applied to a logistic regression classifier with three classes. The model’s predicted label is *Class 1*, but the conformal predictor yields a prediction set $C(x_{\text{new}}) = \{\text{Class 1}, \text{Class 2}\}$.](images/CP_demo.png){style="text-align: right;"}
 
 ## Conformal Prediction (CP) {auto-animate="true" data-id="CP"}
-::: header
-
-Toolbox
-
-:::
 
 > **Statistical guarantee**: 
 [$$\mathbb{P}\left[ Y_{n+1} \in \mathcal{C}\left(X_{n+1}\right) \right] \ge 1-\alpha$$]{style='color: {{< brand color primary >}}'}
@@ -293,20 +239,10 @@ Toolbox
 # Imprecise Probabilistic ML
 
 ## Application: medical imaging
-::: header
-
-Application
-
-:::
 
 ![Source: [@dataset_ex]. Raw expert annotations (left) vs. the final goldstandard ground truth (right) on a sample image from CytoCrowd.](images/datasetshow.png){style="text-align: right;"}
 
 ## Imprecise Probabilistic CP
-::: header
-
-Application
-
-:::
 
 ::: {.nonincremental}
 - @caprio2025

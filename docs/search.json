@@ -620,7 +620,7 @@
     "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilities",
     "title": "The game of mind and dice",
     "section": "Imprecise Probabilities",
-    "text": "Imprecise Probabilities\n\nToolbox\n\n\n\n\n\nSource: [@alan]. A skeleton demonstrating the connection between various uncertainty calculi. \\(A \\to B\\) means \\(A\\) generalises \\(B\\), meaning that \\(B\\) is a specific instance of \\(A\\)."
+    "text": "Imprecise Probabilities\n\n\n\n\nSource: [@alan]. A skeleton demonstrating the connection between various uncertainty calculi. \\(A \\to B\\) means \\(A\\) generalises \\(B\\), meaning that \\(B\\) is a specific instance of \\(A\\)."
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilities-1",
@@ -690,35 +690,35 @@
     "href": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp",
     "title": "The game of mind and dice",
     "section": "Conformal Prediction (CP)",
-    "text": "Conformal Prediction (CP)\n\nToolbox\n\n\n\nIntroduced by @VladimirVovk2005\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1, Y_1), (X_2, Y_2), \\dots, (X_n, Y_n) \\} \\subseteq \\mathcal{X} \\times \\mathcal{Y}\\)\nKey assumption: \\(\\mathcal{D}_\\text{cal} \\cup (X_{n+1}, Y_{n+1})\\) is exchangeable\n\n\n\n\n\\(s: \\mathcal{X} \\times \\mathcal{Y} \\to [0, 1]\\) - (non)conformity function\n\\(\\alpha\\) - user specified miscoverage level\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)"
+    "text": "Conformal Prediction (CP)\n\n\nIntroduced by @VladimirVovk2005\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1, Y_1), (X_2, Y_2), \\dots, (X_n, Y_n) \\} \\subseteq \\mathcal{X} \\times \\mathcal{Y}\\)\nKey assumption: \\(\\mathcal{D}_\\text{cal} \\cup (X_{n+1}, Y_{n+1})\\) is exchangeable\n\n\n\n\n\\(s: \\mathcal{X} \\times \\mathcal{Y} \\to [0, 1]\\) - (non)conformity function\n\\(\\alpha\\) - user specified miscoverage level\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)"
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp-1",
     "href": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp-1",
     "title": "The game of mind and dice",
     "section": "Conformal Prediction (CP)",
-    "text": "Conformal Prediction (CP)\n\nToolbox\n\n\n\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)\n\n\n\n\n\nSource: [@lv]. Example of conformal prediction at significance level \\(\\alpha = 0.05\\) applied to a logistic regression classifier with three classes. The model’s predicted label is Class 1, but the conformal predictor yields a prediction set \\(C(x_{\\text{new}}) = \\{\\text{Class 1}, \\text{Class 2}\\}\\)."
+    "text": "Conformal Prediction (CP)\n\n\nForm a prediction set \\(\\mathcal{C}(X_{n+1}) = \\{y \\in \\mathcal{Y} : s(X_{n+1}, y) \\ge \\tau \\}\\) where \\(\\tau = q(\\{s(x, y) \\mid (x, y) \\in \\mathcal{D}_\\text{cal}\\}, \\alpha)\\)\n\n\n\n\n\nSource: [@lv]. Example of conformal prediction at significance level \\(\\alpha = 0.05\\) applied to a logistic regression classifier with three classes. The model’s predicted label is Class 1, but the conformal predictor yields a prediction set \\(C(x_{\\text{new}}) = \\{\\text{Class 1}, \\text{Class 2}\\}\\)."
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp-2",
     "href": "talks/MIMUC2026_v2/index.html#conformal-prediction-cp-2",
     "title": "The game of mind and dice",
     "section": "Conformal Prediction (CP)",
-    "text": "Conformal Prediction (CP)\n\nToolbox\n\n\nStatistical guarantee: \\[\\mathbb{P}\\left[ Y_{n+1} \\in \\mathcal{C}\\left(X_{n+1}\\right) \\right] \\ge 1-\\alpha\\]\n\n\n\n\nSource: [@lv]. Example of conformal prediction at significance level \\(\\alpha = 0.05\\) applied to a logistic regression classifier with three classes. The model’s predicted label is Class 1, but the conformal predictor yields a prediction set \\(C(x_{\\text{new}}) = \\{\\text{Class 1}, \\text{Class 2}\\}\\)."
+    "text": "Conformal Prediction (CP)\n\nStatistical guarantee: \\[\\mathbb{P}\\left[ Y_{n+1} \\in \\mathcal{C}\\left(X_{n+1}\\right) \\right] \\ge 1-\\alpha\\]\n\n\n\n\nSource: [@lv]. Example of conformal prediction at significance level \\(\\alpha = 0.05\\) applied to a logistic regression classifier with three classes. The model’s predicted label is Class 1, but the conformal predictor yields a prediction set \\(C(x_{\\text{new}}) = \\{\\text{Class 1}, \\text{Class 2}\\}\\)."
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#application-medical-imaging",
     "href": "talks/MIMUC2026_v2/index.html#application-medical-imaging",
     "title": "The game of mind and dice",
     "section": "Application: medical imaging",
-    "text": "Application: medical imaging\n\nApplication\n\n\n\n\nSource: [@dataset_ex]. Raw expert annotations (left) vs. the final goldstandard ground truth (right) on a sample image from CytoCrowd."
+    "text": "Application: medical imaging\n\n\n\nSource: [@dataset_ex]. Raw expert annotations (left) vs. the final goldstandard ground truth (right) on a sample image from CytoCrowd."
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#imprecise-probabilistic-cp",
     "href": "talks/MIMUC2026_v2/index.html#imprecise-probabilistic-cp",
     "title": "The game of mind and dice",
     "section": "Imprecise Probabilistic CP",
-    "text": "Imprecise Probabilistic CP\n\nApplication\n\n\n\n@caprio2025\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1,  \\boldsymbol{\\Lambda_1}), (X_2, \\boldsymbol{\\Lambda_2}), \\dots, (X_n, \\boldsymbol{\\Lambda_n}) \\} \\subseteq \\mathcal{X} \\times \\Delta^{K-1}\\)\n\\(\\implies \\mathcal{C}(X_{n+1}) = \\{ \\lambda \\in \\Delta^{K-1}:S(X_{n+1}, \\lambda) \\ge \\tau \\}\\) plausibility region\n\n\n\n\n\\(S(x, \\boldsymbol{\\lambda}) = \\sum_{i=1}^K \\lambda_i s(x, k_i)\\)\n\\(\\mathcal{P} = \\{\\text{Cat}(\\lambda) : \\lambda \\in \\mathcal{C}(X_{n+1}) \\}\\) credal region\n\n\n\n\nStatistical guarantee: \\[\\mathbb{P}\\left[  \\text{Cat}\\left(\\Lambda_{n+1}\\right) \\in \\mathcal{P}\\right] \\ge 1-\\alpha\\]"
+    "text": "Imprecise Probabilistic CP\n\n\n@caprio2025\n\\(\\mathcal{D}_\\text{cal} = \\{ (X_1,  \\boldsymbol{\\Lambda_1}), (X_2, \\boldsymbol{\\Lambda_2}), \\dots, (X_n, \\boldsymbol{\\Lambda_n}) \\} \\subseteq \\mathcal{X} \\times \\Delta^{K-1}\\)\n\\(\\implies \\mathcal{C}(X_{n+1}) = \\{ \\lambda \\in \\Delta^{K-1}:S(X_{n+1}, \\lambda) \\ge \\tau \\}\\) plausibility region\n\n\n\n\n\\(S(x, \\boldsymbol{\\lambda}) = \\sum_{i=1}^K \\lambda_i s(x, k_i)\\)\n\\(\\mathcal{P} = \\{\\text{Cat}(\\lambda) : \\lambda \\in \\mathcal{C}(X_{n+1}) \\}\\) credal region\n\n\n\n\nStatistical guarantee: \\[\\mathbb{P}\\left[  \\text{Cat}\\left(\\Lambda_{n+1}\\right) \\in \\mathcal{P}\\right] \\ge 1-\\alpha\\]"
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#key-takeaways",
@@ -746,41 +746,41 @@
     "href": "talks/MIMUC2026_v2/index.html#cat-vs-dog",
     "title": "The game of mind and dice",
     "section": "Cat vs Dog",
-    "text": "Cat vs Dog\n\nRationale"
+    "text": "Cat vs Dog"
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#cat-vs-dog-1",
     "href": "talks/MIMUC2026_v2/index.html#cat-vs-dog-1",
     "title": "The game of mind and dice",
     "section": "Cat vs Dog",
-    "text": "Cat vs Dog\n\nRationale\n\n\n\n\n\n\nSource: [@cats_uncertainty]\n\n\n\n\naleatoric\n(irreducible, conflict)\n\nepistemic\n(reducible, non-specifity)\n\n\n\n\ntotal\n\\(TU  = AU + EU\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource: KYM"
+    "text": "Cat vs Dog\n\n\n\n\n\nSource: [@cats_uncertainty]\n\n\n\n\naleatoric\n(irreducible, conflict)\n\nepistemic\n(reducible, non-specifity)\n\n\n\n\ntotal\n\\(TU  = AU + EU\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\nSource: KYM"
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#classical-probabilities",
     "href": "talks/MIMUC2026_v2/index.html#classical-probabilities",
     "title": "The game of mind and dice",
     "section": "Classical probabilities",
-    "text": "Classical probabilities\n\nRationale\n\n\n\n\n\n\nSource: Edology\n\n\n\n\n\n\nEllsberg paradox [@Ellsberg1961]\n\n\n\n\n\n\nIf I do not know anything about event \\(A\\), I want to encode \\(\\mathbb{P}[A] = 0\\), but that implies that I know everything about \\(A^C\\) since now \\(\\mathbb{P}[A^C]= 1\\) [@alan]."
+    "text": "Classical probabilities\n\n\n\n\n\nSource: Edology\n\n\n\n\n\n\nEllsberg paradox [@Ellsberg1961]\n\n\n\n\n\n\nIf I do not know anything about event \\(A\\), I want to encode \\(\\mathbb{P}[A] = 0\\), but that implies that I know everything about \\(A^C\\) since now \\(\\mathbb{P}[A^C]= 1\\) [@alan]."
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#credal-sets",
     "href": "talks/MIMUC2026_v2/index.html#credal-sets",
     "title": "The game of mind and dice",
     "section": "Credal sets",
-    "text": "Credal sets\n\nToolbox\n\n\n\n\nCredal sets \\(\\mathcal{P}\\) [@Walley1991]:\n\nClosed and convex sets of probability distributions \\(\\forall P_1, P_2  \\in \\mathcal{P}\\) \\[\\{ \\lambda P_1 + (1 - \\lambda)P_2 \\mid \\lambda \\in [0, 1]\\} \\subseteq \\mathcal P\\]\nFor finite space, represented as simplex \\(\\Delta^{\\lvert \\Omega \\rvert - 1} := \\{ \\boldsymbol{v} \\in \\mathbb{R}^{\\lvert \\Omega \\rvert}_{\\ge 0} \\mid \\sum_{i=1}^{\\lvert \\Omega \\rvert}v_i = 1\\}\\)\n\n\n\n\\[x+y+z = 1\\]\n\n\n\n\n\n\nSource: [@lv]\n\n\n\n\n\n\n\nSource: [@intro_to_ip]."
+    "text": "Credal sets\n\n\n\nCredal sets \\(\\mathcal{P}\\) [@Walley1991]:\n\nClosed and convex sets of probability distributions \\(\\forall P_1, P_2  \\in \\mathcal{P}\\) \\[\\{ \\lambda P_1 + (1 - \\lambda)P_2 \\mid \\lambda \\in [0, 1]\\} \\subseteq \\mathcal P\\]\nFor finite space, represented as simplex \\(\\Delta^{\\lvert \\Omega \\rvert - 1} := \\{ \\boldsymbol{v} \\in \\mathbb{R}^{\\lvert \\Omega \\rvert}_{\\ge 0} \\mid \\sum_{i=1}^{\\lvert \\Omega \\rvert}v_i = 1\\}\\)\n\n\n\n\\[x+y+z = 1\\]\n\n\n\n\n\n\nSource: [@lv]\n\n\n\n\n\n\n\nSource: [@intro_to_ip]."
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#lower-and-upper-probabilities",
     "href": "talks/MIMUC2026_v2/index.html#lower-and-upper-probabilities",
     "title": "The game of mind and dice",
     "section": "Lower and upper probabilities",
-    "text": "Lower and upper probabilities\n\nToolbox\n\n\n\n\nCredal sets \\(\\mathcal{P}\\) [@Walley1991]:\n\nClosed and convex sets of probability distributions\n\n\n\n\n\n\nSource: [@lv]\n\n\n\n\n\nLower/upper probabilities\n\\[\n\\bar{\\mathbb{P}} \\left[ A\\right] = \\sup_{P \\in \\mathcal{P}} P(A)\n\\] \\[\n\\underline{\\mathbb{P}} \\left[ A\\right] = \\inf_{P \\in \\mathcal{P}} P(A)\n\\] \\(\\forall A \\in \\sigma(\\Omega)\\) [@ihds]"
+    "text": "Lower and upper probabilities\n\n\n\nCredal sets \\(\\mathcal{P}\\) [@Walley1991]:\n\nClosed and convex sets of probability distributions\n\n\n\n\n\n\nSource: [@lv]\n\n\n\n\n\nLower/upper probabilities\n\\[\n\\bar{\\mathbb{P}} \\left[ A\\right] = \\sup_{P \\in \\mathcal{P}} P(A)\n\\] \\[\n\\underline{\\mathbb{P}} \\left[ A\\right] = \\inf_{P \\in \\mathcal{P}} P(A)\n\\] \\(\\forall A \\in \\sigma(\\Omega)\\) [@ihds]"
   },
   {
     "objectID": "talks/MIMUC2026_v2/index.html#progress-check",
     "href": "talks/MIMUC2026_v2/index.html#progress-check",
     "title": "The game of mind and dice",
     "section": "Progress check",
-    "text": "Progress check\n\nToolbox\n\n\nWe know how to create our abstract model - Credal sets\nWe know how to draw inference on the credal set - Lower and upper probabilities\nWe know how it relates to uncertainty decomposition - Lower and upper Shannon entropies\n\n\n\n\n\nSource: KYM"
+    "text": "Progress check\n\nWe know how to create our abstract model - Credal sets\nWe know how to draw inference on the credal set - Lower and upper probabilities\nWe know how it relates to uncertainty decomposition - Lower and upper Shannon entropies\n\n\n\n\n\nSource: KYM"
   }
 ]

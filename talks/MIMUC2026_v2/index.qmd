@@ -45,6 +45,8 @@ format:
 3. **What we can do with it? [(Application to ML)]{style='color: {{< brand color gray >}}'}**
 :::
 
+<!---
+
 # Rationale
 
 ![Source: [IMDb](https://www.imdb.com/title/tt2084970/?ref_=mv_close)](/images/imitation.png)
@@ -64,6 +66,7 @@ $$ (\text{Imitation Game})^{-1}: \text{Human} \to \text{Agent} $$
 ![](images/kimi.jpg){width="70%" fig-align="center"}
 :::
 ::::
+--->
 
 ## Cat vs Dog 
 
@@ -112,7 +115,13 @@ $$ (\text{Imitation Game})^{-1}: \text{Human} \to \text{Agent} $$
 
 ::::{.columns}
 ::: {.column width="50%"}
-![Source: [Edology](https://www.edology.com/blog/artificial-intelligence-and-machine-learning/bias-variance-the-impact-and-relevance-in-artificial-intelligence-and-machine-learning)](./images/bias_variance.png){fig-align="center" width="60%" style="text-align: center;"}
+$$ 
+\begin{align}
+\text{Var}(\hat{y} \mid x) &= \mathbb{E}_\theta\!\left[ \text{Var}(\hat{y} \mid x, \theta)  \right] \\
+&+ \text{Var}_\theta(\mathbb{E}_\theta\!\left[\hat{y} \mid x, \theta  \right])
+\end{align}
+$$
+[@Waegeman]
 :::
 ::: {.column width="50%" .fragment}
 ![Ellsberg paradox [@Ellsberg1961]](images/ellsberg_paradox.png){width="60%" style="text-align: right;" style="text-align: center;"}
